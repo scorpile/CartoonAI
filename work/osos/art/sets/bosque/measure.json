@@ -1,0 +1,94 @@
+{
+ "size": [
+  1672,
+  941
+ ],
+ "interior_bbox": [
+  1102,
+  408,
+  1347,
+  734
+ ],
+ "ground_top_left": 684,
+ "ground_top_mid": 686,
+ "sun_px": [
+  336.15950049666526,
+  180.59088974031502
+ ],
+ "clouds": [
+  {
+   "file": "assets/sets/bosque/clouds-0.png",
+   "box": [
+    15,
+    10,
+    364,
+    199
+   ]
+  },
+  {
+   "file": "assets/sets/bosque/clouds-1.png",
+   "box": [
+    394,
+    2,
+    954,
+    225
+   ]
+  },
+  {
+   "file": "assets/sets/bosque/clouds-2.png",
+   "box": [
+    997,
+    70,
+    1229,
+    192
+   ]
+  },
+  {
+   "file": "assets/sets/bosque/clouds-3.png",
+   "box": [
+    1269,
+    10,
+    1658,
+    212
+   ]
+  }
+ ],
+ "fg": [
+  {
+   "file": "assets/sets/bosque/fg-0.png",
+   "box": [
+    10,
+    0,
+    469,
+    271
+   ]
+  },
+  {
+   "file": "assets/sets/bosque/fg-1.png",
+   "box": [
+    10,
+    630,
+    493,
+    941
+   ]
+  },
+  {
+   "file": "assets/sets/bosque/fg-2.png",
+   "box": [
+    1325,
+    0,
+    1626,
+    176
+   ]
+  },
+  {
+   "file": "assets/sets/bosque/fg-3.png",
+   "box": [
+    1338,
+    763,
+    1658,
+    941
+   ]
+  }
+ ]
+}

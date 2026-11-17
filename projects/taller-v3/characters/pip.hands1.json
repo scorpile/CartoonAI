@@ -1,0 +1,388 @@
+{
+ "name": "Pip",
+ "colors": {
+  "outline": "#241b12",
+  "skin": "#fce0b6",
+  "eye_white": "#fbfafb",
+  "pupil": "#251409",
+  "mouth_inside": "#8c4131",
+  "tongue": "#ef8873",
+  "blush": "#f8ab77",
+  "nose": null,
+  "sleeve": "#6da894",
+  "sleeve_shade": "#6da894",
+  "forearm": "#74af9a",
+  "cuff": "#559482",
+  "thigh": "#73ae9a",
+  "shin": "#73ae9a",
+  "leg_shade": "#487b6c"
+ },
+ "outline": 2.511627906976744,
+ "hip_height": 97.77,
+ "hip_half": 20.0,
+ "hip_joint_dy": 8.0,
+ "ankle_h": 29.77358490566038,
+ "foot": {
+  "toe": 23.86,
+  "heel": 10.69,
+  "depth": 3.5
+ },
+ "arm": {
+  "upper": 45.0,
+  "fore": 41.0,
+  "w": [
+   27.0,
+   25.65,
+   24.613953488372093
+  ],
+  "smooth": 0.72,
+  "bands": [
+   {
+    "from": 0,
+    "to": 1,
+    "color": "#6da894"
+   }
+  ],
+  "cuff": {
+   "from": 0.8,
+   "to": 0.97,
+   "color": "#559482"
+  },
+  "highlight": {
+   "color": "#a9d9c4",
+   "w": 2.4,
+   "alpha": 0.9,
+   "from": 0.1,
+   "to": 0.42,
+   "offset": -0.2
+  }
+ },
+ "leg": {
+  "thigh": 32.68345009472507,
+  "shin": 28.226615990898917,
+  "smooth": 0.3,
+  "w": [
+   30.0,
+   20.544337137840213,
+   20.34475471698113
+  ],
+  "bands": [
+   {
+    "from": 0,
+    "to": 1,
+    "color": "#73ae9a"
+   }
+  ],
+  "highlight": {
+   "color": "#a9d9c4",
+   "w": 2.4,
+   "alpha": 0.9,
+   "from": 0.12,
+   "to": 0.45,
+   "offset": -0.2
+  }
+ },
+ "torso": {
+  "file": "assets/pip/torso.png",
+  "upp": 0.43636363636363634,
+  "pivot": [
+   109.5,
+   210.08333333333334
+  ],
+  "shoulder": [
+   27.0,
+   -56.0
+  ],
+  "neck": [
+   0.0,
+   -77.58181818181818
+  ]
+ },
+ "hips": {
+  "file": "assets/pip/hips.png",
+  "upp": 0.3854166666666667,
+  "pivot": [
+   96.0,
+   71.5
+  ]
+ },
+ "hands": {
+  "closed": {
+   "file": "assets/pip/hand_closed.png",
+   "upp": 0.313953488372093,
+   "pivot": [
+    58.2,
+    7.0
+   ],
+   "dir": 102.6
+  },
+  "open": {
+   "file": "assets/pip/hand_open.png",
+   "upp": 0.313953488372093,
+   "pivot": [
+    14.5,
+    72.5
+   ],
+   "dir": -17.7
+  },
+  "point": {
+   "file": "assets/pip/hand_point.png",
+   "upp": 0.313953488372093,
+   "pivot": [
+    12.5,
+    53.5
+   ],
+   "dir": -16.0
+  }
+ },
+ "boots": {
+  "side": {
+   "file": "assets/pip/boot_side.png",
+   "upp": 0.22641509433962265,
+   "pivot": [
+    66.0,
+    20.5
+   ],
+   "mouth": {
+    "c": [
+     66.0,
+     20.5
+    ],
+    "rx": 46.8,
+    "ry": 8.7
+   }
+  },
+  "tip": {
+   "file": "assets/pip/boot_tip.png",
+   "upp": 0.22641509433962265,
+   "pivot": [
+    58.5,
+    45.5
+   ],
+   "mouth": {
+    "c": [
+     58.5,
+     45.5
+    ],
+    "rx": 42.3,
+    "ry": 7.575
+   }
+  }
+ },
+ "head": {
+  "front": {
+   "file": "assets/pip/head_front.png",
+   "mask": "assets/pip/head_front_face.png",
+   "size": [
+    269,
+    275
+   ],
+   "upp": 0.6434782608695652,
+   "pivot": [
+    138.5,
+    268.0
+   ],
+   "top": 55.0,
+   "face": {
+    "bbox": [
+     68.0,
+     100.0,
+     230.0,
+     228.0
+    ],
+    "line": 5.739999999999999,
+    "eye_l": {
+     "c": [
+      110.5,
+      163.0
+     ],
+     "rx": 23.3,
+     "ry": 26.8
+    },
+    "eye_r": {
+     "c": [
+      194.0,
+      161.5
+     ],
+     "rx": 21.8,
+     "ry": 26.3
+    },
+    "pupil": {
+     "rx": 12.991999999999999,
+     "ry": 18.48,
+     "highlight_r": 4.25,
+     "highlight_offset": [
+      4.0,
+      -6.25
+     ]
+    },
+    "brow_l": {
+     "c": [
+      107.0,
+      120.0
+     ],
+     "w": 30.0,
+     "thickness": 5.4
+    },
+    "brow_r": {
+     "c": [
+      195.5,
+      119.5
+     ],
+     "w": 29.0,
+     "thickness": 5.1
+    },
+    "mouth": {
+     "c": [
+      154.5,
+      198.5
+     ],
+     "w": 39.0,
+     "thickness": 5.2
+    },
+    "nose": null,
+    "blush_l": {
+     "c": [
+      93.0,
+      200.0
+     ],
+     "rx": 12.0,
+     "ry": 8.0
+    },
+    "blush_r": {
+     "c": [
+      209.5,
+      196.5
+     ],
+     "rx": 11.5,
+     "ry": 7.5
+    }
+   },
+   "appendages": [
+    {
+     "name": "antenna",
+     "base": [
+      135.5,
+      53.5
+     ],
+     "tip": [
+      180.0,
+      9.5
+     ],
+     "freq": 2.7,
+     "damp": 0.11,
+     "gain": 1.7,
+     "spread": 1.1,
+     "vertical": 2.2
+    }
+   ]
+  },
+  "3q": {
+   "file": "assets/pip/head_3q_flip.png",
+   "mask": "assets/pip/head_3q_face_flip.png",
+   "size": [
+    370,
+    391
+   ],
+   "upp": 0.4523652173913043,
+   "pivot": [
+    197.0,
+    385.0
+   ],
+   "top": 82.0,
+   "face": {
+    "bbox": [
+     107.0,
+     146.0,
+     323.0,
+     333.0
+    ],
+    "line": 5.739999999999999,
+    "eye_l": {
+     "c": [
+      174.0,
+      240.0
+     ],
+     "rx": 37.1,
+     "ry": 41.1
+    },
+    "eye_r": {
+     "c": [
+      284.5,
+      235.0
+     ],
+     "rx": 30.6,
+     "ry": 40.1
+    },
+    "pupil": {
+     "rx": 17.168,
+     "ry": 27.44,
+     "highlight_r": 5.44,
+     "highlight_offset": [
+      -5.125,
+      -9.125
+     ]
+    },
+    "brow_l": {
+     "c": [
+      166.5,
+      176.5
+     ],
+     "w": 45.0,
+     "thickness": 7.8
+    },
+    "brow_r": {
+     "c": [
+      277.5,
+      173.0
+     ],
+     "w": 33.0,
+     "thickness": 7.0
+    },
+    "mouth": {
+     "c": [
+      234.0,
+      292.0
+     ],
+     "w": 52.0,
+     "thickness": 9.0
+    },
+    "nose": null,
+    "blush_l": {
+     "c": [
+      146.5,
+      294.0
+     ],
+     "rx": 17.5,
+     "ry": 12.0
+    },
+    "blush_r": {
+     "c": [
+      305.0,
+      288.0
+     ],
+     "rx": 14.0,
+     "ry": 10.0
+    }
+   },
+   "appendages": [
+    {
+     "name": "antenna",
+     "base": [
+      166.0,
+      81.5
+     ],
+     "tip": [
+      225.2,
+      11.2
+     ],
+     "freq": 2.7,
+     "damp": 0.11,
+     "gain": 1.7,
+     "spread": 1.1,
+     "vertical": 2.2
+    }
+   ]
+  }
+ }
+}

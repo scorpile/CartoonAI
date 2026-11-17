@@ -1,0 +1,201 @@
+{
+ "babero": {
+  "files": {
+   "babero_mano": {
+    "file": "assets/props/babero/babero_mano.png",
+    "size": [
+     402,
+     554
+    ],
+    "pivot": [
+     211,
+     40
+    ]
+   },
+   "babero_puesto": {
+    "file": "assets/props/babero/babero_puesto.png",
+    "size": [
+     418,
+     465
+    ],
+    "pivot": [
+     212,
+     0
+    ]
+   },
+   "babero_perfil": {
+    "file": "assets/props/babero/babero_perfil.png",
+    "size": [
+     220,
+     447
+    ],
+    "pivot": [
+     94,
+     0
+    ]
+   },
+   "babero_3q": {
+    "file": "assets/props/babero/babero_3q.png",
+    "size": [
+     368,
+     466
+    ],
+    "pivot": [
+     241,
+     0
+    ]
+   }
+  },
+  "sheet": "assets/props/babero/babero-sheet.png",
+  "cells": [
+   [
+    0,
+    0,
+    467,
+    574
+   ],
+   [
+    467,
+    0,
+    934,
+    574
+   ],
+   [
+    934,
+    0,
+    1401,
+    574
+   ],
+   [
+    1401,
+    0,
+    1868,
+    574
+   ]
+  ],
+  "pivot": [
+   251,
+   50
+  ]
+ },
+ "tenedor": {
+  "files": {
+   "tenedor": {
+    "file": "assets/props/tenedor/tenedor.png",
+    "size": [
+     227,
+     759
+    ],
+    "pivot": [
+     114,
+     606
+    ]
+   },
+   "tenedor_inclinado": {
+    "file": "assets/props/tenedor/tenedor_inclinado.png",
+    "size": [
+     547,
+     734
+    ],
+    "pivot": [
+     116,
+     584
+    ]
+   }
+  },
+  "sheet": "assets/props/tenedor/tenedor-sheet.png",
+  "cells": [
+   [
+    0,
+    0,
+    567,
+    779
+   ],
+   [
+    567,
+    0,
+    1134,
+    779
+   ]
+  ],
+  "pivot": [
+   126,
+   616
+  ],
+  "handle_pixels": [
+   26952,
+   29238
+  ]
+ },
+ "library": {
+  "babero": {
+   "sheet": "assets/props/babero/babero-sheet.png",
+   "cells": [
+    [
+     0,
+     0,
+     467,
+     574
+    ],
+    [
+     467,
+     0,
+     934,
+     574
+    ],
+    [
+     934,
+     0,
+     1401,
+     574
+    ],
+    [
+     1401,
+     0,
+     1868,
+     574
+    ]
+   ],
+   "pivot": [
+    251,
+    50
+   ],
+   "upp": 0.12,
+   "layer": "front",
+   "frames": {
+    "mano": 0,
+    "puesto": 1,
+    "perfil": 2,
+    "tres_cuartos": 3
+   }
+  },
+  "tenedor": {
+   "sheet": "assets/props/tenedor/tenedor-sheet.png",
+   "cells": [
+    [
+     0,
+     0,
+     567,
+     779
+    ],
+    [
+     567,
+     0,
+     1134,
+     779
+    ]
+   ],
+   "pivot": [
+    126,
+    616
+   ],
+   "upp": 0.085,
+   "layer": "front",
+   "frames": {
+    "vertical": 0,
+    "inclinado": 1
+   }
+  }
+ },
+ "notes": "pivot de hoja: babero = borde del cuello (arriba, centro; en la celda 0 el nudo de las cintas); tenedor = centro del mango donde cierra el puno. upp orientativo (unidades de mundo por pixel), a ajustar en plano. Archivos sueltos para items/wear del rig: pivot en pixeles del PNG recortado."
+}

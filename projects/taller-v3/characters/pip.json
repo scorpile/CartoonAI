@@ -1,0 +1,571 @@
+{
+ "name": "Pip",
+ "colors": {
+  "outline": "#241b12",
+  "skin": "#fce0b6",
+  "eye_white": "#fbfafb",
+  "pupil": "#251409",
+  "mouth_inside": "#8c4131",
+  "tongue": "#ef8873",
+  "blush": "#f8ab77",
+  "nose": null,
+  "sleeve": "#6da894",
+  "sleeve_shade": "#6da894",
+  "forearm": "#74af9a",
+  "cuff": "#559482",
+  "thigh": "#73ae9a",
+  "shin": "#73ae9a",
+  "leg_shade": "#487b6c"
+ },
+ "outline": 2.511627906976744,
+ "hip_height": 97.77,
+ "hip_half": 20.0,
+ "hip_joint_dy": 8.0,
+ "ankle_h": 29.77358490566038,
+ "foot": {
+  "toe": 23.86,
+  "heel": 10.69,
+  "depth": 3.5
+ },
+ "arm": {
+  "upper": 45.0,
+  "fore": 41.0,
+  "w": [
+   27.0,
+   25.65,
+   24.613953488372093
+  ],
+  "smooth": 0.72,
+  "bands": [
+   {
+    "from": 0,
+    "to": 1,
+    "color": "#6da894"
+   }
+  ],
+  "cuff": {
+   "from": 0.8,
+   "to": 0.97,
+   "color": "#559482"
+  },
+  "highlight": {
+   "color": "#a9d9c4",
+   "w": 2.4,
+   "alpha": 0.9,
+   "from": 0.1,
+   "to": 0.42,
+   "offset": -0.2
+  }
+ },
+ "leg": {
+  "thigh": 32.68345009472507,
+  "shin": 28.226615990898917,
+  "smooth": 0.3,
+  "w": [
+   30.0,
+   20.544337137840213,
+   20.34475471698113
+  ],
+  "bands": [
+   {
+    "from": 0,
+    "to": 1,
+    "color": "#73ae9a"
+   }
+  ],
+  "highlight": {
+   "color": "#a9d9c4",
+   "w": 2.4,
+   "alpha": 0.9,
+   "from": 0.12,
+   "to": 0.45,
+   "offset": -0.2
+  }
+ },
+ "torso": {
+  "file": "assets/pip/torso.png",
+  "upp": 0.43636363636363634,
+  "pivot": [
+   109.5,
+   210.08333333333334
+  ],
+  "shoulder": [
+   27.0,
+   -56.0
+  ],
+  "neck": [
+   0.0,
+   -77.58181818181818
+  ],
+  "profile": {
+   "file": "assets/pip/torso_profile.png",
+   "upp": 0.2026472727272727,
+   "pivot": [
+    182.5,
+    448.65317255239734
+   ],
+   "shoulder": [
+    1.8238254545454544,
+    -56.0
+   ],
+   "neck": [
+    2.4317672727272726,
+    -79.56306618181816
+   ]
+  },
+  "back3q": {
+   "file": "assets/pip/torso_back3q.png",
+   "upp": 0.17764363636363636,
+   "pivot": [
+    251.0,
+    510.7075247686891
+   ],
+   "shoulder": [
+    1.2435054545454545,
+    -56.0
+   ],
+   "neck": [
+    0.97704,
+    -79.54496145454546
+   ]
+  }
+ },
+ "hips": {
+  "file": "assets/pip/hips.png",
+  "upp": 0.3854166666666667,
+  "pivot": [
+   96.0,
+   71.5
+  ]
+ },
+ "hands": {
+  "closed": {
+   "file": "assets/pip/hand2_closed.png",
+   "upp": 0.08326,
+   "pivot": [
+    6.5,
+    227.0
+   ],
+   "dir": -6.7,
+   "back": {
+    "file": "assets/pip/hand2b_closed.png",
+    "upp": 0.085,
+    "pivot": [
+     6.5,
+     230.5
+    ],
+    "dir": -8.4
+   }
+  },
+  "open": {
+   "file": "assets/pip/hand2_open.png",
+   "upp": 0.08475,
+   "pivot": [
+    6.5,
+    297.5
+   ],
+   "dir": -6.9,
+   "back": {
+    "file": "assets/pip/hand2b_open.png",
+    "upp": 0.0842,
+    "pivot": [
+     6.5,
+     300.0
+    ],
+    "dir": -7.1
+   }
+  },
+  "point": {
+   "file": "assets/pip/hand2_point.png",
+   "upp": 0.08607,
+   "pivot": [
+    6.5,
+    223.5
+   ],
+   "dir": -12.8,
+   "back": {
+    "file": "assets/pip/hand2b_point.png",
+    "upp": 0.08582,
+    "pivot": [
+     6.5,
+     225.0
+    ],
+    "dir": -12.7
+   }
+  }
+ },
+ "boots": {
+  "side": {
+   "file": "assets/pip/boot_side.png",
+   "upp": 0.22641509433962265,
+   "pivot": [
+    66.0,
+    20.5
+   ],
+   "mouth": {
+    "c": [
+     66.0,
+     20.5
+    ],
+    "rx": 46.8,
+    "ry": 8.7
+   }
+  },
+  "tip": {
+   "file": "assets/pip/boot_tip.png",
+   "upp": 0.22641509433962265,
+   "pivot": [
+    58.5,
+    45.5
+   ],
+   "mouth": {
+    "c": [
+     58.5,
+     45.5
+    ],
+    "rx": 42.3,
+    "ry": 7.575
+   }
+  }
+ },
+ "head": {
+  "front": {
+   "file": "assets/pip/head_front.png",
+   "mask": "assets/pip/head_front_face.png",
+   "size": [
+    269,
+    275
+   ],
+   "upp": 0.6434782608695652,
+   "pivot": [
+    138.5,
+    268.0
+   ],
+   "top": 55.0,
+   "face": {
+    "bbox": [
+     68.0,
+     100.0,
+     230.0,
+     228.0
+    ],
+    "line": 5.739999999999999,
+    "eye_l": {
+     "c": [
+      110.5,
+      163.0
+     ],
+     "rx": 23.3,
+     "ry": 26.8
+    },
+    "eye_r": {
+     "c": [
+      194.0,
+      161.5
+     ],
+     "rx": 21.8,
+     "ry": 26.3
+    },
+    "pupil": {
+     "rx": 12.991999999999999,
+     "ry": 18.48,
+     "highlight_r": 4.25,
+     "highlight_offset": [
+      4.0,
+      -6.25
+     ]
+    },
+    "brow_l": {
+     "c": [
+      107.0,
+      120.0
+     ],
+     "w": 30.0,
+     "thickness": 5.4
+    },
+    "brow_r": {
+     "c": [
+      195.5,
+      119.5
+     ],
+     "w": 29.0,
+     "thickness": 5.1
+    },
+    "mouth": {
+     "c": [
+      154.5,
+      198.5
+     ],
+     "w": 39.0,
+     "thickness": 5.2
+    },
+    "nose": null,
+    "blush_l": {
+     "c": [
+      93.0,
+      200.0
+     ],
+     "rx": 12.0,
+     "ry": 8.0
+    },
+    "blush_r": {
+     "c": [
+      209.5,
+      196.5
+     ],
+     "rx": 11.5,
+     "ry": 7.5
+    }
+   },
+   "appendages": [
+    {
+     "name": "antenna",
+     "base": [
+      135.5,
+      53.5
+     ],
+     "tip": [
+      180.0,
+      9.5
+     ],
+     "freq": 2.7,
+     "damp": 0.11,
+     "gain": 1.7,
+     "spread": 1.1,
+     "vertical": 2.2
+    }
+   ]
+  },
+  "3q": {
+   "file": "assets/pip/head_3q_flip.png",
+   "mask": "assets/pip/head_3q_face_flip.png",
+   "size": [
+    370,
+    391
+   ],
+   "upp": 0.4523652173913043,
+   "pivot": [
+    197.0,
+    385.0
+   ],
+   "top": 82.0,
+   "face": {
+    "bbox": [
+     107.0,
+     146.0,
+     323.0,
+     333.0
+    ],
+    "line": 5.739999999999999,
+    "eye_l": {
+     "c": [
+      174.0,
+      240.0
+     ],
+     "rx": 37.1,
+     "ry": 41.1
+    },
+    "eye_r": {
+     "c": [
+      284.5,
+      235.0
+     ],
+     "rx": 30.6,
+     "ry": 40.1
+    },
+    "pupil": {
+     "rx": 17.168,
+     "ry": 27.44,
+     "highlight_r": 5.44,
+     "highlight_offset": [
+      -5.125,
+      -9.125
+     ]
+    },
+    "brow_l": {
+     "c": [
+      166.5,
+      176.5
+     ],
+     "w": 45.0,
+     "thickness": 7.8
+    },
+    "brow_r": {
+     "c": [
+      277.5,
+      173.0
+     ],
+     "w": 33.0,
+     "thickness": 7.0
+    },
+    "mouth": {
+     "c": [
+      234.0,
+      292.0
+     ],
+     "w": 52.0,
+     "thickness": 9.0
+    },
+    "nose": null,
+    "blush_l": {
+     "c": [
+      146.5,
+      294.0
+     ],
+     "rx": 17.5,
+     "ry": 12.0
+    },
+    "blush_r": {
+     "c": [
+      305.0,
+      288.0
+     ],
+     "rx": 14.0,
+     "ry": 10.0
+    }
+   },
+   "appendages": [
+    {
+     "name": "antenna",
+     "base": [
+      166.0,
+      81.5
+     ],
+     "tip": [
+      225.2,
+      11.2
+     ],
+     "freq": 2.7,
+     "damp": 0.11,
+     "gain": 1.7,
+     "spread": 1.1,
+     "vertical": 2.2
+    }
+   ]
+  },
+  "back3q": {
+   "file": "assets/pip/head_back3q.png",
+   "back": true,
+   "size": [
+    538,
+    618
+   ],
+   "upp": 0.28856377217391305,
+   "pivot": [
+    252.0,
+    611.0
+   ],
+   "top": 136.0,
+   "face": {
+    "bbox": [
+     134.8,
+     278.5,
+     376.2,
+     468.5
+    ]
+   },
+   "appendages": [
+    {
+     "name": "antenna",
+     "base": [
+      255.5,
+      136.2
+     ],
+     "tip": [
+      363.6,
+      14.2
+     ],
+     "freq": 2.7,
+     "damp": 0.11,
+     "gain": 1.7,
+     "spread": 1.1,
+     "vertical": 2.2
+    }
+   ]
+  },
+  "profile": {
+   "file": "assets/pip/head_profile.png",
+   "mask": "assets/pip/head_profile_face.png",
+   "profile": true,
+   "size": [
+    459,
+    584
+   ],
+   "upp": 0.30941780869565216,
+   "pivot": [
+    249.0,
+    577.0
+   ],
+   "top": 134.0,
+   "face": {
+    "bbox": [
+     287.0,
+     228.0,
+     435.0,
+     499.0
+    ],
+    "line": 7.379999999999999,
+    "eye_r": {
+     "c": [
+      387.5,
+      353.2
+     ],
+     "rx": 36.2,
+     "ry": 42.1
+    },
+    "pupil": {
+     "rx": 15.775999999999998,
+     "ry": 28.112000000000005,
+     "highlight_r": 5.609999999999999,
+     "highlight_offset": [
+      4.25,
+      -9.375
+     ]
+    },
+    "brow_r": {
+     "c": [
+      391.0909124752476,
+      292.16854950495053
+     ],
+     "w": 76.0,
+     "thickness": 10.2
+    },
+    "mouth": {
+     "c": [
+      392.7887788778878,
+      434.46000000000004
+     ],
+     "w": 64.6,
+     "thickness": 13.2
+    },
+    "nose": null,
+    "blush_r": {
+     "c": [
+      369.38636871287133,
+      431.75
+     ],
+     "rx": 20.5,
+     "ry": 14.6
+    }
+   },
+   "appendages": [
+    {
+     "name": "antenna",
+     "base": [
+      247.0,
+      134.8
+     ],
+     "tip": [
+      360.1,
+      15.7
+     ],
+     "freq": 2.7,
+     "damp": 0.11,
+     "gain": 1.7,
+     "spread": 1.1,
+     "vertical": 2.2
+    }
+   ]
+  }
+ }
+}

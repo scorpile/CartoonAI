@@ -1,0 +1,130 @@
+{
+ "clouds": [
+  {
+   "file": "assets/set/parts/clouds-0.png",
+   "box": [
+    0,
+    38,
+    414,
+    163
+   ]
+  },
+  {
+   "file": "assets/set/parts/clouds-1.png",
+   "box": [
+    414,
+    15,
+    1214,
+    307
+   ]
+  },
+  {
+   "file": "assets/set/parts/clouds-2.png",
+   "box": [
+    1170,
+    5,
+    1672,
+    204
+   ]
+  }
+ ],
+ "fg": [
+  {
+   "file": "assets/set/parts/fg-0.png",
+   "box": [
+    0,
+    0,
+    470,
+    305
+   ]
+  },
+  {
+   "file": "assets/set/parts/fg-1.png",
+   "box": [
+    0,
+    737,
+    352,
+    941
+   ]
+  },
+  {
+   "file": "assets/set/parts/fg-2.png",
+   "box": [
+    1251,
+    699,
+    1672,
+    941
+   ]
+  }
+ ],
+ "main": {
+  "size": [
+   1672,
+   941
+  ],
+  "ground_top_left": 718,
+  "ground_top_mid": 709,
+  "house_bbox_cols": [
+   723,
+   1659
+  ],
+  "house_top": 162
+ },
+ "sun": {
+  "c": [
+   1205.8971846846846,
+   191.6072072072072
+  ],
+  "r": 85.5
+ },
+ "far": {
+  "top": 223,
+  "top_left": 341,
+  "top_right": 270
+ },
+ "mid": {
+  "top": 112,
+  "top_left": 481,
+  "top_right": 143
+ },
+ "butterfly-sheet": [
+  [
+   116,
+   301,
+   452,
+   638
+  ],
+  [
+   712,
+   297,
+   991,
+   633
+  ],
+  [
+   1326,
+   290,
+   1546,
+   630
+  ]
+ ],
+ "puff-sheet": [
+  [
+   147,
+   370,
+   451,
+   629
+  ],
+  [
+   617,
+   322,
+   1045,
+   644
+  ],
+  [
+   1160,
+   351,
+   1565,
+   628
+  ]
+ ]
+}

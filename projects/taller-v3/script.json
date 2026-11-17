@@ -1,0 +1,4625 @@
+{
+  "schema_version": 2,
+  "kind": "script",
+  "id": "taller-v3",
+  "title": "El taller del valle — Una visita con alas",
+  "revision": 18,
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "story": "Luma llega al taller. Pip la saluda. Una mariposa se posa en la antena de Pip; él intenta no moverse, estornuda, y la mariposa termina en la oreja de Luma antes de irse hacia el sol.",
+  "style": {
+    "hold": 2,
+    "contour": 0.9,
+    "boil": 0.32,
+    "boil_hold": 3
+  },
+  "bible": {
+    "style": "Cutout 2D con extremidades continuas, cara paramétrica, multiplano con profundidad de campo y luz de atardecer.",
+    "story": "Luma llega al taller. Pip la saluda. Una mariposa se posa en la antena de Pip; él intenta no moverse, estornuda, y la mariposa termina en la oreja de Luma antes de irse hacia el sol.",
+    "continuity": "Luma a la izquierda mirando a la derecha; Pip a la derecha mirando a la izquierda. Suelo y=690, escala .66. Sin diálogo ni audio."
+  },
+  "characters": {
+    "luma": "characters/luma.json",
+    "pip": "characters/pip.json"
+  },
+  "sets": {
+    "valley": "sets/valley.json"
+  },
+  "props": {
+    "butterfly": {
+      "id": "butterfly",
+      "sheet": "assets/props/butterfly-poses-sheet.png",
+      "cells": [
+        [
+          0,
+          0,
+          640,
+          640
+        ],
+        [
+          640,
+          0,
+          1280,
+          640
+        ],
+        [
+          1280,
+          0,
+          1920,
+          640
+        ],
+        [
+          1920,
+          0,
+          2560,
+          640
+        ]
+      ],
+      "pivot": [
+        330,
+        330
+      ],
+      "upp": 0.093,
+      "layer": "front",
+      "shadow": {
+        "ground": 696.0,
+        "width": 30
+      },
+      "flap_frames": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "perch_rest": 3
+    },
+    "puff": {
+      "sheet": "assets/props/puff-phases-sheet.png",
+      "cells": [
+        [
+          116,
+          274,
+          343,
+          470
+        ],
+        [
+          565,
+          264,
+          905,
+          494
+        ],
+        [
+          1035,
+          174,
+          1557,
+          569
+        ],
+        [
+          1677,
+          231,
+          2069,
+          509
+        ]
+      ],
+      "upp": 0.11,
+      "layer": "front",
+      "phases": true
+    }
+  },
+  "references": [],
+  "scenes": [
+    {
+      "id": "taller",
+      "title": "El taller al atardecer",
+      "description": "Luma llega al taller de Pip; una mariposa se posa en la antena y luego en la oreja de Luma.",
+      "set": "valley",
+      "cast": [
+        {
+          "id": "pip",
+          "character": "pip",
+          "start": {
+            "x": 838,
+            "y": 690.0,
+            "scale": 0.66
+          }
+        },
+        {
+          "id": "luma",
+          "character": "luma",
+          "start": {
+            "y": 690.0,
+            "scale": 0.66
+          }
+        }
+      ],
+      "props": [
+        {
+          "id": "butterfly",
+          "prop": "butterfly",
+          "spec": {}
+        }
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "duration": 6.0,
+      "scene": "taller",
+      "description": "General. El taller al atardecer; Pip trabaja en su banco, Luma llega caminando.",
+      "actors": [
+        {
+          "id": "pip",
+          "start": {
+            "facing": 1,
+            "look_x": 0.7,
+            "look_y": 0.55,
+            "smile": 0.3,
+            "brow_y": -0.2,
+            "brow_rot": -6
+          }
+        },
+        {
+          "id": "luma",
+          "start": {
+            "x": -60,
+            "look_x": 0.55,
+            "look_y": -0.25,
+            "smile": 0.75
+          }
+        }
+      ],
+      "props": [],
+      "actions": [
+        {
+          "on": "shot",
+          "do": "dof",
+          "value": 1.6
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 0,
+          "x": 612,
+          "y": 388,
+          "zoom": 1.04
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 6.0,
+          "x": 646,
+          "y": 402,
+          "zoom": 1.12,
+          "ease": "inout"
+        },
+        {
+          "on": "shot",
+          "do": "fade_in",
+          "dur": 0.9
+        },
+        {
+          "on": "shot",
+          "do": "overlay",
+          "kind": "title",
+          "title": "El taller del valle",
+          "subtitle": "Una visita con alas",
+          "keys": [
+            [
+              0.9,
+              0
+            ],
+            [
+              1.9,
+              1,
+              "out"
+            ],
+            [
+              3.7,
+              1
+            ],
+            [
+              4.4,
+              0,
+              "in"
+            ]
+          ]
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "arm_r_x",
+          "value": 46
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "arm_r_y",
+          "value": 34
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "arm_l_x",
+          "value": 42
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "arm_l_y",
+          "value": 20
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "lean",
+          "value": 7
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "head_rot",
+          "value": 5
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 0.3,
+          "dur": 0.16,
+          "ease": "out",
+          "overlap": 0,
+          "arm_l_y": 4,
+          "arm_l_x": 36,
+          "hand_l_rot": -25
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 0.45999999999999996,
+          "dur": 0.09,
+          "ease": "in",
+          "overlap": 0,
+          "arm_l_y": 24,
+          "arm_l_x": 44,
+          "hand_l_rot": 10
+        },
+        {
+          "on": "pip",
+          "do": "pulse",
+          "t": 0.55,
+          "up": 0.05,
+          "hold": 0,
+          "down": 0.16,
+          "head_dy": 1.6
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 1.25,
+          "dur": 0.16,
+          "ease": "out",
+          "overlap": 0,
+          "arm_l_y": 4,
+          "arm_l_x": 36,
+          "hand_l_rot": -25
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 1.41,
+          "dur": 0.09,
+          "ease": "in",
+          "overlap": 0,
+          "arm_l_y": 24,
+          "arm_l_x": 44,
+          "hand_l_rot": 10
+        },
+        {
+          "on": "pip",
+          "do": "pulse",
+          "t": 1.5,
+          "up": 0.05,
+          "hold": 0,
+          "down": 0.16,
+          "head_dy": 1.6
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 1.75,
+          "dur": 0.16,
+          "ease": "out",
+          "overlap": 0,
+          "arm_l_y": 4,
+          "arm_l_x": 36,
+          "hand_l_rot": -25
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 1.91,
+          "dur": 0.09,
+          "ease": "in",
+          "overlap": 0,
+          "arm_l_y": 24,
+          "arm_l_x": 44,
+          "hand_l_rot": 10
+        },
+        {
+          "on": "pip",
+          "do": "pulse",
+          "t": 2.0,
+          "up": 0.05,
+          "hold": 0,
+          "down": 0.16,
+          "head_dy": 1.6
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 2.25,
+          "dur": 0.16,
+          "ease": "out",
+          "overlap": 0,
+          "arm_l_y": 4,
+          "arm_l_x": 36,
+          "hand_l_rot": -25
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 2.41,
+          "dur": 0.09,
+          "ease": "in",
+          "overlap": 0,
+          "arm_l_y": 24,
+          "arm_l_x": 44,
+          "hand_l_rot": 10
+        },
+        {
+          "on": "pip",
+          "do": "pulse",
+          "t": 2.5,
+          "up": 0.05,
+          "hold": 0,
+          "down": 0.16,
+          "head_dy": 1.6
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 2.75,
+          "dur": 0.16,
+          "ease": "out",
+          "overlap": 0,
+          "arm_l_y": 4,
+          "arm_l_x": 36,
+          "hand_l_rot": -25
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 2.91,
+          "dur": 0.09,
+          "ease": "in",
+          "overlap": 0,
+          "arm_l_y": 24,
+          "arm_l_x": 44,
+          "hand_l_rot": 10
+        },
+        {
+          "on": "pip",
+          "do": "pulse",
+          "t": 3.0,
+          "up": 0.05,
+          "hold": 0,
+          "down": 0.16,
+          "head_dy": 1.6
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 3.7,
+          "dur": 0.16,
+          "ease": "out",
+          "overlap": 0,
+          "arm_l_y": 4,
+          "arm_l_x": 36,
+          "hand_l_rot": -25
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 3.8600000000000003,
+          "dur": 0.09,
+          "ease": "in",
+          "overlap": 0,
+          "arm_l_y": 24,
+          "arm_l_x": 44,
+          "hand_l_rot": 10
+        },
+        {
+          "on": "pip",
+          "do": "pulse",
+          "t": 3.95,
+          "up": 0.05,
+          "hold": 0,
+          "down": 0.16,
+          "head_dy": 1.6
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 4.2,
+          "dur": 0.16,
+          "ease": "out",
+          "overlap": 0,
+          "arm_l_y": 4,
+          "arm_l_x": 36,
+          "hand_l_rot": -25
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 4.36,
+          "dur": 0.09,
+          "ease": "in",
+          "overlap": 0,
+          "arm_l_y": 24,
+          "arm_l_x": 44,
+          "hand_l_rot": 10
+        },
+        {
+          "on": "pip",
+          "do": "pulse",
+          "t": 4.45,
+          "up": 0.05,
+          "hold": 0,
+          "down": 0.16,
+          "head_dy": 1.6
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 4.7,
+          "dur": 0.16,
+          "ease": "out",
+          "overlap": 0,
+          "arm_l_y": 4,
+          "arm_l_x": 36,
+          "hand_l_rot": -25
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 4.86,
+          "dur": 0.09,
+          "ease": "in",
+          "overlap": 0,
+          "arm_l_y": 24,
+          "arm_l_x": 44,
+          "hand_l_rot": 10
+        },
+        {
+          "on": "pip",
+          "do": "pulse",
+          "t": 4.95,
+          "up": 0.05,
+          "hold": 0,
+          "down": 0.16,
+          "head_dy": 1.6
+        },
+        {
+          "on": "luma",
+          "do": "walk",
+          "t0": 0.7,
+          "t1": 7.4,
+          "x0": -70,
+          "x1": 482,
+          "scale": 0.66,
+          "step": 56,
+          "lift": 16,
+          "swing": 24,
+          "bob": 3.4,
+          "view": "profile"
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 3.2,
+          "name": "curious",
+          "look_x": 0.8
+        },
+        {
+          "on": "luma",
+          "do": "look",
+          "t": 3.1,
+          "x": 0.85,
+          "y": -0.1,
+          "dur": 0.12,
+          "head": 0.4
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 4.9,
+          "name": "awe"
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 5.05,
+          "dur": 0.16,
+          "ease": "out",
+          "overlap": 0,
+          "arm_l_y": 10,
+          "arm_l_x": 38,
+          "hand_l_rot": -12
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 5.12,
+          "dur": 0.3,
+          "ease": "back",
+          "head_dy": -2,
+          "lean": 3,
+          "torso_sy": 1.02
+        },
+        {
+          "on": "pip",
+          "do": "look",
+          "t": 5.35,
+          "x": -0.6,
+          "y": -0.05,
+          "dur": 0.09,
+          "head": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "duration": 3.8,
+      "scene": "taller",
+      "description": "Medio de Pip. Oye pasos, mira atrás, gira con alegría y saluda.",
+      "actors": [
+        {
+          "id": "pip",
+          "start": {
+            "facing": 1,
+            "look_x": -0.6,
+            "look_y": -0.05,
+            "smile": 0.3,
+            "brow_y": -0.2,
+            "brow_rot": -6
+          }
+        }
+      ],
+      "props": [],
+      "actions": [
+        {
+          "on": "shot",
+          "do": "dof",
+          "value": 4.5
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 0,
+          "x": 846,
+          "y": 548,
+          "zoom": 2.12
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 3.8,
+          "x": 836,
+          "y": 544,
+          "zoom": 2.24,
+          "ease": "inout"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "arm_r_x",
+          "value": 46
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "arm_r_y",
+          "value": 34
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "arm_l_x",
+          "value": 38
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "arm_l_y",
+          "value": 10
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "hand_l_rot",
+          "value": -12
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "face_x",
+          "value": -0.18
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "lean",
+          "value": 3
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "head_rot",
+          "value": 5
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "head_dy",
+          "value": -2
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "torso_sy",
+          "value": 1.02
+        },
+        {
+          "on": "pip",
+          "do": "face",
+          "t": 0.2,
+          "name": "curious",
+          "dur": 0.12
+        },
+        {
+          "on": "pip",
+          "do": "look",
+          "t": 0.25,
+          "x": -0.95,
+          "y": -0.1,
+          "dur": 0.08,
+          "head": 0.5
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 0.3,
+          "dur": 0.14,
+          "ease": "back",
+          "overlap": 0.5,
+          "head_dy": -4,
+          "head_rot": -3,
+          "lean": 2,
+          "torso_sy": 1.03,
+          "arm_l_y": 22,
+          "arm_l_x": 44,
+          "hand_l_rot": 0
+        },
+        {
+          "on": "pip",
+          "do": "drift",
+          "t0": 0.5,
+          "t1": 1.0,
+          "period": 1.0,
+          "head_rot": 1.2,
+          "lean": 0.8
+        },
+        {
+          "on": "pip",
+          "do": "blink",
+          "times": [
+            0.95
+          ]
+        },
+        {
+          "on": "pip",
+          "do": "turn_around",
+          "t": 1.12,
+          "facing": -1
+        },
+        {
+          "on": "pip",
+          "do": "look",
+          "t": 1.2,
+          "x": 0.75,
+          "y": 0,
+          "dur": 0.08,
+          "head": 0.3
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 1.18,
+          "dur": 0.22,
+          "ease": "back",
+          "arm_l_x": -5,
+          "arm_l_y": 83,
+          "arm_r_x": 5,
+          "arm_r_y": 83,
+          "hand_l_rot": 0,
+          "lean": -3,
+          "head_rot": -4,
+          "head_dy": 0,
+          "torso_sy": 1
+        },
+        {
+          "on": "pip",
+          "do": "face",
+          "t": 1.34,
+          "name": "happy",
+          "dur": 0.16
+        },
+        {
+          "on": "pip",
+          "do": "gasp",
+          "t": 1.36,
+          "amount": 0.7
+        },
+        {
+          "on": "pip",
+          "do": "wave",
+          "t": 1.86,
+          "side": "l",
+          "cycles": 3,
+          "period": 0.34
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 3.63,
+          "dur": 0.4,
+          "ease": "inout",
+          "lean": 0,
+          "head_rot": 0
+        },
+        {
+          "on": "pip",
+          "do": "face",
+          "t": 3.3,
+          "name": "soft"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "duration": 3.6,
+      "scene": "taller",
+      "description": "Medio de Luma. Se detiene, descubre a Pip, salta de alegría y saluda.",
+      "actors": [
+        {
+          "id": "luma",
+          "start": {
+            "x": 420,
+            "look_x": 0.8,
+            "look_y": -0.05
+          }
+        }
+      ],
+      "props": [],
+      "actions": [
+        {
+          "on": "shot",
+          "do": "dof",
+          "value": 4.5
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 0,
+          "x": 462,
+          "y": 548,
+          "zoom": 2.1
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 3.6,
+          "x": 486,
+          "y": 544,
+          "zoom": 2.2,
+          "ease": "inout"
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "smile",
+          "value": 0.45
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_open",
+          "value": 0.38
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_w",
+          "value": 0.62
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_round",
+          "value": 0.7
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_y",
+          "value": 0.85
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_rot",
+          "value": 6
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "eye_open",
+          "value": 1.14
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "pupil",
+          "value": 1.12
+        },
+        {
+          "on": "luma",
+          "do": "walk",
+          "t0": -1.4,
+          "t1": 0.78,
+          "x0": 345,
+          "x1": 500,
+          "scale": 0.66,
+          "step": 56,
+          "lift": 16,
+          "swing": 24,
+          "phase": 0.35,
+          "bob": 3.4,
+          "view": "profile"
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 0.74,
+          "dur": 0.14,
+          "ease": "out",
+          "lean": 10,
+          "hip_dy": 6,
+          "head_rot": 3
+        },
+        {
+          "on": "luma",
+          "do": "look",
+          "t": 0.72,
+          "x": 1,
+          "y": 0,
+          "dur": 0.06,
+          "head": 0.7
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 0.9,
+          "dur": 0.3,
+          "ease": "back",
+          "lean": -9,
+          "hip_dy": -1,
+          "head_rot": -6,
+          "head_dy": -4,
+          "torso_sy": 1.05
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 0.82,
+          "name": "surprise",
+          "dur": 0.1,
+          "brow_y": 1.3
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 0.84,
+          "dur": 0.2,
+          "ease": "out",
+          "overlap": 0,
+          "arm_l_x": -26,
+          "arm_l_y": 56,
+          "arm_r_x": 26,
+          "arm_r_y": 56,
+          "hand_l_rot": -25,
+          "hand_r_rot": 25
+        },
+        {
+          "on": "luma",
+          "do": "blink",
+          "times": [
+            1.12
+          ]
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 1.14,
+          "dur": 0.2,
+          "ease": "inout",
+          "lean": -2,
+          "head_dy": 0,
+          "torso_sy": 1
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 1.22,
+          "name": "happy",
+          "dur": 0.16
+        },
+        {
+          "on": "luma",
+          "do": "hop",
+          "t": 1.36,
+          "height": 26,
+          "air": 0.36
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 1.36,
+          "dur": 0.16,
+          "ease": "out",
+          "overlap": 0,
+          "arm_l_x": -30,
+          "arm_l_y": 50,
+          "arm_r_x": 30,
+          "arm_r_y": 50
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 1.52,
+          "dur": 0.2,
+          "ease": "back",
+          "overlap": 0,
+          "arm_l_x": -52,
+          "arm_l_y": -6,
+          "arm_r_x": 54,
+          "arm_r_y": -10
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 1.9100000000000001,
+          "dur": 0.3,
+          "ease": "soft",
+          "overlap": 0,
+          "arm_l_x": -5,
+          "arm_l_y": 83,
+          "arm_r_x": 5,
+          "arm_r_y": 83
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 1.5,
+          "name": "joy",
+          "dur": 0.1
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 2.0300000000000002,
+          "name": "happy",
+          "dur": 0.2
+        },
+        {
+          "on": "luma",
+          "do": "wave",
+          "t": 2.21,
+          "side": "l",
+          "cycles": 3,
+          "period": 0.32
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 3.87,
+          "dur": 0.4,
+          "ease": "inout",
+          "lean": 0,
+          "head_rot": 0
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "duration": 6.6,
+      "scene": "taller",
+      "description": "Plano de dos. Luma se acerca; se saludan con una reverencia. Llega una mariposa.",
+      "actors": [
+        {
+          "id": "luma",
+          "start": {
+            "x": 500,
+            "look_x": 0.8
+          }
+        },
+        {
+          "id": "pip",
+          "start": {
+            "facing": -1,
+            "look_x": 0.8
+          }
+        }
+      ],
+      "props": [
+        {
+          "id": "butterfly"
+        }
+      ],
+      "actions": [
+        {
+          "on": "shot",
+          "do": "dof",
+          "value": 3.0
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 0,
+          "x": 655,
+          "y": 540,
+          "zoom": 1.58
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 2.4,
+          "x": 688,
+          "y": 532,
+          "zoom": 1.64,
+          "ease": "inout"
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 6.6,
+          "x": 704,
+          "y": 500,
+          "zoom": 1.66,
+          "ease": "inout"
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 0,
+          "name": "happy"
+        },
+        {
+          "on": "pip",
+          "do": "face",
+          "t": 0,
+          "name": "soft"
+        },
+        {
+          "on": "luma",
+          "do": "walk",
+          "t0": 0.3,
+          "t1": 1.75,
+          "x0": 500,
+          "x1": 612,
+          "scale": 0.66,
+          "step": 54,
+          "lift": 15,
+          "swing": 28,
+          "bob": 3.2,
+          "view": "profile"
+        },
+        {
+          "on": "luma",
+          "do": "set",
+          "t": 0,
+          "hand_l": "open"
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "arm_l_x",
+          "value": -78
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "arm_l_y",
+          "value": -42
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "arm_l_bend",
+          "value": 0.9
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "hand_l_rot",
+          "value": 18
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 0.0,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0,
+          "arm_l_x": -5,
+          "arm_l_y": 83.42,
+          "arm_l_bend": 1.0,
+          "hand_l_rot": 0
+        },
+        {
+          "on": "luma",
+          "do": "set",
+          "t": 0.3,
+          "hand_l": "closed"
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 1.72,
+          "dur": 0.12,
+          "ease": "out",
+          "lean": 6,
+          "hip_dy": 4
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 1.84,
+          "dur": 0.28,
+          "ease": "back",
+          "lean": 0,
+          "hip_dy": 0
+        },
+        {
+          "on": "luma",
+          "do": "blink",
+          "times": [
+            1.5
+          ]
+        },
+        {
+          "on": "pip",
+          "do": "look",
+          "t": 0.15,
+          "x": 0.8,
+          "y": 0.1,
+          "dur": 0.08,
+          "head": 0.3
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 0.18,
+          "dur": 0.14,
+          "ease": "out",
+          "overlap": 0,
+          "lean": 3,
+          "head_dy": 2
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 0.32,
+          "dur": 0.2,
+          "ease": "back",
+          "overlap": 0,
+          "lean": -3,
+          "head_dy": -1
+        },
+        {
+          "on": "pip",
+          "do": "react",
+          "t": 1.6,
+          "x": 0.85,
+          "y": 0,
+          "head": 0.35
+        },
+        {
+          "on": "pip",
+          "do": "pulse",
+          "t": 1.74,
+          "up": 0.1,
+          "hold": 0.08,
+          "down": 0.3,
+          "hip_dy": 3,
+          "head_dy": 1.5
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 0.38,
+          "dur": 0.12,
+          "ease": "out",
+          "overlap": 0,
+          "lean": 3,
+          "head_dy": 3,
+          "torso_sy": 0.97
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 0.5,
+          "dur": 0.3,
+          "ease": "back",
+          "arm_l_x": -44,
+          "arm_l_y": 46,
+          "arm_r_x": 50,
+          "arm_r_y": 40,
+          "hand_l_rot": -30,
+          "hand_r_rot": 30,
+          "lean": -5,
+          "head_dy": -2,
+          "torso_sy": 1.02
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 0.84,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0,
+          "head_dy": 0,
+          "torso_sy": 1
+        },
+        {
+          "on": "pip",
+          "do": "set",
+          "t": 0.5,
+          "hand_l": "open",
+          "hand_r": "open"
+        },
+        {
+          "on": "pip",
+          "do": "face",
+          "t": 0.5,
+          "name": "happy"
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 1.7,
+          "dur": 0.35,
+          "ease": "inout",
+          "arm_l_x": -5,
+          "arm_l_y": 83,
+          "arm_r_x": 5,
+          "arm_r_y": 83,
+          "hand_l_rot": 0,
+          "hand_r_rot": 0,
+          "lean": 0
+        },
+        {
+          "on": "pip",
+          "do": "set",
+          "t": 2.0,
+          "hand_l": "closed",
+          "hand_r": "closed"
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 2.05,
+          "dur": 0.12,
+          "ease": "out",
+          "lean": -3,
+          "head_rot": -3
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 2.17,
+          "dur": 0.34,
+          "ease": "inout",
+          "lean": 13,
+          "bend": 11,
+          "head_rot": 9,
+          "hip_dy": 5,
+          "hip_dx": -4,
+          "lid": 1,
+          "arm_l_x": 6,
+          "arm_r_x": 14
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 2.7699999999999996,
+          "dur": 0.4,
+          "ease": "back",
+          "lean": 0,
+          "bend": 0,
+          "head_rot": 0,
+          "hip_dy": 0,
+          "hip_dx": 0,
+          "lid": 0,
+          "arm_l_x": -5,
+          "arm_r_x": 5
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 2.9499999999999997,
+          "name": "happy"
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 2.3,
+          "dur": 0.12,
+          "ease": "out",
+          "lean": -3,
+          "head_rot": -3
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 2.42,
+          "dur": 0.34,
+          "ease": "inout",
+          "lean": 13,
+          "bend": 11,
+          "head_rot": 9,
+          "hip_dy": 5,
+          "hip_dx": -4,
+          "lid": 1,
+          "arm_l_x": 6,
+          "arm_r_x": 14
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 3.0199999999999996,
+          "dur": 0.4,
+          "ease": "back",
+          "lean": 0,
+          "bend": 0,
+          "head_rot": 0,
+          "hip_dy": 0,
+          "hip_dx": 0,
+          "lid": 0,
+          "arm_l_x": -5,
+          "arm_r_x": 5
+        },
+        {
+          "on": "pip",
+          "do": "face",
+          "t": 3.1999999999999997,
+          "name": "happy"
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 0,
+          "channel": "opacity",
+          "value": 0,
+          "ease": "step"
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 3.0,
+          "channel": "opacity",
+          "value": 1,
+          "ease": "step"
+        },
+        {
+          "on": "butterfly",
+          "do": "path",
+          "t0": 3.0,
+          "t1": 6.6,
+          "points": [
+            [
+              400,
+              330
+            ],
+            [
+              520,
+              440
+            ],
+            [
+              655,
+              468
+            ],
+            [
+              735,
+              425
+            ],
+            [
+              700,
+              375
+            ],
+            [
+              772,
+              352
+            ],
+            [
+              852,
+              392
+            ],
+            [
+              822,
+              420
+            ]
+          ],
+          "flutter": 6,
+          "seed": 1.3
+        },
+        {
+          "on": "butterfly",
+          "do": "flap",
+          "t0": 3.0,
+          "t1": 6.6,
+          "rate": 5.5
+        },
+        {
+          "on": "luma",
+          "do": "blink",
+          "times": [
+            3.42
+          ]
+        },
+        {
+          "on": "luma",
+          "do": "look",
+          "t": 3.55,
+          "x": -0.2,
+          "y": -0.9,
+          "dur": 0.1,
+          "head": 0.5
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 3.6,
+          "name": "awe"
+        },
+        {
+          "on": "luma",
+          "do": "gasp",
+          "t": 3.62,
+          "amount": 0.7
+        },
+        {
+          "on": "luma",
+          "do": "track",
+          "prop": "butterfly",
+          "t0": 3.7,
+          "t1": 6.6,
+          "x": 612,
+          "facing": 1
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 4.26,
+          "dur": 0.16,
+          "ease": "out",
+          "overlap": 0,
+          "lean": -3,
+          "arm_r_x": 14,
+          "arm_r_y": 64
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 4.42,
+          "dur": 0.2,
+          "ease": "out",
+          "arm_r_x": 98,
+          "arm_r_y": -32,
+          "arm_r_bend": 0.55,
+          "lean": 7,
+          "head_dy": -2
+        },
+        {
+          "on": "luma",
+          "do": "set",
+          "t": 4.5,
+          "hand_r": "point"
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 4.62,
+          "dur": 0.3,
+          "ease": "soft",
+          "arm_r_x": 86,
+          "arm_r_y": -24,
+          "arm_r_bend": 0.7,
+          "lean": 4,
+          "head_dy": 0
+        },
+        {
+          "on": "luma",
+          "do": "drift",
+          "t0": 5.0,
+          "t1": 6.5,
+          "period": 1.3,
+          "arm_r_x": 2.5,
+          "arm_r_y": 2.2,
+          "hand_r_rot": 4,
+          "lean": 0.9
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 5.45,
+          "dur": 0.08,
+          "ease": "out",
+          "overlap": 0.3,
+          "arm_r_x": 94,
+          "arm_r_y": -30,
+          "head_rot": 4,
+          "head_dy": 2
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 5.6,
+          "dur": 0.3,
+          "ease": "soft",
+          "overlap": 0.3,
+          "arm_r_x": 86,
+          "arm_r_y": -24,
+          "head_rot": 0,
+          "head_dy": 0
+        },
+        {
+          "on": "pip",
+          "do": "face",
+          "t": 4.2,
+          "name": "curious"
+        },
+        {
+          "on": "pip",
+          "do": "look",
+          "t": 4.2,
+          "x": 0.7,
+          "y": -0.5,
+          "dur": 0.1,
+          "head": 0.4
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 4.35,
+          "dur": 0.3,
+          "ease": "back",
+          "lean": -3,
+          "head_rot": 4,
+          "head_dy": -2
+        },
+        {
+          "on": "pip",
+          "do": "track",
+          "prop": "butterfly",
+          "t0": 4.5,
+          "t1": 6.6,
+          "x": 838,
+          "facing": -1
+        },
+        {
+          "on": "pip",
+          "do": "face",
+          "t": 5.6,
+          "name": "awe"
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 5.7,
+          "dur": 0.3,
+          "ease": "back",
+          "lean": -7,
+          "head_dy": -3,
+          "torso_sy": 1.03,
+          "arm_l_x": -12,
+          "arm_r_x": 12
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "duration": 4.8,
+      "scene": "taller",
+      "description": "Primer plano de Pip. La mariposa se posa en su antena; se queda inmóvil, bizco.",
+      "actors": [
+        {
+          "id": "pip",
+          "start": {
+            "facing": -1
+          }
+        }
+      ],
+      "props": [
+        {
+          "id": "butterfly",
+          "spec": {
+            "anchor": {
+              "actor": "pip",
+              "point": "tip_antenna",
+              "dx": 2,
+              "dy": -3
+            }
+          }
+        }
+      ],
+      "actions": [
+        {
+          "on": "shot",
+          "do": "dof",
+          "value": 6.5
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 0,
+          "x": 812,
+          "y": 512,
+          "zoom": 2.4
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 4.8,
+          "x": 808,
+          "y": 504,
+          "zoom": 2.55,
+          "ease": "inout"
+        },
+        {
+          "on": "pip",
+          "do": "auto_blink",
+          "enabled": false
+        },
+        {
+          "on": "pip",
+          "do": "face",
+          "t": 0,
+          "name": "awe"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "lean",
+          "value": -7
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "head_dy",
+          "value": -3
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "torso_sy",
+          "value": 1.03
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 0.3,
+          "dur": 0.5,
+          "ease": "inout",
+          "lean": -2,
+          "head_dy": 0,
+          "torso_sy": 1
+        },
+        {
+          "on": "butterfly",
+          "do": "path",
+          "t0": 0,
+          "t1": 1.25,
+          "points": [
+            [
+              822,
+              420
+            ],
+            [
+              792,
+              396
+            ],
+            [
+              812,
+              410
+            ],
+            [
+              797,
+              420
+            ]
+          ],
+          "flutter": 4.5,
+          "seed": 4.1
+        },
+        {
+          "on": "butterfly",
+          "do": "flap",
+          "t0": 0,
+          "t1": 1.2,
+          "rate": 5.5
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 0.85,
+          "channel": "attach",
+          "value": 0
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 1.25,
+          "channel": "attach",
+          "value": 1,
+          "ease": "out"
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 1.25,
+          "channel": "facing",
+          "value": -1,
+          "ease": "step"
+        },
+        {
+          "on": "butterfly",
+          "do": "perch",
+          "t0": 1.25,
+          "t1": 4.8,
+          "period": 1.7
+        },
+        {
+          "on": "pip",
+          "do": "track",
+          "prop": "butterfly",
+          "t0": 0,
+          "t1": 0.8,
+          "x": 838,
+          "facing": -1,
+          "head": 0.4
+        },
+        {
+          "on": "pip",
+          "do": "look",
+          "t": 0.9,
+          "x": 0.3,
+          "y": -1,
+          "dur": 0.1,
+          "head": 0.35
+        },
+        {
+          "on": "pip",
+          "do": "pulse",
+          "t": 1.22,
+          "up": 0.07,
+          "hold": 0.02,
+          "down": 0.3,
+          "head_dy": 4.5,
+          "head_rot": 3.5
+        },
+        {
+          "on": "pip",
+          "do": "face",
+          "t": 1.3,
+          "name": "still",
+          "dur": 0.14
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 1.18,
+          "dur": 0.1,
+          "ease": "out",
+          "overlap": 0,
+          "lean": -6,
+          "torso_sy": 1.06
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 1.3,
+          "dur": 0.3,
+          "ease": "out",
+          "shoulder_l_dy": -9,
+          "shoulder_r_dy": -9,
+          "torso_sy": 1.04,
+          "lean": -3,
+          "arm_l_x": -14,
+          "arm_r_x": 14,
+          "arm_l_y": 78,
+          "arm_r_y": 78
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 1.3,
+          "channel": "life",
+          "value": 1
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 1.6,
+          "channel": "life",
+          "value": 0.4
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.0,
+          "channel": "head_dx",
+          "value": 0.17227583033819685,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.0416666666666665,
+          "channel": "head_dx",
+          "value": 0.4937706056312375,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.083333333333333,
+          "channel": "head_dx",
+          "value": -0.3076714814080449,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.1249999999999996,
+          "channel": "head_dx",
+          "value": -0.40940474815454136,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.166666666666666,
+          "channel": "head_dx",
+          "value": 0.4199333734593293,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.2083333333333326,
+          "channel": "head_dx",
+          "value": 0.29425582706233255,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.249999999999999,
+          "channel": "head_dx",
+          "value": -0.5006205566003078,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.2916666666666656,
+          "channel": "head_dx",
+          "value": -0.15698186740004633,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.333333333333332,
+          "channel": "head_dx",
+          "value": 0.5436661771787499,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.3749999999999987,
+          "channel": "head_dx",
+          "value": 0.007904471572344168,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.416666666666665,
+          "channel": "head_dx",
+          "value": -0.5458336433314434,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.4583333333333317,
+          "channel": "head_dx",
+          "value": 0.1417672599399227,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.4999999999999982,
+          "channel": "head_dx",
+          "value": 0.5069599836987163,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.5416666666666647,
+          "channel": "head_dx",
+          "value": -0.28077953867105027,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.5833333333333313,
+          "channel": "head_dx",
+          "value": -0.4299681012093602,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.624999999999998,
+          "channel": "head_dx",
+          "value": 0.39868005834269904,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.6666666666666643,
+          "channel": "head_dx",
+          "value": 0.32064700057627565,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.708333333333331,
+          "channel": "head_dx",
+          "value": -0.4866039017458828,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.7499999999999973,
+          "channel": "head_dx",
+          "value": -0.18721651415478072,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.791666666666664,
+          "channel": "head_dx",
+          "value": 0.5379400921467039,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.8333333333333304,
+          "channel": "head_dx",
+          "value": 0.0397092543419676,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.874999999999997,
+          "channel": "head_dx",
+          "value": -0.5488286713448431,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.9166666666666634,
+          "channel": "head_dx",
+          "value": 0.11078373660377303,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.95833333333333,
+          "channel": "head_dx",
+          "value": 0.5184509291820774,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 2.9999999999999964,
+          "channel": "head_dx",
+          "value": -0.2529469198792058,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.041666666666663,
+          "channel": "head_dx",
+          "value": -0.44909096220029415,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.0833333333333295,
+          "channel": "head_dx",
+          "value": 0.3760910733043781,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.124999999999996,
+          "channel": "head_dx",
+          "value": 0.34596393286548066,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.1666666666666625,
+          "channel": "head_dx",
+          "value": -0.470957011865308,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.208333333333329,
+          "channel": "head_dx",
+          "value": -0.2168239425132908,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.2499999999999956,
+          "channel": "head_dx",
+          "value": 0.5304117840394986,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.291666666666662,
+          "channel": "head_dx",
+          "value": 0.07138100197344589,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.3333333333333286,
+          "channel": "head_dx",
+          "value": -0.54998499703758,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.374999999999995,
+          "channel": "head_dx",
+          "value": 0.07942906226145245,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.4166666666666616,
+          "channel": "head_dx",
+          "value": 0.5282049447701764,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.458333333333328,
+          "channel": "head_dx",
+          "value": -0.22426687070904894,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.4999999999999947,
+          "channel": "head_dx",
+          "value": -0.4667092651433389,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.541666666666661,
+          "channel": "head_dx",
+          "value": 0.35224209664140144,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.5833333333333277,
+          "channel": "head_dx",
+          "value": 0.3701218063819968,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.6249999999999942,
+          "channel": "head_dx",
+          "value": -0.453732307639631,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.6666666666666607,
+          "channel": "head_dx",
+          "value": -0.24570496077865178,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.7083333333333273,
+          "channel": "head_dx",
+          "value": 0.5211064744213636,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.749999999999994,
+          "channel": "head_dx",
+          "value": 0.10281360682534196,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.7916666666666603,
+          "channel": "head_dx",
+          "value": -0.5492987464525412,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.833333333333327,
+          "channel": "head_dx",
+          "value": 0.047808282285928774,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.8749999999999933,
+          "channel": "head_dx",
+          "value": 0.5361893522666352,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.91666666666666,
+          "channel": "head_dx",
+          "value": -0.1948354759238568,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.9583333333333264,
+          "channel": "head_dx",
+          "value": -0.4827639846700988,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 3.999999999999993,
+          "channel": "head_dx",
+          "value": 0.3272130279126391,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 4.04166666666666,
+          "channel": "head_dx",
+          "value": 0.39303968669141426,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 4.083333333333327,
+          "channel": "head_dx",
+          "value": -0.43498749579099183,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 4.124999999999994,
+          "channel": "head_dx",
+          "value": -0.27376281089485255,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 4.166666666666661,
+          "channel": "head_dx",
+          "value": 0.5100553382204505,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 4.208333333333328,
+          "channel": "head_dx",
+          "value": 0.13390176243950555,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 4.249999999999995,
+          "channel": "head_dx",
+          "value": -0.5467722186870828,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 4.291666666666662,
+          "channel": "head_dx",
+          "value": 0.01602733356532781,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 4.333333333333329,
+          "channel": "head_dx",
+          "value": 0.5423774020693191,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 4.374999999999996,
+          "channel": "head_dx",
+          "value": -0.1647513374676722,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 4.4166666666666625,
+          "channel": "head_dx",
+          "value": -0.4972013337763302,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 4.4583333333333295,
+          "channel": "head_dx",
+          "value": 0.3010877202569825,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 4.4999999999999964,
+          "channel": "head_dx",
+          "value": 0.41464079362181994,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 4.541666666666663,
+          "channel": "head_dx",
+          "value": -0.4147853757518461,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 4.58333333333333,
+          "channel": "head_dx",
+          "value": -0.3009034926085625,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 4.624999999999997,
+          "channel": "head_dx",
+          "value": 0.49729539928564526,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 4.666666666666664,
+          "channel": "head_dx",
+          "value": 0.16454131634201458,
+          "ease": "linear"
+        },
+        {
+          "on": "pip",
+          "do": "pulse",
+          "t": 1.95,
+          "up": 0.3,
+          "hold": 0.3,
+          "down": 0.5,
+          "torso_sy": 1.045,
+          "shoulder_l_dy": -13,
+          "shoulder_r_dy": -13,
+          "hip_dy": -1
+        },
+        {
+          "on": "pip",
+          "do": "pulse",
+          "t": 2.15,
+          "up": 0.2,
+          "hold": 0.5,
+          "down": 0.5,
+          "head_rot": -4,
+          "lean": -1
+        },
+        {
+          "on": "pip",
+          "do": "pulse",
+          "t": 3.0,
+          "up": 0.25,
+          "hold": 0.3,
+          "down": 0.5,
+          "torso_sy": 1.045,
+          "shoulder_l_dy": -13,
+          "shoulder_r_dy": -13,
+          "hip_dy": -1
+        },
+        {
+          "on": "pip",
+          "do": "pulse",
+          "t": 3.8,
+          "up": 0.18,
+          "hold": 0.2,
+          "down": 0.4,
+          "head_rot": 3,
+          "lean": -4,
+          "head_dy": 1.5
+        },
+        {
+          "on": "pip",
+          "do": "pulse",
+          "t": 4.3,
+          "up": 0.2,
+          "hold": 0.3,
+          "down": 0.45,
+          "torso_sy": 1.05,
+          "shoulder_l_dy": -14,
+          "shoulder_r_dy": -14,
+          "mouth_w": 0.36,
+          "mouth_open": 0.3
+        },
+        {
+          "on": "pip",
+          "do": "pulse",
+          "t": 2.85,
+          "up": 0.08,
+          "hold": 0.1,
+          "down": 0.2,
+          "mouth_w": 0.36,
+          "smile": 0.2
+        },
+        {
+          "on": "pip",
+          "do": "look",
+          "t": 2.45,
+          "x": 0.95,
+          "y": 0.05,
+          "dur": 0.09
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 2.5,
+          "dur": 0.15,
+          "ease": "out",
+          "brow_rot": 12,
+          "smile": -0.15
+        },
+        {
+          "on": "pip",
+          "do": "look",
+          "t": 3.25,
+          "x": 0.3,
+          "y": -1,
+          "dur": 0.09
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 3.3,
+          "dur": 0.2,
+          "ease": "out",
+          "brow_rot": 5,
+          "smile": 0.05
+        },
+        {
+          "on": "pip",
+          "do": "blink",
+          "times": [
+            3.9
+          ]
+        },
+        {
+          "on": "pip",
+          "do": "look",
+          "t": 4.25,
+          "x": 0.9,
+          "y": 0.1,
+          "dur": 0.08,
+          "head": 0.3
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 4.2,
+          "dur": 0.4,
+          "ease": "inout",
+          "mouth_w": 0.42,
+          "mouth_round": 0.6,
+          "mouth_open": 0.22,
+          "brow_rot": 14
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "duration": 3.6,
+      "scene": "taller",
+      "description": "Primer plano de Luma. Se tapa la boca para no reír y señala la antena.",
+      "actors": [
+        {
+          "id": "luma",
+          "start": {
+            "x": 612,
+            "look_x": 0.85,
+            "look_y": -0.55,
+            "face_x": 0.4,
+            "face_y": -0.3
+          }
+        }
+      ],
+      "props": [],
+      "actions": [
+        {
+          "on": "shot",
+          "do": "dof",
+          "value": 6.5
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 0,
+          "x": 664,
+          "y": 540,
+          "zoom": 2.36
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 3.6,
+          "x": 670,
+          "y": 534,
+          "zoom": 2.5,
+          "ease": "inout"
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 0,
+          "name": "awe"
+        },
+        {
+          "on": "luma",
+          "do": "gasp",
+          "t": 0.2,
+          "amount": 0.6
+        },
+        {
+          "on": "luma",
+          "do": "set",
+          "t": 0,
+          "hand_r": "closed"
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 0.74,
+          "name": "joy",
+          "dur": 0.16,
+          "mouth_open": 0.5
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 0.3,
+          "dur": 0.12,
+          "ease": "inout",
+          "overlap": 0,
+          "arm_l_x": -2,
+          "arm_r_x": 2,
+          "arm_l_y": 90,
+          "arm_r_y": 88,
+          "lean": -2,
+          "head_dy": 1.5
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 0.42,
+          "dur": 0.6,
+          "ease": "inout",
+          "overlap": 0.4,
+          "arm_l_x": -66,
+          "arm_l_y": -64,
+          "arm_l_bend": 0.8,
+          "hand_l_rot": -20,
+          "arm_r_x": 86,
+          "arm_r_y": -42,
+          "arm_r_bend": 0.8,
+          "hand_r_rot": 20
+        },
+        {
+          "on": "luma",
+          "do": "drift",
+          "t0": 0.95,
+          "t1": 2.05,
+          "period": 0.85,
+          "arm_l_x": 2.5,
+          "arm_r_x": 2.5,
+          "arm_l_y": 3,
+          "arm_r_y": 3,
+          "hand_l_rot": 7,
+          "hand_r_rot": 7,
+          "lean": 1
+        },
+        {
+          "on": "luma",
+          "do": "laugh",
+          "t": 0.8,
+          "dur": 1.2,
+          "beats": 5,
+          "strength": 0.55
+        },
+        {
+          "on": "luma",
+          "do": "look",
+          "t": 1.45,
+          "x": 0.95,
+          "y": -0.25,
+          "dur": 0.08
+        },
+        {
+          "on": "luma",
+          "do": "blink",
+          "times": [
+            1.9
+          ]
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 2.05,
+          "name": "happy",
+          "dur": 0.2,
+          "mouth_open": 0.3
+        },
+        {
+          "on": "luma",
+          "do": "look",
+          "t": 2.0,
+          "x": 0.85,
+          "y": -0.6,
+          "dur": 0.1
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 2.1,
+          "dur": 0.26,
+          "ease": "back",
+          "arm_r_x": 88,
+          "arm_r_y": -34,
+          "arm_r_bend": 0.6,
+          "hand_r_rot": -12,
+          "lean": 5
+        },
+        {
+          "on": "luma",
+          "do": "set",
+          "t": 2.24,
+          "hand_r": "point"
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 2.1,
+          "dur": 0.28,
+          "ease": "in",
+          "arm_l_x": -5,
+          "arm_l_y": 89,
+          "arm_l_bend": 1,
+          "hand_l_rot": 0
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 2.38,
+          "dur": 0.2,
+          "ease": "inout",
+          "arm_l_x": -5,
+          "arm_l_y": 83
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 2.88,
+          "dur": 0.08,
+          "ease": "out",
+          "overlap": 0.3,
+          "arm_r_x": 97,
+          "arm_r_y": -38,
+          "head_dy": 2
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 3.0,
+          "dur": 0.3,
+          "ease": "soft",
+          "overlap": 0.3,
+          "arm_r_x": 88,
+          "arm_r_y": -34,
+          "head_dy": 0
+        },
+        {
+          "on": "luma",
+          "do": "nod",
+          "t": 2.6,
+          "count": 2,
+          "depth": 6,
+          "period": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "duration": 6.4,
+      "scene": "taller",
+      "description": "Plano de dos. Pip aguanta… y estornuda. La mariposa sale volando; ambos ríen.",
+      "actors": [
+        {
+          "id": "luma",
+          "start": {
+            "x": 612,
+            "look_x": 0.85,
+            "look_y": -0.5,
+            "face_x": 0.4,
+            "face_y": -0.3
+          }
+        },
+        {
+          "id": "pip",
+          "start": {
+            "facing": -1,
+            "look_x": 0.3,
+            "look_y": -1
+          }
+        }
+      ],
+      "props": [
+        {
+          "id": "butterfly",
+          "spec": {
+            "anchor": {
+              "actor": "pip",
+              "point": "tip_antenna",
+              "dx": 2,
+              "dy": -3
+            }
+          }
+        }
+      ],
+      "actions": [
+        {
+          "on": "shot",
+          "do": "dof",
+          "value": 3.0
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 0,
+          "x": 716,
+          "y": 528,
+          "zoom": 1.72
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 2.4499999999999997,
+          "x": 730,
+          "y": 522,
+          "zoom": 1.86,
+          "ease": "in"
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 3.05,
+          "x": 706,
+          "y": 530,
+          "zoom": 1.62,
+          "ease": "out"
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 6.4,
+          "x": 690,
+          "y": 522,
+          "zoom": 1.6,
+          "ease": "inout"
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 0,
+          "shake": 0
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 2.55,
+          "ease": "step",
+          "shake": 0
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 2.57,
+          "ease": "step",
+          "shake": 7
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 3.05,
+          "ease": "out",
+          "shake": 0
+        },
+        {
+          "on": "pip",
+          "do": "auto_blink",
+          "enabled": false
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 0,
+          "name": "happy",
+          "mouth_open": 0.25
+        },
+        {
+          "on": "luma",
+          "do": "set",
+          "t": 0,
+          "hand_r": "point"
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "arm_r_x",
+          "value": 88
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "arm_r_y",
+          "value": -34
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "arm_r_bend",
+          "value": 0.6
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "hand_r_rot",
+          "value": -12
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 0.08,
+          "dur": 0.5,
+          "ease": "inout",
+          "overlap": 0,
+          "arm_r_x": 5,
+          "arm_r_y": 83,
+          "arm_r_bend": -1,
+          "hand_r_rot": 0
+        },
+        {
+          "on": "luma",
+          "do": "set",
+          "t": 0.5,
+          "hand_r": "closed"
+        },
+        {
+          "on": "pip",
+          "do": "face",
+          "t": 0,
+          "name": "still"
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_w",
+          "value": 0.42
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_round",
+          "value": 0.6
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_open",
+          "value": 0.22
+        },
+        {
+          "on": "pip",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_rot",
+          "value": 14
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 0,
+          "channel": "attach",
+          "value": 1
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 0,
+          "channel": "facing",
+          "value": -1,
+          "ease": "step"
+        },
+        {
+          "on": "butterfly",
+          "do": "perch",
+          "t0": 0,
+          "t1": 2.55,
+          "period": 1.1
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 0.35,
+          "dur": 0.3,
+          "ease": "out",
+          "head_rot": -5,
+          "lean": -2,
+          "bend": -3.5,
+          "face_y": -0.2,
+          "torso_sy": 1.025,
+          "shoulder_l_dy": -2.5,
+          "shoulder_r_dy": -2.5,
+          "mouth_open": 0.45,
+          "mouth_w": 0.5,
+          "mouth_round": 0.75,
+          "smile": -0.1,
+          "lid": 0.08,
+          "squint": 0.2,
+          "brow_rot": 17,
+          "brow_y": 0.85,
+          "hip_dy": -1
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 0.73,
+          "dur": 0.2,
+          "ease": "inout",
+          "head_rot": -2,
+          "torso_sy": 1.01,
+          "mouth_open": 0.3
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 1.05,
+          "dur": 0.3,
+          "ease": "out",
+          "head_rot": -10,
+          "lean": -4,
+          "bend": -7.0,
+          "face_y": -0.4,
+          "torso_sy": 1.05,
+          "shoulder_l_dy": -5.0,
+          "shoulder_r_dy": -5.0,
+          "mouth_open": 0.65,
+          "mouth_w": 0.58,
+          "mouth_round": 0.75,
+          "smile": -0.2,
+          "lid": 0.16,
+          "squint": 0.4,
+          "brow_rot": 20,
+          "brow_y": 1.0,
+          "hip_dy": -2
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 1.4300000000000002,
+          "dur": 0.2,
+          "ease": "inout",
+          "head_rot": -7,
+          "torso_sy": 1.0350000000000001,
+          "mouth_open": 0.44999999999999996
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 1.7,
+          "dur": 0.3,
+          "ease": "out",
+          "head_rot": -15,
+          "lean": -6,
+          "bend": -10.5,
+          "face_y": -0.6000000000000001,
+          "torso_sy": 1.075,
+          "shoulder_l_dy": -7.5,
+          "shoulder_r_dy": -7.5,
+          "mouth_open": 0.8500000000000001,
+          "mouth_w": 0.6599999999999999,
+          "mouth_round": 0.75,
+          "smile": -0.30000000000000004,
+          "lid": 0.24,
+          "squint": 0.6000000000000001,
+          "brow_rot": 23,
+          "brow_y": 1.15,
+          "hip_dy": -3
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 2.08,
+          "dur": 0.2,
+          "ease": "inout",
+          "head_rot": -12,
+          "torso_sy": 1.06,
+          "mouth_open": 0.6
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 2.08,
+          "dur": 0.05,
+          "ease": "linear",
+          "overlap": 0,
+          "head_dx": -1.4,
+          "hip_dy": -3.0,
+          "torso_sy": 1.075,
+          "shoulder_l_dy": -7.5,
+          "shoulder_r_dy": -7.5
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 2.16,
+          "dur": 0.05,
+          "ease": "linear",
+          "overlap": 0,
+          "head_dx": 1.4,
+          "hip_dy": -3.5,
+          "torso_sy": 1.081,
+          "shoulder_l_dy": -8.0,
+          "shoulder_r_dy": -8.0
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 2.24,
+          "dur": 0.05,
+          "ease": "linear",
+          "overlap": 0,
+          "head_dx": -1.4,
+          "hip_dy": -4.0,
+          "torso_sy": 1.087,
+          "shoulder_l_dy": -8.5,
+          "shoulder_r_dy": -8.5
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 2.3200000000000003,
+          "dur": 0.05,
+          "ease": "linear",
+          "overlap": 0,
+          "head_dx": 1.4,
+          "hip_dy": -4.5,
+          "torso_sy": 1.093,
+          "shoulder_l_dy": -9.0,
+          "shoulder_r_dy": -9.0
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 2.4,
+          "dur": 0.05,
+          "ease": "linear",
+          "overlap": 0,
+          "head_dx": -1.4,
+          "hip_dy": -5.0,
+          "torso_sy": 1.099,
+          "shoulder_l_dy": -9.5,
+          "shoulder_r_dy": -9.5
+        },
+        {
+          "on": "luma",
+          "do": "react",
+          "t": 0.38,
+          "x": 0.85,
+          "y": -0.8,
+          "head": 0.5,
+          "lean": 3
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 0.5,
+          "name": "curious",
+          "dur": 0.2
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 1.2,
+          "name": "oops",
+          "dur": 0.2
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 1.2,
+          "dur": 0.38,
+          "ease": "back",
+          "arm_l_x": 72,
+          "arm_l_y": -4,
+          "arm_r_x": 84,
+          "arm_r_y": -16,
+          "arm_l_bend": 0.5,
+          "arm_r_bend": 0.5,
+          "hand_l_rot": -50,
+          "hand_r_rot": -50,
+          "lean": 4
+        },
+        {
+          "on": "luma",
+          "do": "set",
+          "t": 1.25,
+          "hand_l": "open",
+          "hand_r": "open"
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 1.5,
+          "dur": 0.3,
+          "ease": "out",
+          "lean": 7,
+          "head_dy": -2
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 1.6,
+          "dur": 0.11,
+          "ease": "sine",
+          "overlap": 0,
+          "hand_l_rot": -26,
+          "hand_r_rot": -26,
+          "arm_l_x": 77,
+          "arm_r_x": 89,
+          "arm_l_y": -4,
+          "arm_r_y": -16,
+          "face_x": 0.2,
+          "head_rot": 3
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 1.7100000000000002,
+          "dur": 0.11,
+          "ease": "sine",
+          "overlap": 0,
+          "hand_l_rot": -66,
+          "hand_r_rot": -66,
+          "arm_l_x": 67,
+          "arm_r_x": 79
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 1.82,
+          "dur": 0.11,
+          "ease": "sine",
+          "overlap": 0,
+          "hand_l_rot": -30,
+          "hand_r_rot": -30,
+          "arm_l_x": 77,
+          "arm_r_x": 89,
+          "arm_l_y": -8,
+          "arm_r_y": -20,
+          "face_x": -0.2,
+          "head_rot": -3
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 1.9300000000000002,
+          "dur": 0.11,
+          "ease": "sine",
+          "overlap": 0,
+          "hand_l_rot": -70,
+          "hand_r_rot": -70,
+          "arm_l_x": 67,
+          "arm_r_x": 79
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 2.04,
+          "dur": 0.11,
+          "ease": "sine",
+          "overlap": 0,
+          "hand_l_rot": -34,
+          "hand_r_rot": -34,
+          "arm_l_x": 77,
+          "arm_r_x": 89,
+          "arm_l_y": -12,
+          "arm_r_y": -24,
+          "face_x": 0.2,
+          "head_rot": 3
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 2.15,
+          "dur": 0.11,
+          "ease": "sine",
+          "overlap": 0,
+          "hand_l_rot": -74,
+          "hand_r_rot": -74,
+          "arm_l_x": 67,
+          "arm_r_x": 79
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 2.25,
+          "dur": 0.22,
+          "ease": "out",
+          "overlap": 0.5,
+          "lean": -3,
+          "squint": 0.55,
+          "face_x": -0.2,
+          "head_rot": -3,
+          "arm_l_x": 62,
+          "arm_l_y": 2,
+          "arm_r_x": 70,
+          "arm_r_y": -8
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 2.25,
+          "dur": 0.25,
+          "ease": "out",
+          "overlap": 0,
+          "head_rot": -18,
+          "lean": -7,
+          "bend": -9,
+          "face_y": -0.5,
+          "torso_sy": 1.1,
+          "lid": 0.25
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 2.51,
+          "dur": 0.09,
+          "ease": "in",
+          "overlap": 0,
+          "head_rot": 20,
+          "lean": 13,
+          "bend": 15,
+          "face_y": 0.7,
+          "torso_sy": 0.88,
+          "torso_sx": 1.08,
+          "hip_dy": 9,
+          "hip_dx": 6,
+          "squint": 0.3,
+          "lid": 1.0,
+          "mouth_open": 1.0,
+          "mouth_w": 0.95,
+          "mouth_round": 0.6,
+          "smile": -0.7,
+          "brow_rot": -24,
+          "brow_y": -0.6,
+          "shoulder_l_dy": 4,
+          "shoulder_r_dy": 4,
+          "head_dx": 0,
+          "arm_l_x": -34,
+          "arm_l_y": 46,
+          "arm_r_x": -22,
+          "arm_r_y": 52
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 2.67,
+          "dur": 0.3,
+          "ease": "back",
+          "overlap": 0.6,
+          "head_rot": -6,
+          "lean": -4,
+          "bend": 0,
+          "face_y": 0,
+          "torso_sy": 1.04,
+          "torso_sx": 0.98,
+          "hip_dy": 0,
+          "hip_dx": 0,
+          "mouth_open": 0.15,
+          "mouth_w": 0.6,
+          "shoulder_l_dy": 0,
+          "shoulder_r_dy": 0,
+          "arm_l_x": -5,
+          "arm_l_y": 83,
+          "arm_r_x": 5,
+          "arm_r_y": 83
+        },
+        {
+          "on": "shot",
+          "do": "puff_burst",
+          "t": 2.59,
+          "x": 740,
+          "y": 560.64,
+          "direction": -1,
+          "count": 3,
+          "spread": 38,
+          "size": 1.15
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 2.55,
+          "channel": "attach",
+          "value": 1
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 2.8499999999999996,
+          "channel": "attach",
+          "value": 0,
+          "ease": "out"
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 2.5999999999999996,
+          "channel": "x",
+          "value": 790
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 2.5999999999999996,
+          "channel": "y",
+          "value": 388
+        },
+        {
+          "on": "butterfly",
+          "do": "path",
+          "t0": 2.5999999999999996,
+          "t1": 6.4,
+          "points": [
+            [
+              790,
+              388
+            ],
+            [
+              730,
+              290
+            ],
+            [
+              640,
+              300
+            ],
+            [
+              590,
+              360
+            ],
+            [
+              665,
+              400
+            ],
+            [
+              700,
+              340
+            ],
+            [
+              640,
+              310
+            ],
+            [
+              606,
+              352
+            ]
+          ],
+          "flutter": 6.5,
+          "seed": 2.2
+        },
+        {
+          "on": "butterfly",
+          "do": "flap",
+          "t0": 2.5999999999999996,
+          "t1": 6.4,
+          "rate": 6
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 3.05,
+          "dur": 0.15,
+          "ease": "sine",
+          "overlap": 0,
+          "head_rot": 7,
+          "face_x": 0.25
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 3.1999999999999997,
+          "dur": 0.15,
+          "ease": "sine",
+          "overlap": 0,
+          "head_rot": -6,
+          "face_x": -0.25
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 3.3499999999999996,
+          "dur": 0.15,
+          "ease": "sine",
+          "overlap": 0,
+          "head_rot": 5,
+          "face_x": 0.25
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 3.4999999999999996,
+          "dur": 0.15,
+          "ease": "sine",
+          "overlap": 0,
+          "head_rot": -4,
+          "face_x": -0.25
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 3.65,
+          "dur": 0.15,
+          "ease": "sine",
+          "overlap": 0,
+          "head_rot": 3,
+          "face_x": 0.25
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 3.8,
+          "dur": 0.15,
+          "ease": "sine",
+          "overlap": 0,
+          "head_rot": -2,
+          "face_x": -0.25
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 3.9499999999999997,
+          "dur": 0.25,
+          "ease": "inout",
+          "head_rot": 0,
+          "face_x": 0,
+          "lean": 0,
+          "torso_sy": 1
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 2.8899999999999997,
+          "dur": 0.22,
+          "ease": "out",
+          "squint": 0,
+          "lid": 0,
+          "brow_rot": 16,
+          "brow_y": 0.75,
+          "smile": -0.25,
+          "mouth_round": 0.2,
+          "mouth_open": 0.12,
+          "mouth_w": 0.6
+        },
+        {
+          "on": "pip",
+          "do": "look",
+          "t": 3.05,
+          "x": 0.1,
+          "y": 0.2,
+          "dur": 0.1
+        },
+        {
+          "on": "pip",
+          "do": "track",
+          "prop": "butterfly",
+          "t0": 3.3,
+          "t1": 3.75,
+          "x": 838,
+          "facing": -1,
+          "head": 0.3
+        },
+        {
+          "on": "pip",
+          "do": "blink",
+          "times": [
+            3.8,
+            4.05
+          ]
+        },
+        {
+          "on": "pip",
+          "do": "face",
+          "t": 4.15,
+          "name": "oops",
+          "dur": 0.2
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 4.25,
+          "dur": 0.3,
+          "ease": "inout",
+          "head_rot": -6,
+          "lean": 2,
+          "brow_y": 0.9
+        },
+        {
+          "on": "pip",
+          "do": "laugh",
+          "t": 4.5,
+          "dur": 0.65,
+          "beats": 3,
+          "strength": 0.3
+        },
+        {
+          "on": "pip",
+          "do": "look",
+          "t": 4.17,
+          "x": 0.85,
+          "y": 0,
+          "dur": 0.1
+        },
+        {
+          "on": "pip",
+          "do": "face",
+          "t": 5.05,
+          "name": "joy",
+          "dur": 0.2
+        },
+        {
+          "on": "pip",
+          "do": "laugh",
+          "t": 5.1,
+          "dur": 1.2,
+          "beats": 5,
+          "strength": 0.7
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 2.57,
+          "dur": 0.1,
+          "ease": "out",
+          "overlap": 0.3,
+          "lean": -6,
+          "bend": -8,
+          "head_rot": -6,
+          "hip_dx": -6,
+          "torso_sy": 1.05,
+          "arm_l_x": 30,
+          "arm_l_y": -40,
+          "arm_r_x": 44,
+          "arm_r_y": -46,
+          "squint": 1,
+          "mouth_open": 0.2,
+          "mouth_w": 0.7
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 3.05,
+          "dur": 0.4,
+          "ease": "inout",
+          "lean": 0,
+          "bend": 0,
+          "head_rot": 0,
+          "hip_dx": 0,
+          "torso_sy": 1,
+          "arm_l_x": -5,
+          "arm_l_y": 83,
+          "arm_r_x": 5,
+          "arm_r_y": 83,
+          "hand_l_rot": 0,
+          "hand_r_rot": 0,
+          "arm_l_bend": 1,
+          "arm_r_bend": -1,
+          "squint": 0
+        },
+        {
+          "on": "luma",
+          "do": "set",
+          "t": 3.4499999999999997,
+          "hand_l": "closed",
+          "hand_r": "closed"
+        },
+        {
+          "on": "luma",
+          "do": "blink",
+          "times": [
+            3.17
+          ]
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 3.25,
+          "name": "awe",
+          "dur": 0.2
+        },
+        {
+          "on": "luma",
+          "do": "track",
+          "prop": "butterfly",
+          "t0": 3.3,
+          "t1": 4.05,
+          "x": 612,
+          "facing": 1
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 4.05,
+          "name": "joy",
+          "dur": 0.16
+        },
+        {
+          "on": "luma",
+          "do": "look",
+          "t": 4.05,
+          "x": 0.85,
+          "y": 0,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 4.1,
+          "dur": 0.2,
+          "ease": "inout",
+          "face_x": 0.3,
+          "face_y": 0,
+          "head_rot": 0
+        },
+        {
+          "on": "pip",
+          "do": "face",
+          "t": 4.65,
+          "name": "happy",
+          "dur": 0.25
+        },
+        {
+          "on": "luma",
+          "do": "laugh",
+          "t": 4.15,
+          "dur": 1.35,
+          "beats": 7,
+          "strength": 0.9
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 4.25,
+          "dur": 0.3,
+          "ease": "out",
+          "overlap": 0.3,
+          "bend": 9,
+          "lean": 6,
+          "arm_l_x": 14,
+          "arm_l_y": 48,
+          "arm_r_x": 18,
+          "arm_r_y": -46,
+          "arm_r_bend": -0.85
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 5.1,
+          "dur": 0.4,
+          "ease": "inout",
+          "overlap": 0.3,
+          "bend": 0,
+          "lean": 0,
+          "arm_l_x": -5,
+          "arm_l_y": 83,
+          "arm_r_x": 5,
+          "arm_r_y": 83,
+          "arm_r_bend": -1
+        },
+        {
+          "on": "luma",
+          "do": "react",
+          "t": 4.85,
+          "x": 0.85,
+          "y": 0,
+          "head": 0.4
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 5.55,
+          "name": "happy",
+          "dur": 0.25
+        },
+        {
+          "on": "luma",
+          "do": "track",
+          "prop": "butterfly",
+          "t0": 5.55,
+          "t1": 6.4,
+          "x": 612,
+          "facing": 1,
+          "head": 0.4
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "duration": 4.4,
+      "scene": "taller",
+      "description": "Primer plano de Luma. La mariposa se posa en su oreja; ella se queda quieta y sonríe.",
+      "actors": [
+        {
+          "id": "luma",
+          "start": {
+            "x": 612
+          }
+        }
+      ],
+      "props": [
+        {
+          "id": "butterfly",
+          "spec": {
+            "anchor": {
+              "actor": "luma",
+              "point": "tip_ear_r",
+              "dx": 0,
+              "dy": -2
+            }
+          }
+        }
+      ],
+      "actions": [
+        {
+          "on": "shot",
+          "do": "dof",
+          "value": 6.5
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 0,
+          "x": 660,
+          "y": 528,
+          "zoom": 2.36
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 4.4,
+          "x": 656,
+          "y": 520,
+          "zoom": 2.52,
+          "ease": "inout"
+        },
+        {
+          "on": "luma",
+          "do": "auto_blink",
+          "enabled": false
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "smile",
+          "value": 1
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_open",
+          "value": 0.55
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_w",
+          "value": 1.1
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_round",
+          "value": 0
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_y",
+          "value": 0.45
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_rot",
+          "value": 0
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "eye_open",
+          "value": 1.04
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "squint",
+          "value": 0.2
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "lid",
+          "value": 0
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "pupil",
+          "value": 1.05
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "smile",
+          "value": 1.1
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_open",
+          "value": 0.7
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 0.0,
+          "dur": 0.5,
+          "ease": "out",
+          "overlap": 0,
+          "mouth_open": 0.4,
+          "smile": 1
+        },
+        {
+          "on": "luma",
+          "do": "laugh",
+          "t": 0.04,
+          "dur": 0.55,
+          "beats": 2,
+          "strength": 0.4
+        },
+        {
+          "on": "butterfly",
+          "do": "path",
+          "t0": 0,
+          "t1": 1.1,
+          "points": [
+            [
+              606,
+              352
+            ],
+            [
+              640,
+              372
+            ],
+            [
+              622,
+              400
+            ],
+            [
+              640,
+              415
+            ]
+          ],
+          "flutter": 4.5,
+          "seed": 6.3
+        },
+        {
+          "on": "butterfly",
+          "do": "flap",
+          "t0": 0,
+          "t1": 1.05,
+          "rate": 5.5
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 0.75,
+          "channel": "attach",
+          "value": 0
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 1.1,
+          "channel": "attach",
+          "value": 1,
+          "ease": "out"
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 1.1,
+          "channel": "facing",
+          "value": 1,
+          "ease": "step"
+        },
+        {
+          "on": "butterfly",
+          "do": "perch",
+          "t0": 1.1,
+          "t1": 3.6,
+          "period": 1.3
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 4.0,
+          "channel": "attach",
+          "value": 1
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 4.4,
+          "channel": "attach",
+          "value": 0,
+          "ease": "out"
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 4.06,
+          "channel": "x",
+          "value": 652
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 4.06,
+          "channel": "y",
+          "value": 412
+        },
+        {
+          "on": "butterfly",
+          "do": "path",
+          "t0": 4.06,
+          "t1": 5.0,
+          "points": [
+            [
+              652,
+              412
+            ],
+            [
+              690,
+              368
+            ],
+            [
+              724,
+              330
+            ]
+          ],
+          "flutter": 3,
+          "seed": 7.1
+        },
+        {
+          "on": "butterfly",
+          "do": "flap",
+          "t0": 3.9,
+          "t1": 5.0,
+          "rate": 7
+        },
+        {
+          "on": "luma",
+          "do": "track",
+          "prop": "butterfly",
+          "t0": 0,
+          "t1": 0.9,
+          "x": 612,
+          "facing": 1,
+          "head": 0.4
+        },
+        {
+          "on": "luma",
+          "do": "pulse",
+          "t": 1.08,
+          "up": 0.07,
+          "hold": 0.02,
+          "down": 0.3,
+          "head_dy": 2.2,
+          "head_rot": -2
+        },
+        {
+          "on": "luma",
+          "do": "look",
+          "t": 1.1,
+          "x": 0.35,
+          "y": -1,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 1.2,
+          "name": "still",
+          "dur": 0.14
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 1.06,
+          "dur": 0.12,
+          "ease": "out",
+          "overlap": 0,
+          "lean": -4,
+          "torso_sy": 1.05
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 1.2,
+          "dur": 0.3,
+          "ease": "out",
+          "shoulder_l_dy": -8,
+          "shoulder_r_dy": -8,
+          "torso_sy": 1.03,
+          "lean": -2,
+          "head_rot": -5,
+          "arm_l_x": -12,
+          "arm_r_x": 12
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 1.2,
+          "channel": "life",
+          "value": 1
+        },
+        {
+          "on": "luma",
+          "do": "key",
+          "t": 1.5,
+          "channel": "life",
+          "value": 0.2
+        },
+        {
+          "on": "luma",
+          "do": "look",
+          "t": 2.2,
+          "x": 0.95,
+          "y": 0.05,
+          "dur": 0.09
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 2.3,
+          "dur": 0.3,
+          "ease": "soft",
+          "smile": 0.8,
+          "mouth_w": 0.9,
+          "brow_rot": 4,
+          "brow_y": 0.9,
+          "eye_open": 1.1
+        },
+        {
+          "on": "luma",
+          "do": "look",
+          "t": 3.0,
+          "x": 0.35,
+          "y": -1,
+          "dur": 0.09
+        },
+        {
+          "on": "luma",
+          "do": "blink",
+          "times": [
+            3.4
+          ]
+        },
+        {
+          "on": "luma",
+          "do": "laugh",
+          "t": 2.55,
+          "dur": 0.6,
+          "beats": 2,
+          "strength": 0.2
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 3.5,
+          "name": "soft",
+          "dur": 0.4
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 3.5,
+          "dur": 0.5,
+          "ease": "inout",
+          "shoulder_l_dy": 0,
+          "shoulder_r_dy": 0,
+          "torso_sy": 1,
+          "head_rot": 0
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 3.95,
+          "name": "awe",
+          "dur": 0.12
+        },
+        {
+          "on": "luma",
+          "do": "track",
+          "prop": "butterfly",
+          "t0": 4.05,
+          "t1": 4.4,
+          "x": 612,
+          "facing": 1,
+          "head": 0.5
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "duration": 7.4,
+      "scene": "taller",
+      "description": "General. La mariposa despega hacia el sol; Luma y Pip la despiden.",
+      "actors": [
+        {
+          "id": "luma",
+          "start": {
+            "x": 612,
+            "look_x": 0.35,
+            "look_y": -1
+          }
+        },
+        {
+          "id": "pip",
+          "start": {
+            "facing": -1,
+            "look_x": 0.8,
+            "look_y": -0.45
+          }
+        }
+      ],
+      "props": [
+        {
+          "id": "butterfly",
+          "spec": {
+            "anchor": {
+              "actor": "luma",
+              "point": "tip_ear_r",
+              "dx": 0,
+              "dy": -2
+            }
+          }
+        }
+      ],
+      "actions": [
+        {
+          "on": "shot",
+          "do": "dof",
+          "value": [
+            [
+              0,
+              2.6
+            ],
+            [
+              3,
+              2.6
+            ],
+            [
+              6.5,
+              1.2,
+              "inout"
+            ]
+          ]
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 0,
+          "x": 716,
+          "y": 528,
+          "zoom": 1.62
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 2.2,
+          "x": 716,
+          "y": 520,
+          "zoom": 1.6,
+          "ease": "inout"
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 6.6,
+          "x": 642,
+          "y": 378,
+          "zoom": 1.03,
+          "ease": "inout"
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 0,
+          "name": "soft"
+        },
+        {
+          "on": "pip",
+          "do": "face",
+          "t": 0,
+          "name": "happy"
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 0,
+          "channel": "attach",
+          "value": 0
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 0,
+          "channel": "facing",
+          "value": 1,
+          "ease": "step"
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 0,
+          "channel": "x",
+          "value": 673.3472123978808
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 0,
+          "channel": "y",
+          "value": 387.5425217244662
+        },
+        {
+          "on": "butterfly",
+          "do": "path",
+          "t0": 0,
+          "t1": 7.0,
+          "points": [
+            [
+              673.3472123978808,
+              387.5425217244662
+            ],
+            [
+              700,
+              350
+            ],
+            [
+              760,
+              380
+            ],
+            [
+              800,
+              330
+            ],
+            [
+              735,
+              300
+            ],
+            [
+              770,
+              240
+            ],
+            [
+              850,
+              195
+            ],
+            [
+              932.0,
+              151.0
+            ]
+          ],
+          "flutter": 6,
+          "seed": 7.7
+        },
+        {
+          "on": "butterfly",
+          "do": "flap",
+          "t0": 0,
+          "t1": 7.2,
+          "rate": 5.5
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 3.6,
+          "channel": "scale",
+          "value": 1
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 7.0,
+          "channel": "scale",
+          "value": 0.32,
+          "ease": "in"
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 6.2,
+          "channel": "opacity",
+          "value": 1
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 7.0,
+          "channel": "opacity",
+          "value": 0,
+          "ease": "linear"
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 3.2,
+          "channel": "shadow",
+          "value": 1
+        },
+        {
+          "on": "butterfly",
+          "do": "key",
+          "t": 4.2,
+          "channel": "shadow",
+          "value": 0,
+          "ease": "linear"
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 0.1,
+          "name": "awe",
+          "dur": 0.2
+        },
+        {
+          "on": "luma",
+          "do": "track",
+          "prop": "butterfly",
+          "t0": 0.1,
+          "t1": 6.2,
+          "x": 612,
+          "facing": 1
+        },
+        {
+          "on": "pip",
+          "do": "track",
+          "prop": "butterfly",
+          "t0": 0.35,
+          "t1": 3.7,
+          "x": 838,
+          "facing": -1
+        },
+        {
+          "on": "pip",
+          "do": "track",
+          "prop": "butterfly",
+          "t0": 3.85,
+          "t1": 6.2,
+          "x": 838,
+          "facing": 1
+        },
+        {
+          "on": "pip",
+          "do": "face",
+          "t": 0.6,
+          "name": "awe",
+          "dur": 0.25
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 3.3,
+          "name": "happy"
+        },
+        {
+          "on": "pip",
+          "do": "face",
+          "t": 3.6,
+          "name": "happy"
+        },
+        {
+          "on": "luma",
+          "do": "hop",
+          "t": 3.5,
+          "height": 20,
+          "air": 0.32
+        },
+        {
+          "on": "luma",
+          "do": "wave_off",
+          "t": 4.109999999999999,
+          "side": "r",
+          "cycles": 3,
+          "period": 0.36,
+          "out": 86,
+          "up": -40
+        },
+        {
+          "on": "pip",
+          "do": "pulse",
+          "t": 3.55,
+          "up": 0.1,
+          "hold": 0.05,
+          "down": 0.3,
+          "hip_dy": 4,
+          "head_dy": 2
+        },
+        {
+          "on": "pip",
+          "do": "turn_around",
+          "t": 3.7,
+          "facing": 1
+        },
+        {
+          "on": "pip",
+          "do": "wave_off",
+          "t": 4.2,
+          "side": "r",
+          "cycles": 3,
+          "period": 0.34,
+          "out": 86,
+          "up": -40
+        },
+        {
+          "on": "luma",
+          "do": "to",
+          "t": 6.35,
+          "dur": 0.4,
+          "ease": "inout",
+          "face_x": 0.3,
+          "face_y": 0,
+          "head_rot": 0
+        },
+        {
+          "on": "luma",
+          "do": "look",
+          "t": 6.3,
+          "x": 0.85,
+          "y": 0,
+          "dur": 0.1
+        },
+        {
+          "on": "pip",
+          "do": "look",
+          "t": 6.45,
+          "x": -0.9,
+          "y": 0,
+          "dur": 0.1
+        },
+        {
+          "on": "pip",
+          "do": "look",
+          "t": 6.7,
+          "x": 0.85,
+          "y": 0,
+          "dur": 0.1
+        },
+        {
+          "on": "pip",
+          "do": "turn_around",
+          "t": 6.78,
+          "facing": -1
+        },
+        {
+          "on": "pip",
+          "do": "to",
+          "t": 7.02,
+          "dur": 0.36,
+          "ease": "inout",
+          "face_x": 0.3,
+          "face_y": 0,
+          "head_rot": 0
+        },
+        {
+          "on": "luma",
+          "do": "face",
+          "t": 6.4,
+          "name": "soft"
+        },
+        {
+          "on": "pip",
+          "do": "face",
+          "t": 6.6,
+          "name": "soft"
+        },
+        {
+          "on": "shot",
+          "do": "fade_out",
+          "dur": 1.0
+        }
+      ]
+    }
+  ]
+}

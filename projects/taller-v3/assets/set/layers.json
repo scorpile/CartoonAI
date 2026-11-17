@@ -1,0 +1,299 @@
+{
+  "generator": "built-in image_gen",
+  "reference": "projects/taller-v3/source/valley-studio.png",
+  "requested_canvas": "16:9 landscape at largest supported native resolution; 3840x2160 requested in prompts",
+  "actual_canvas": [
+    1672,
+    941
+  ],
+  "resolution_note": "Tool returned 1672x941 on every call; no upscaling performed. This is approximately 16:9, not mathematically exact. Maximum supported resolution was not independently established because the tool exposes no size parameter.",
+  "back_to_front": [
+    "sky.png",
+    "clouds.png",
+    "far.png",
+    "mid.png",
+    "main.png",
+    "fg.png"
+  ],
+  "review_note": "Every generated result visually inspected and saved PNG independently checked with Pillow. No painted checkerboard or solid backdrop observed on transparent layers. Hidden terrain reconstructed; exact pixel identity to flattened reference is not guaranteed. Alpha outside artwork is real zero; minor edge fringes and partial opacity remain as listed. Only sky was converted from RGB to RGBA with opaque alpha; no art was drawn or repaired with code.",
+  "assets": [
+    {
+      "file": "set/sky.png",
+      "pixel_size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "transparent_background_requested": false,
+      "alpha_verified": true,
+      "alpha_check": "all pixels alpha 255",
+      "corner_alpha": {
+        "top_left": 255,
+        "top_right": 255,
+        "bottom_left": 255,
+        "bottom_right": 255
+      },
+      "alpha_range": [
+        255,
+        255
+      ],
+      "attempts_used": 1,
+      "selected_attempt": 1,
+      "visually_reviewed": true,
+      "foreign_layer_elements_observed": false,
+      "known_defects": [],
+      "prompt_brief": "Opaque sunset gradient and sun only.",
+      "sha256": "e5150f3d1e2138ce93316403921ec0edf60ecce5b9ff7cccccc4f186b87251c1"
+    },
+    {
+      "file": "set/clouds.png",
+      "pixel_size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "transparent_background_requested": true,
+      "alpha_verified": true,
+      "alpha_check": "top_left corner alpha 0; nonempty artwork",
+      "corner_alpha": {
+        "top_left": 0,
+        "top_right": 0,
+        "bottom_left": 0,
+        "bottom_right": 0
+      },
+      "alpha_range": [
+        0,
+        255
+      ],
+      "attempts_used": 1,
+      "selected_attempt": 1,
+      "visually_reviewed": true,
+      "foreign_layer_elements_observed": false,
+      "known_defects": [
+        "Fine pale/color fringe on some cloud edges."
+      ],
+      "prompt_brief": "Four separate peach-pink sunset clouds; transparent remainder.",
+      "sha256": "b0d851cd2fb6a5a11d3f0c2539d8bc6f3a64e5817823691e1a8ae64ee417b430"
+    },
+    {
+      "file": "set/far.png",
+      "pixel_size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "transparent_background_requested": true,
+      "alpha_verified": true,
+      "alpha_check": "top_left corner alpha 0; nonempty artwork",
+      "corner_alpha": {
+        "top_left": 0,
+        "top_right": 0,
+        "bottom_left": 253,
+        "bottom_right": 254
+      },
+      "alpha_range": [
+        0,
+        255
+      ],
+      "attempts_used": 1,
+      "selected_attempt": 1,
+      "visually_reviewed": true,
+      "foreign_layer_elements_observed": false,
+      "known_defects": [
+        "Fine cyan fringe on silhouette.",
+        "Lower painted area is slightly translucent, rather than uniformly alpha 255."
+      ],
+      "prompt_brief": "Two main distant blue mountain peaks; continuous filled terrain to bottom; transparent sky.",
+      "sha256": "272a524159557062c579b95209cb7a4788a23bf0e5a3b1cc25852f7af4cb62aa",
+      "bottom_row_alpha_range": [
+        253,
+        254
+      ],
+      "bottom_row_has_transparent_holes": false,
+      "lower_20_percent_alpha_range": [
+        252,
+        254
+      ],
+      "lower_20_percent_has_transparent_holes": false
+    },
+    {
+      "file": "set/mid.png",
+      "pixel_size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "transparent_background_requested": true,
+      "alpha_verified": true,
+      "alpha_check": "top_left corner alpha 0; nonempty artwork",
+      "corner_alpha": {
+        "top_left": 0,
+        "top_right": 0,
+        "bottom_left": 250,
+        "bottom_right": 250
+      },
+      "alpha_range": [
+        0,
+        255
+      ],
+      "attempts_used": 1,
+      "selected_attempt": 1,
+      "visually_reviewed": true,
+      "foreign_layer_elements_observed": false,
+      "known_defects": [
+        "Fine cyan fringe on silhouette.",
+        "Lower painted area is slightly translucent, rather than uniformly alpha 255.",
+        "Reconstructed hidden terrain varies from flattened reference."
+      ],
+      "prompt_brief": "Pine forest and rolling green hills; reconstruct terrain behind cottage down to bottom; transparent above.",
+      "sha256": "7047c75ca877f8f6de5da14151c16ac45b632c7106de2253d336085fefa6f87a",
+      "bottom_row_alpha_range": [
+        250,
+        253
+      ],
+      "bottom_row_has_transparent_holes": false,
+      "lower_20_percent_alpha_range": [
+        250,
+        254
+      ],
+      "lower_20_percent_has_transparent_holes": false
+    },
+    {
+      "file": "set/main.png",
+      "pixel_size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "transparent_background_requested": true,
+      "alpha_verified": true,
+      "alpha_check": "top_left corner alpha 0; nonempty artwork",
+      "corner_alpha": {
+        "top_left": 0,
+        "top_right": 0,
+        "bottom_left": 252,
+        "bottom_right": 252
+      },
+      "alpha_range": [
+        0,
+        255
+      ],
+      "attempts_used": 1,
+      "selected_attempt": 1,
+      "visually_reviewed": true,
+      "foreign_layer_elements_observed": false,
+      "known_defects": [
+        "Fine warm fringe along cutout edges.",
+        "Courtyard is slightly translucent, rather than uniformly alpha 255.",
+        "Left courtyard begins at 76.5 percent height, slightly below requested 72-75 percent."
+      ],
+      "prompt_brief": "Reference workshop cottage and sandy courtyard; left horizon at 75 percent; no distant landscape or foreground framing.",
+      "sha256": "d6edb782105299c17617d880ceb2164eb6031c7c89cd01b064162d96e16fdfc8",
+      "bottom_row_alpha_range": [
+        252,
+        254
+      ],
+      "bottom_row_has_transparent_holes": false,
+      "left_ground_start_y": 720,
+      "left_ground_start_fraction": 0.7651,
+      "lower_20_percent_alpha_range": [
+        252,
+        254
+      ],
+      "lower_20_percent_has_transparent_holes": false
+    },
+    {
+      "file": "set/fg.png",
+      "pixel_size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "transparent_background_requested": true,
+      "alpha_verified": true,
+      "alpha_check": "top_right corner alpha 0; nonempty artwork",
+      "corner_alpha": {
+        "top_left": 252,
+        "top_right": 0,
+        "bottom_left": 252,
+        "bottom_right": 253
+      },
+      "alpha_range": [
+        0,
+        255
+      ],
+      "attempts_used": 1,
+      "selected_attempt": 1,
+      "visually_reviewed": true,
+      "foreign_layer_elements_observed": false,
+      "known_defects": [
+        "Fine warm fringe along some cutout edges."
+      ],
+      "prompt_brief": "Bottom-left leaves, bottom-right rock and orange flowers, top-left pine branch; empty transparent center.",
+      "sha256": "74715317844675172542340ad063aae33864313e2d10dacc1f732df573e0722a",
+      "center_alpha": 0
+    },
+    {
+      "file": "props/butterfly-sheet.png",
+      "pixel_size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "transparent_background_requested": true,
+      "alpha_verified": true,
+      "alpha_check": "top_left corner alpha 0; nonempty artwork",
+      "corner_alpha": {
+        "top_left": 0,
+        "top_right": 0,
+        "bottom_left": 0,
+        "bottom_right": 0
+      },
+      "alpha_range": [
+        0,
+        255
+      ],
+      "attempts_used": 1,
+      "selected_attempt": 1,
+      "visually_reviewed": true,
+      "foreign_layer_elements_observed": false,
+      "known_defects": [
+        "Hand-generated frames have slight shape/anchor drift; not a mechanically registered animation.",
+        "Width is not divisible by three; use fractional cell boundaries."
+      ],
+      "prompt_brief": "Three equal horizontal cells: same right-facing orange-yellow butterfly with cream spots, wings open, half closed, closed upward.",
+      "sha256": "550e16c68724a0dce8fbf046d0bd143152458b51935d1ad765604b81427c12ab"
+    },
+    {
+      "file": "props/puff-sheet.png",
+      "pixel_size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "transparent_background_requested": true,
+      "alpha_verified": true,
+      "alpha_check": "top_left corner alpha 0; nonempty artwork",
+      "corner_alpha": {
+        "top_left": 0,
+        "top_right": 0,
+        "bottom_left": 0,
+        "bottom_right": 0
+      },
+      "alpha_range": [
+        0,
+        255
+      ],
+      "attempts_used": 1,
+      "selected_attempt": 1,
+      "visually_reviewed": true,
+      "foreign_layer_elements_observed": false,
+      "known_defects": [
+        "Width is not divisible by three; use fractional cell boundaries.",
+        "Puff sizes vary across frames."
+      ],
+      "prompt_brief": "Three equal horizontal cells with cream-white outlined dust puff variants; transparent background.",
+      "sha256": "e0128c8d9a65c272985a0e1567413204c91d5c5e5a946f2ff4094d8bb65d43de"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Saved `pip-back3q.png` — 2172×724. Pillow verified RGBA and alpha 0 at all four corners.

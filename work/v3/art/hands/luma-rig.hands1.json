@@ -1,0 +1,411 @@
+{
+ "colors": {
+  "outline": "#311605",
+  "skin": "#fcd69b",
+  "eye_white": "#fcfaf7",
+  "pupil": "#2a1306",
+  "mouth_inside": "#953522",
+  "tongue": "#f37b5e",
+  "blush": "#fca464",
+  "nose": "#703916",
+  "sleeve": "#fb8129",
+  "sleeve_shade": "#d35924",
+  "forearm": "#fcd392",
+  "cuff": "#fb832b",
+  "thigh": "#454848",
+  "shin": "#454848",
+  "leg_shade": "#2f2e2b"
+ },
+ "outline_px": {
+  "head": 8.0,
+  "head_3q": 13.0,
+  "parts": 9.0
+ },
+ "heads": {
+  "front": {
+   "file": "head_front.png",
+   "size": [
+    257,
+    235
+   ],
+   "neck": [
+    132.0,
+    228.0
+   ],
+   "skull_bbox": [
+    6.0,
+    8.0,
+    250.0,
+    228.0
+   ],
+   "face_bbox": [
+    57.0,
+    56.0,
+    226.0,
+    195.0
+   ],
+   "eye_l": {
+    "c": [
+     105.5,
+     123.5
+    ],
+    "rx": 24.9,
+    "ry": 26.9
+   },
+   "eye_r": {
+    "c": [
+     193.0,
+     121.0
+    ],
+    "rx": 21.4,
+    "ry": 26.4
+   },
+   "pupil": {
+    "rx": 11.0,
+    "ry": 16.0,
+    "highlight_r": 2.4,
+    "highlight_offset": [
+     3.1,
+     -4.8
+    ],
+    "highlight_measured": false,
+    "rest_offset_l": [
+     9.0,
+     1.5
+    ],
+    "rest_offset_r": [
+     -6.5,
+     3.0
+    ]
+   },
+   "mouth": {
+    "c": [
+     151.5,
+     157.5
+    ],
+    "w": 41.0,
+    "thickness": 5.6
+   },
+   "nose": {
+    "c": [
+     156.5,
+     136.0
+    ],
+    "r": 5.1
+   },
+   "blush_l": {
+    "c": [
+     80.0,
+     155.0
+    ],
+    "rx": 13.0,
+    "ry": 10.0
+   },
+   "blush_r": {
+    "c": [
+     211.0,
+     152.0
+    ],
+    "rx": 11.0,
+    "ry": 9.0
+   },
+   "appendages": [
+    {
+     "name": "ear_r",
+     "base": [
+      206.1,
+      28.6
+     ],
+     "tip": [
+      215.4,
+      9.7
+     ]
+    },
+    {
+     "name": "ear_l",
+     "base": [
+      53.8,
+      29.0
+     ],
+     "tip": [
+      43.7,
+      10.5
+     ]
+    }
+   ],
+   "brow_l": {
+    "c": [
+     99.5,
+     79.5
+    ],
+    "w": 29.0,
+    "thickness": 4.8
+   },
+   "brow_r": {
+    "c": [
+     193.5,
+     77.5
+    ],
+    "w": 25.0,
+    "thickness": 4.8
+   },
+   "source": "sheet"
+  },
+  "3q": {
+   "file": "head_3q.png",
+   "size": [
+    368,
+    348
+   ],
+   "neck": [
+    192.0,
+    341.0
+   ],
+   "skull_bbox": [
+    7.0,
+    16.0,
+    361.0,
+    341.0
+   ],
+   "face_bbox": [
+    102.0,
+    89.0,
+    332.0,
+    291.0
+   ],
+   "eye_l": {
+    "c": [
+     188.5,
+     186.5
+    ],
+    "rx": 39.6,
+    "ry": 42.6
+   },
+   "eye_r": {
+    "c": [
+     303.0,
+     180.5
+    ],
+    "rx": 27.1,
+    "ry": 39.6
+   },
+   "pupil": {
+    "rx": 13.5,
+    "ry": 24.0,
+    "highlight_r": 3.0,
+    "highlight_offset": [
+     3.8,
+     -7.2
+    ],
+    "highlight_measured": false,
+    "rest_offset_l": [
+     17.0,
+     4.0
+    ],
+    "rest_offset_r": [
+     8.5,
+     3.0
+    ]
+   },
+   "mouth": {
+    "c": [
+     252.0,
+     240.0
+    ],
+    "w": 54.0,
+    "thickness": 8.0
+   },
+   "nose": {
+    "c": [
+     266.7,
+     206.9
+    ],
+    "r": 6.1
+   },
+   "blush_l": {
+    "c": [
+     153.0,
+     236.5
+    ],
+    "rx": 19.0,
+    "ry": 14.5
+   },
+   "blush_r": {
+    "c": [
+     322.5,
+     232.0
+    ],
+    "rx": 11.5,
+    "ry": 9.0
+   },
+   "appendages": [
+    {
+     "name": "ear_l",
+     "base": [
+      84.1,
+      44.9
+     ],
+     "tip": [
+      66.2,
+      10.7
+     ]
+    },
+    {
+     "name": "ear_r",
+     "base": [
+      293.1,
+      48.9
+     ],
+     "tip": [
+      308.3,
+      17.7
+     ]
+    }
+   ],
+   "brow_l": {
+    "c": [
+     172.5,
+     121.5
+    ],
+    "w": 45.0,
+    "thickness": 7.6
+   },
+   "brow_r": {
+    "c": [
+     294.0,
+     118.0
+    ],
+    "w": 28.0,
+    "thickness": 7.2
+   },
+   "source": "directional",
+   "looks": "right"
+  }
+ },
+ "head_scale_3q_over_front": 0.6769,
+ "open_mouth_ref": {
+  "w": 47.0,
+  "h": 32.0,
+  "c": [
+   151.5,
+   165.0
+  ]
+ },
+ "torso": {
+  "file": "torso.png",
+  "size": [
+   231,
+   261
+  ],
+  "neck": [
+   118.3,
+   27.9
+  ],
+  "shoulder_l": [
+   66.4,
+   80.8
+  ],
+  "shoulder_r": [
+   167.6,
+   80.8
+  ],
+  "waist": [
+   115.5,
+   254.0
+  ]
+ },
+ "hips": {
+  "file": "hips.png",
+  "size": [
+   192,
+   142
+  ],
+  "top": [
+   96.0,
+   7.0
+  ],
+  "hip_l": [
+   51.0,
+   128.5
+  ],
+  "hip_r": [
+   139.5,
+   128.5
+  ]
+ },
+ "hands": {
+  "closed": {
+   "file": "hand_closed.png",
+   "size": [
+    115,
+    89
+   ],
+   "wrist": [
+    55.5,
+    7.0
+   ],
+   "dir_deg": 101.3
+  },
+  "open": {
+   "file": "hand_open.png",
+   "size": [
+    122,
+    121
+   ],
+   "wrist": [
+    25.8,
+    82.4
+   ],
+   "dir_deg": -28.6
+  },
+  "point": {
+   "file": "hand_point.png",
+   "size": [
+    120,
+    109
+   ],
+   "wrist": [
+    12.1,
+    55.1
+   ],
+   "dir_deg": -15.9
+  }
+ },
+ "boots": {
+  "side": {
+   "file": "boot_side.png",
+   "size": [
+    196,
+    156
+   ],
+   "ankle": [
+    66.9,
+    13.8
+   ],
+   "sole_y": 150.0
+  },
+  "tip": {
+   "file": "boot_tip.png",
+   "size": [
+    188,
+    181
+   ],
+   "ankle": [
+    73.0,
+    15.2
+   ],
+   "sole_y": 175.0
+  }
+ },
+ "limbs": {
+  "upper_arm_w": 90,
+  "forearm_w": 77.0,
+  "thigh_w_top": 111.4,
+  "thigh_w_bottom": 73.4,
+  "shin_w": 80.0,
+  "upper_arm_len": 200,
+  "forearm_len": 158.0,
+  "thigh_len": 206,
+  "shin_len": 189
+ }
+}

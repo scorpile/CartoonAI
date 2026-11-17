@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "kind": "series",
+  "id": "tres-osos",
+  "title": "Los tres osos",
+  "revision": 1,
+  "notes": "Tres osos vuelven a su cabana, huelen algo raro, entran y encuentran a una nina de rizos dorados dormida en la cama pequena. Se miran, sonrien despacio, se atan los baberos y levantan los tenedores. Ella abre un ojo.",
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "style": {
+    "hold": 2,
+    "contour": 0.9,
+    "boil": 0.32,
+    "boil_hold": 3
+  },
+  "bible": {
+    "style": "Cartoon de TV infantil, colores planos, contorno marron grueso, paleta calida.",
+    "story": "Tres osos vuelven a su cabana, huelen algo raro, entran y encuentran a una nina de rizos dorados dormida en la cama pequena. Se miran, sonrien despacio, se atan los baberos y levantan los tenedores. Ella abre un ojo.",
+    "continuity": "Osos mirando a la derecha; papa delante, luego mama y osito. Bosque: suelo y=640, escala .62. Dormitorio: suelo y=655, escala .70. Sin audio."
+  },
+  "references": [],
+  "library": {
+    "characters": {
+      "papa_oso": "characters/papa_oso.json",
+      "mama_osa": "characters/mama_osa.json",
+      "osito": "characters/osito.json",
+      "ricitos": "characters/ricitos.json"
+    },
+    "sets": {
+      "bosque": "sets/bosque.json",
+      "dormitorio": "sets/dormitorio.json"
+    },
+    "props": {
+      "curl": {
+        "sheet": "assets/props/curl/curl.png",
+        "cells": [
+          [
+            0,
+            0,
+            600,
+            572
+          ],
+          [
+            600,
+            0,
+            1200,
+            572
+          ],
+          [
+            1200,
+            0,
+            1800,
+            572
+          ]
+        ],
+        "pivot": [
+          300.0,
+          7.0
+        ],
+        "upp": 0.0536,
+        "layer": "front",
+        "id": "curl"
+      }
+    }
+  }
+}

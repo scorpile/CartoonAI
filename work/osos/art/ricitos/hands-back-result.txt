@@ -1,0 +1,1 @@
+Saved `hands-back.png` — 2172×724, RGBA; Pillow verified all corner alpha values are 0.

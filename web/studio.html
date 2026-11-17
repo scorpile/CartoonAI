@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cel Studio · Estudio v2</title><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/studio.css"><script src="/studio.js" defer></script></head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="/" data-i18n-aria="html.brand_aria" aria-label="Cel Studio, inicio"><span class="brand-mark">c.</span><span>CEL<span class="brand-small">STUDIO</span></span></a>
+  <div class="sidebar-label" data-i18n="html.your_project">TU PROYECTO</div>
+  <label class="sr-only" for="film-select" data-i18n="html.current_project">Proyecto actual</label><select id="film-select"></select><button type="button" id="new-film" class="button small" data-i18n="html.new_film">＋ Nueva película</button> <button type="button" id="new-series" class="button small" data-i18n="html.new_series">＋ Nueva serie</button>
+  <div id="episode-box" class="hidden"><label class="sidebar-label" for="episode-select" data-i18n="html.episode">CAPÍTULO</label><select id="episode-select"></select></div>
+  <nav id="nav" data-i18n-aria="html.nav_aria" aria-label="Etapas de producción">
+    <button data-view="episodes" class="series-only hidden"><span>◆</span> <em data-i18n="html.nav_episodes">Capítulos</em> <i>↗</i></button>
+    <button data-view="library" class="series-only hidden"><span>◆</span> <em data-i18n="html.nav_library">Biblioteca de la serie</em> <i>↗</i></button>
+    <button data-view="references"><span>01</span> <em data-i18n="html.nav_references">Referencias</em> <i>↗</i></button>
+    <button data-view="script"><span>02</span> <em data-i18n="html.nav_script">Guion</em> <i>↗</i></button>
+    <button data-view="characters"><span>03</span> <em data-i18n="html.nav_characters">Personajes</em> <i>↗</i></button>
+    <button data-view="sets"><span>04</span> <em data-i18n="html.nav_sets">Escenarios y utilería</em> <i>↗</i></button>
+    <button data-view="scenes"><span>05</span> <em data-i18n="html.nav_scenes">Escenas</em> <i>↗</i></button>
+    <button data-view="shots" class="active"><span>06</span> <em data-i18n="html.nav_shots">Planos</em> <i>↗</i><b id="error-badge" class="badge hidden"></b></button>
+    <button data-view="render"><span>07</span> <em data-i18n="html.nav_render">Render</em> <i>↗</i></button>
+  </nav>
+  <div class="sidebar-bottom"><div class="pipeline"><span class="green-dot"></span> <span data-i18n="html.pipeline">Motor v2 · animación en CPU</span></div><p><span data-i18n="html.note_script">El guion es datos: </span><code>script.json</code>.<br><span data-i18n="html.note_render">El render es determinista.</span></p><div class="audio-note" data-i18n="html.audio_note">DOBLAJE · ETAPA POSTERIOR</div></div>
+</aside>
+<main>
+  <header><div class="breadcrumb"><span data-i18n="html.breadcrumb">TALLER LOCAL</span> <span>/</span> <span id="view-name">PLANOS</span></div><div class="header-actions"><div class="lang-switch" role="group" data-i18n-aria="html.language" aria-label="Idioma"><button type="button" data-lang="es" aria-pressed="true">ES</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div><span id="save-state">Cargando…</span><button id="save" class="button dark"><em data-i18n="html.save">Guardar guion</em> <span>↗</span></button></div></header>
+  <section class="project-heading"><div><div class="eyebrow"><span data-i18n="html.eyebrow">MOTOR V2</span> <span class="tag" id="revision-tag">REVISIÓN —</span></div><h1 id="film-title">Cel Studio</h1><p id="film-subtitle" data-i18n="html.subtitle">Referencias, guion, personajes, escenarios, planos y render en un solo lugar.</p></div><div class="stats"><div><strong id="stat-duration">—</strong><span data-i18n="html.stat_duration">DURACIÓN</span></div><div><strong id="stat-shots">—</strong><span data-i18n="html.stat_shots">PLANOS</span></div><div><strong id="stat-fps">—</strong><span data-i18n="html.stat_fps">FPS</span></div></div></section>
+  <div id="job" class="job hidden" role="status"><div><strong id="job-title">Renderizando</strong><span id="job-message"></span></div><progress id="job-progress" max="1" value="0"></progress><button id="cancel-job" class="button small" data-i18n="html.cancel">Cancelar</button><a id="job-result" class="button small hidden" target="_blank" rel="noopener" data-i18n="html.open_video">Abrir video ↗</a></div>
+  <div id="view"></div>
+  <footer><span data-i18n="html.footer_engine">CEL STUDIO / MOTOR V2</span><span data-i18n="html.footer_save">Ctrl+S guarda el guion</span><span data-i18n="html.footer_local">LOCAL · VIDEO SILENCIOSO</span></footer>
+</main>
+<div id="toast" role="status" class="toast hidden"></div>
+</body></html>

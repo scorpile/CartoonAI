@@ -1,0 +1,1 @@
+[butterfly-poses.png](/C:/Proyectos/CartoonAI/work/v3/art/fx/butterfly-poses.png) — 2172×724 px, RGBA; verificado con Pillow: alfa 0 en las cuatro esquinas.

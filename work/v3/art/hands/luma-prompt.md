@@ -1,0 +1,14 @@
+You are the art department for a 2D cartoon. Use your built-in image generation tool (image_gen) to make ONE image. Do NOT draw art with code (no PIL/matplotlib drawing). Work only inside this folder (the working directory); do not modify anything else.
+
+Reference: the attached image shows body parts of a small cartoon kid (torso, shorts, boots, and three crude hands at the top right/bottom left). Match its style exactly: flat cel colours, thick dark-brown outline (about #311605) of the same weight as the torso and boots outlines, simple storybook TV cartoon. The current hands are poor (mitten shapes with a notch that reads like a heart, no fingers). Draw better replacements.
+
+Output: a single wide image on a TRANSPARENT background (real alpha, transparent_background), containing exactly 3 hands in one row, each drawn ALONE with generous empty space between them, all the same scale, all the same flat skin colour #fcd69b with the dark outline #311605, no shading except at most one very subtle flat shade, no shadows, no text, no arms, no sleeves.
+
+ALL THREE HANDS use the SAME orientation convention: the fingers point to the RIGHT of the image, the thumb is on the UPPER side, and the wrist end is on the LEFT as a perfectly flat, straight, VERTICAL cut (the wrist is simply cut off flat; the sleeve cuff will cover it later; no outline needed across the cut and no cuff drawn). All three wrist cuts have the same height (the wrist is about 60% of the height of the fist). They are all the same hand (left or right does not matter, but be consistent: thumb up, fingers right).
+1. Left cell, "closed": a relaxed soft loose fist as a small kid's hand hangs at the side: four curled fingers visible as chunky rounded bumps in a row, the thumb resting along the top/front of the fist. Natural and soft, not a clenched tight ball.
+2. Middle cell, "open": an open hand seen from the palm side, fingers pointing right and slightly spread: a clearly readable separate thumb pointing up-right, plus four short, chunky, rounded fingers (like classic rubber-hose cartoon hands). No mitten notch.
+3. Right cell, "point": index finger extended pointing right, the other three fingers curled into a small fist, the thumb resting on top of the curled fingers.
+
+Chunky, simple proportions of a small child's cartoon character: each hand roughly as long as it is tall, fingers short and fat, rounded fingertips. The three hands must read clearly at about 100 pixels wide.
+
+Save the image as `luma-hands.png` in the working directory (largest size the tool allows). After saving, open it with Python/Pillow and verify it is RGBA and that the corner pixels have alpha 0; if a checkerboard or solid background was painted, regenerate (max 3 attempts). Then write one line stating the final file and size to stdout.

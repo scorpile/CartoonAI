@@ -1,0 +1,22 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.claude/
+
+# rendered videos are published as GitHub release assets, not in git
+projects/**/renders/
+*.partial.mp4
+*.parts/
+
+# review sheets, scratch films and agent logs (regenerable, large)
+work/**/review/
+work/**/scratch/
+work/v3/fx-check/
+work/**/*.log
+work/**/*.result.txt
+work/v3/codex-art-result.txt
+work/v3/fx2_*.py
+work/osos/check_*.json
+
+# backups written by the studio on save
+**/*.previous.json

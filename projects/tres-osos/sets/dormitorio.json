@@ -1,0 +1,207 @@
+{
+ "color": "#8a5a36",
+ "ground_y": 655.0,
+ "notes": {
+  "ground_y": 655.0,
+  "floor_line_beds_y": 613.0,
+  "baseboard_y": 593.2,
+  "beds_x": {
+   "big": [
+    115.1,
+    484.8
+   ],
+   "medium": [
+    487.3,
+    774.5
+   ],
+   "small": [
+    776.2,
+    1019.7
+   ],
+   "chest": [
+    1030.4,
+    1263.1
+   ]
+  },
+  "small_bed": {
+   "pillow_center": [
+    896.7,
+    424.4
+   ],
+   "pillow_box": [
+    820.8,
+    390.1,
+    972.6,
+    458.6
+   ],
+   "blanket_top_y": 461.9,
+   "blanket_cut_y": 458.6,
+   "blanket_x": [
+    776.2,
+    1019.7
+   ],
+   "headboard_top_y": 313.4
+  },
+  "door_left": {
+   "jamb_x": [
+    0,
+    106.8
+   ],
+   "dark_opening_x": [
+    0,
+    22.6
+   ]
+  },
+  "actors": "Ricitos (actor detras): colocar y para que su cintura quede en blanket_top_y y su cabeza sobre pillow_center; la capa blanket (front) tapa de la cintura para abajo. Cualquier actor que pase por x en blanket_x entre y=blanket_cut_y y el suelo queda tapado por la manta: los osos deben quedarse a la izquierda de blanket_x[0] o a la derecha (zona del baul)."
+ },
+ "layers": [
+  {
+   "id": "wall",
+   "image": "assets/sets/dormitorio/wall.png",
+   "depth": 0.94,
+   "x": 640.0,
+   "y": 360.0,
+   "w": 1380.0,
+   "blur": 0.15
+  },
+  {
+   "id": "beds",
+   "image": "assets/sets/dormitorio/beds.png",
+   "depth": 1.0,
+   "x": 640.0,
+   "y": 360.0,
+   "w": 1380.0,
+   "blur": 0.1
+  },
+  {
+   "id": "blanket_small",
+   "image": "assets/sets/dormitorio/blanket_small.png",
+   "depth": 1.0,
+   "x": 640.0,
+   "y": 360.0,
+   "w": 1380.0,
+   "blur": 0.1,
+   "front": true
+  },
+  {
+   "id": "door",
+   "image": "assets/sets/dormitorio/door.png",
+   "depth": 1.0,
+   "x": 640.0,
+   "y": 360.0,
+   "w": 1380.0,
+   "blur": 0.1,
+   "front": true
+  }
+ ],
+ "lights": [
+  {
+   "x": 833.2,
+   "y": 204.7,
+   "depth": 0.94,
+   "radius": 230,
+   "color": "#ffe0a0",
+   "opacity": 0.22,
+   "pulse": 0.04,
+   "period": 6.0
+  }
+ ],
+ "smoke": [],
+ "particles": [
+  {
+   "kind": "motes",
+   "count": 30,
+   "area": [
+    300,
+    100,
+    1100,
+    620
+   ],
+   "depth": 1.1,
+   "color": "#fff0c0",
+   "size": 2.2,
+   "opacity": 0.5
+  }
+ ],
+ "rays": [
+  {
+   "x": 833.2,
+   "y": 204.7,
+   "depth": 0.5,
+   "count": 4,
+   "length": 700,
+   "spread_deg": 30,
+   "direction_deg": 125,
+   "color": "#fff0c0",
+   "opacity": 0.07
+  }
+ ],
+ "light": {
+  "ambient": {
+   "color": "#ffcf94",
+   "amount": 0.12
+  },
+  "rim": {
+   "dir": [
+    0.75,
+    -0.5
+   ],
+   "color": "#ffe6b0",
+   "opacity": 0.42,
+   "width": 2.6
+  },
+  "shade": {
+   "dir": [
+    -0.7,
+    0.6
+   ],
+   "color": "#a48a9a",
+   "opacity": 0.45,
+   "width": 5.0
+  },
+  "shadow": {
+   "contact": {
+    "width": 110,
+    "height": 18,
+    "opacity": 0.42,
+    "color": "#3a2415"
+   },
+   "cast": {
+    "shear": -0.5,
+    "squash": 0.28,
+    "opacity": 0.14,
+    "blur": 5.0,
+    "color": "#3a2415"
+   }
+  }
+ },
+ "post": {
+  "bloom": {
+   "threshold": 0.82,
+   "sigma": 0.012,
+   "strength": 0.12
+  },
+  "grade": {
+   "contrast": 1.05,
+   "saturation": 1.06,
+   "temperature": 0.03,
+   "lift": [
+    0,
+    0,
+    0
+   ],
+   "gain": [
+    1,
+    1,
+    1
+   ]
+  },
+  "vignette": {
+   "strength": 0.25,
+   "radius": 0.8
+  },
+  "grain": {
+   "amount": 0.02
+  }
+ }
+}

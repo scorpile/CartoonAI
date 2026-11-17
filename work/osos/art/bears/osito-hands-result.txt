@@ -1,0 +1,1 @@
+[osito-hands.png](osito-hands.png) — 1774 × 887 px, RGBA; esquinas α=0, pero persisten píxeles α=1 entre piezas tras 3 intentos.

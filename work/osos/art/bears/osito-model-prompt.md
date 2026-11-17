@@ -1,0 +1,10 @@
+You are the art department for a 2D cartoon. Use your built-in image generation tool (image_gen) to make ONE image. Do NOT draw art with code. Work only inside this folder (the working directory).
+
+Reference: the attached image shows a cartoon character sheet of "Luma", a small kid (head variants, torso, boots, hands). Match its STYLE exactly: flat cel colours, thick dark-brown outline (#311605) of that same weight, simple storybook TV children's cartoon, big head (head is about 40% of the total height), simple chunky shapes, no gradients, no texture, no shadows.
+
+Draw the MODEL SHEET of this new character, a bipedal cartoon bear standing upright and walking on two legs like a person:
+OSITO, a small cute baby bear cub: warm honey-brown fur (#c98a45), lighter cream muzzle (#f3d9a8), small round ears with lighter inner ear, brown-black nose. He wears blue denim overalls (a peto, #3f78c4) with ONE strap over the shoulder (the other strap hangs loose) and a red baseball cap (#d8402f) worn between the ears (ears poke out at the sides of the cap). Big round eyes. Body is a short chubby toddler.
+
+Output: ONE wide image on a TRANSPARENT background (real alpha), showing the SAME character three times in one row with generous space between: (1) full body FRONT view, standing, arms relaxed at the sides, neutral closed-mouth friendly face; (2) full body THREE-QUARTER view looking to the right; (3) full body SIDE PROFILE view facing right. Same size and proportions in all three, whole body including both feet visible (bear paw feet with soles, no shoes). Bears have short stubby tails not visible. No text, no labels, no guide lines.
+
+Save as `osito-model.png` in the working directory (largest size the tool allows). Verify with Pillow it is RGBA and the four corner pixels have alpha 0; if a checkerboard or solid background was painted, regenerate (max 3 attempts). Then write one line with the final file and size.

@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest>=8,<10
+# solo para los scripts de preparación de arte (work/v3, work/osos)
+scipy>=1.11

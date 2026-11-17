@@ -1,0 +1,13 @@
+You are the art department for a 2D cartoon. Use your built-in image generation tool (image_gen) to make ONE image. Do NOT draw art with code (no PIL/matplotlib drawing). Work only inside this folder (the working directory); do not modify anything else.
+
+References: the first attached image is the MODEL SHEET of the new character "Ricitos" (Goldilocks, a little girl with abundant golden curls and a light-blue nightgown): keep her design, colours, curls, outline weight and style EXACTLY (flat cel colours, thick dark-brown outline about #311605, no gradients). The second attached image is the part sheet of another character of the same film, only for the style of the BLANK FACE PLATES: its heads have a smooth empty face area with no features.
+
+Output: a single wide image containing exactly 3 hands in one row, each drawn ALONE with generous empty space between them, all the same scale, all the same peach skin colour of Ricitos with the dark outline, no shading, no shadows, no arms, no sleeves, no text. ALL THREE use the same orientation convention: the fingers point to the RIGHT of the image, the thumb is on the UPPER side, and the wrist end is on the LEFT as a perfectly flat, straight, VERTICAL cut (the wrist is simply cut off flat; the sleeve cuff covers it later; no outline needed across the cut). All three wrist cuts have the same height. They are the same little girl's hand, seen from the PALM side, chubby and small like a 5-year-old's:
+1. Left cell, "closed": a soft relaxed loose fist, four curled fingers as chunky rounded bumps, thumb resting over them. Natural and soft.
+2. Middle cell, "open": an open hand seen from the palm side, fingers together-ish and relaxed pointing right, clearly readable separate thumb pointing up-right, four short chunky rounded fingers, slightly curled as when sleeping (not stiff).
+3. Right cell, "curled": a hand as a sleeping child holds it: fingers loosely half-curled and relaxed, thumb tucked, palm side visible, like a hand resting on a pillow.
+Chunky simple proportions, fingers short and fat, rounded fingertips, readable at 100 pixels wide. Save the image as `hands-palm.png` in the working directory (largest size the tool allows).
+
+Flat colours only, no shadows on the ground, no text, no labels, no guide lines. Transparent background (real alpha, transparent_background) with the drawing ALONE and generous empty margin around it.
+
+After saving, open the file with Python/Pillow and verify it is RGBA and that the corner pixels have alpha 0; if a checkerboard or solid background was painted, regenerate (max 3 attempts). Then write one line stating the final file and size to stdout.

@@ -1,0 +1,8449 @@
+{
+  "schema_version": 2,
+  "kind": "script",
+  "id": "tres-osos",
+  "title": "Los tres osos",
+  "revision": 22,
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "story": "Tres osos vuelven a su cabana, huelen algo raro, entran y encuentran a una nina de rizos dorados dormida en la cama pequena. Se miran, sonrien despacio, se atan los baberos y levantan tenedor y cuchillo. Ella abre un ojo.",
+  "bible": {
+    "style": "Cartoon de TV infantil, colores planos, contorno marron grueso, paleta calida.",
+    "story": "Tres osos vuelven a su cabana, huelen algo raro, entran y encuentran a una nina de rizos dorados dormida en la cama pequena. Se miran, sonrien despacio, se atan los baberos y levantan tenedor y cuchillo. Ella abre un ojo.",
+    "continuity": "Osos mirando a la derecha; papa delante, luego mama y osito. Bosque: suelo y=640, escala .62. Dormitorio: suelo y=655, escala .70. Sin audio."
+  },
+  "references": [],
+  "scenes": [
+    {
+      "id": "llegada",
+      "title": "Llegada a la cabana",
+      "description": "Los tres osos llegan por el sendero, huelen el aire y entran por la puerta.",
+      "set": "bosque",
+      "cast": [
+        {
+          "id": "papa_oso",
+          "character": "papa_oso",
+          "start": {
+            "y": 640.0,
+            "scale": 0.62,
+            "facing": 1,
+            "turn": 2,
+            "smile": 0.4,
+            "wear": "",
+            "item_l": "",
+            "item_r": "",
+            "hand_l": "closed",
+            "hand_r": "closed"
+          }
+        },
+        {
+          "id": "mama_osa",
+          "character": "mama_osa",
+          "start": {
+            "y": 640.0,
+            "scale": 0.62,
+            "facing": 1,
+            "turn": 2,
+            "smile": 0.5,
+            "wear": "",
+            "item_l": "",
+            "item_r": "",
+            "hand_l": "closed",
+            "hand_r": "closed"
+          }
+        },
+        {
+          "id": "osito",
+          "character": "osito",
+          "start": {
+            "y": 640.0,
+            "scale": 0.62,
+            "facing": 1,
+            "turn": 2,
+            "smile": 0.85,
+            "look_x": 0.6,
+            "wear": "",
+            "item_l": "",
+            "item_r": "",
+            "hand_l": "closed",
+            "hand_r": "closed"
+          }
+        }
+      ],
+      "props": []
+    },
+    {
+      "id": "dormitorio",
+      "title": "El dormitorio",
+      "description": "Los osos descubren a Ricitos dormida en la cama pequena.",
+      "set": "dormitorio",
+      "cast": [
+        {
+          "id": "papa_oso",
+          "character": "papa_oso",
+          "start": {
+            "y": 655.0,
+            "scale": 0.7,
+            "facing": 1,
+            "item_l": "",
+            "item_r": "",
+            "hand_l": "closed",
+            "hand_r": "closed"
+          }
+        },
+        {
+          "id": "mama_osa",
+          "character": "mama_osa",
+          "start": {
+            "y": 655.0,
+            "scale": 0.7,
+            "facing": 1,
+            "item_l": "",
+            "item_r": "",
+            "hand_l": "closed",
+            "hand_r": "closed"
+          }
+        },
+        {
+          "id": "osito",
+          "character": "osito",
+          "start": {
+            "facing": 1,
+            "item_l": "",
+            "item_r": "",
+            "hand_l": "closed",
+            "hand_r": "closed"
+          }
+        },
+        {
+          "id": "ricitos",
+          "character": "ricitos",
+          "start": {
+            "x": 1012.0,
+            "y": 478.0,
+            "scale": 0.7,
+            "turn": 1,
+            "arm_l_x": -26,
+            "arm_l_y": -36,
+            "arm_l_bend": 0.9,
+            "hand_l": "open",
+            "arm_r_x": -3,
+            "arm_r_y": 16,
+            "hand_r": "curled"
+          }
+        }
+      ],
+      "props": [
+        {
+          "id": "curl",
+          "prop": "curl",
+          "spec": {}
+        }
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "duration": 5.5,
+      "scene": "llegada",
+      "description": "General. Papa, mama y osito caminan en fila hacia la cabana; osito da saltitos para seguir el paso.",
+      "actors": [
+        {
+          "id": "papa_oso",
+          "start": {
+            "x": 80,
+            "look_x": 0.7,
+            "look_y": -0.1
+          }
+        },
+        {
+          "id": "mama_osa",
+          "start": {
+            "x": -20,
+            "look_x": 0.7
+          }
+        },
+        {
+          "id": "osito",
+          "start": {
+            "x": -125,
+            "look_y": -0.1,
+            "eye_open": 1.1
+          }
+        }
+      ],
+      "props": [],
+      "actions": [
+        {
+          "on": "shot",
+          "do": "dof",
+          "value": 1.2
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 0,
+          "x": 520,
+          "y": 372,
+          "zoom": 1.0
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 5.5,
+          "x": 690,
+          "y": 372,
+          "zoom": 1.05,
+          "ease": "inout"
+        },
+        {
+          "on": "shot",
+          "do": "fade_in",
+          "dur": 0.8
+        },
+        {
+          "on": "papa_oso",
+          "do": "walk",
+          "t0": 0.0,
+          "t1": 7.45,
+          "x0": 80,
+          "x1": 795.0,
+          "scale": 0.62,
+          "step": 89.69999999999999,
+          "lift": 17.25,
+          "swing": 17,
+          "phase": 0.0,
+          "bob": 2.6,
+          "view": "profile"
+        },
+        {
+          "on": "mama_osa",
+          "do": "walk",
+          "t0": 0.0,
+          "t1": 7.9,
+          "x0": -20,
+          "x1": 712.0,
+          "scale": 0.62,
+          "step": 82.28999999999999,
+          "lift": 15.825,
+          "swing": 17,
+          "phase": 0.3,
+          "bob": 2.6,
+          "view": "profile"
+        },
+        {
+          "on": "osito",
+          "do": "walk",
+          "t0": 0.0,
+          "t1": 8.15,
+          "x0": -125,
+          "x1": 635.0,
+          "scale": 0.62,
+          "step": 59.5,
+          "lift": 14.45,
+          "swing": 22,
+          "phase": 0.1,
+          "bob": 2.6,
+          "view": "profile"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 1.0,
+          "channel": "lift",
+          "value": 0,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 1.15,
+          "channel": "lift",
+          "value": 13,
+          "ease": "out"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 1.3,
+          "channel": "lift",
+          "value": 0,
+          "ease": "in"
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 1.0,
+          "dur": 0.1,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 0.95,
+          "sx": 1.04
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 1.1,
+          "dur": 0.14,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 1.05,
+          "sx": 0.96
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 1.28,
+          "dur": 0.08,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 0.93,
+          "sx": 1.06
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 1.3599999999999999,
+          "dur": 0.2,
+          "ease": "back",
+          "overlap": 0,
+          "sy": 1.0,
+          "sx": 1.0
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 2.3,
+          "channel": "lift",
+          "value": 0,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 2.4499999999999997,
+          "channel": "lift",
+          "value": 13,
+          "ease": "out"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 2.5999999999999996,
+          "channel": "lift",
+          "value": 0,
+          "ease": "in"
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 2.3,
+          "dur": 0.1,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 0.95,
+          "sx": 1.04
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 2.4,
+          "dur": 0.14,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 1.05,
+          "sx": 0.96
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 2.58,
+          "dur": 0.08,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 0.93,
+          "sx": 1.06
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 2.6599999999999997,
+          "dur": 0.2,
+          "ease": "back",
+          "overlap": 0,
+          "sy": 1.0,
+          "sx": 1.0
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 3.6,
+          "channel": "lift",
+          "value": 0,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 3.75,
+          "channel": "lift",
+          "value": 13,
+          "ease": "out"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 3.9,
+          "channel": "lift",
+          "value": 0,
+          "ease": "in"
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 3.6,
+          "dur": 0.1,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 0.95,
+          "sx": 1.04
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 3.7,
+          "dur": 0.14,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 1.05,
+          "sx": 0.96
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 3.88,
+          "dur": 0.08,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 0.93,
+          "sx": 1.06
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 3.96,
+          "dur": 0.2,
+          "ease": "back",
+          "overlap": 0,
+          "sy": 1.0,
+          "sx": 1.0
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.7,
+          "channel": "lift",
+          "value": 0,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.8500000000000005,
+          "channel": "lift",
+          "value": 13,
+          "ease": "out"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.0,
+          "channel": "lift",
+          "value": 0,
+          "ease": "in"
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 4.7,
+          "dur": 0.1,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 0.95,
+          "sx": 1.04
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 4.8,
+          "dur": 0.14,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 1.05,
+          "sx": 0.96
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 4.98,
+          "dur": 0.08,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 0.93,
+          "sx": 1.06
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 5.0600000000000005,
+          "dur": 0.2,
+          "ease": "back",
+          "overlap": 0,
+          "sy": 1.0,
+          "sx": 1.0
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 1.4,
+          "x": 0.85,
+          "y": -0.15,
+          "dur": 0.1,
+          "head": 0.2
+        },
+        {
+          "on": "papa_oso",
+          "do": "blink",
+          "times": [
+            1.9,
+            4.3
+          ]
+        },
+        {
+          "on": "mama_osa",
+          "do": "look",
+          "t": 2.6,
+          "x": 0.45,
+          "y": 0.1,
+          "dur": 0.1,
+          "head": 0.2
+        },
+        {
+          "on": "mama_osa",
+          "do": "blink",
+          "times": [
+            2.2,
+            4.8
+          ]
+        },
+        {
+          "on": "mama_osa",
+          "do": "look",
+          "t": 3.2,
+          "x": 0.85,
+          "y": 0,
+          "dur": 0.1,
+          "head": 0.2
+        },
+        {
+          "on": "osito",
+          "do": "look",
+          "t": 2.0,
+          "x": 0.9,
+          "y": 0.3,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "osito",
+          "do": "blink",
+          "times": [
+            3.1
+          ]
+        },
+        {
+          "on": "osito",
+          "do": "look",
+          "t": 3.9,
+          "x": 0.5,
+          "y": 0,
+          "dur": 0.1,
+          "head": 0.2
+        },
+        {
+          "on": "papa_oso",
+          "do": "face",
+          "t": 4.6,
+          "name": "curious",
+          "dur": 0.4
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 4.8,
+          "x": 0.95,
+          "y": -0.4,
+          "dur": 0.1,
+          "head": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "duration": 7.4,
+      "scene": "llegada",
+      "description": "Medio en la puerta. Papa olfatea el aire, mama le da un codazo, entran uno a uno y desaparecen tras el marco.",
+      "actors": [
+        {
+          "id": "papa_oso",
+          "start": {
+            "x": 795.0,
+            "look_x": 0.95,
+            "look_y": -0.4,
+            "brow_y": 0.6
+          }
+        },
+        {
+          "id": "mama_osa",
+          "start": {
+            "x": 712.0,
+            "look_x": 0.85
+          }
+        },
+        {
+          "id": "osito",
+          "start": {
+            "x": 635.0
+          }
+        }
+      ],
+      "props": [],
+      "actions": [
+        {
+          "on": "shot",
+          "do": "dof",
+          "value": 2.5
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 0,
+          "x": 840,
+          "y": 432,
+          "zoom": 1.5
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 3.0,
+          "x": 870,
+          "y": 428,
+          "zoom": 1.56,
+          "ease": "inout"
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 7.4,
+          "x": 900,
+          "y": 424,
+          "zoom": 1.6,
+          "ease": "inout"
+        },
+        {
+          "on": "papa_oso",
+          "do": "walk",
+          "t0": -5.5,
+          "t1": 1.9500000000000002,
+          "x0": 80,
+          "x1": 795.0,
+          "scale": 0.62,
+          "step": 89.69999999999999,
+          "lift": 17.25,
+          "swing": 17,
+          "phase": 0.0,
+          "bob": 2.6,
+          "view": "profile"
+        },
+        {
+          "on": "mama_osa",
+          "do": "walk",
+          "t0": -5.5,
+          "t1": 2.4000000000000004,
+          "x0": -20,
+          "x1": 712.0,
+          "scale": 0.62,
+          "step": 82.28999999999999,
+          "lift": 15.825,
+          "swing": 17,
+          "phase": 0.3,
+          "bob": 2.6,
+          "view": "profile"
+        },
+        {
+          "on": "osito",
+          "do": "walk",
+          "t0": -5.5,
+          "t1": 2.6500000000000004,
+          "x0": -125,
+          "x1": 635.0,
+          "scale": 0.62,
+          "step": 59.5,
+          "lift": 14.45,
+          "swing": 22,
+          "phase": 0.1,
+          "bob": 2.6,
+          "view": "profile"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 1.9500000000000002,
+          "channel": "turn",
+          "value": 2.0,
+          "ease": "step"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 2.4000000000000004,
+          "channel": "turn",
+          "value": 2.0,
+          "ease": "step"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 2.6500000000000004,
+          "channel": "turn",
+          "value": 2.0,
+          "ease": "step"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0.15,
+          "channel": "lift",
+          "value": 0,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0.3,
+          "channel": "lift",
+          "value": 13,
+          "ease": "out"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0.44999999999999996,
+          "channel": "lift",
+          "value": 0,
+          "ease": "in"
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 0.15,
+          "dur": 0.1,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 0.95,
+          "sx": 1.04
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 0.25,
+          "dur": 0.14,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 1.05,
+          "sx": 0.96
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 0.43000000000000005,
+          "dur": 0.08,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 0.93,
+          "sx": 1.06
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 0.51,
+          "dur": 0.2,
+          "ease": "back",
+          "overlap": 0,
+          "sy": 1.0,
+          "sx": 1.0
+        },
+        {
+          "on": "papa_oso",
+          "do": "face",
+          "t": 0.0,
+          "name": "curious",
+          "dur": 0.01
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 1.55,
+          "dur": 0.22,
+          "ease": "out",
+          "head_rot": -9.0,
+          "face_y": -0.5,
+          "head_dy": -3,
+          "lean": -5.0,
+          "torso_sy": 1.03,
+          "lid": 0.55,
+          "squint": 0.25,
+          "mouth_w": 0.45,
+          "smile": 0.1,
+          "brow_y": 0.5
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 1.85,
+          "dur": 0.12,
+          "ease": "out",
+          "overlap": 0.2,
+          "torso_sy": 1.07,
+          "head_dy": -5,
+          "head_rot": -12.0,
+          "shoulder_l_dy": -4,
+          "shoulder_r_dy": -4,
+          "mouth_round": 0.5
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 1.9700000000000002,
+          "dur": 0.2,
+          "ease": "inout",
+          "overlap": 0.2,
+          "torso_sy": 1.03,
+          "head_dy": -3,
+          "head_rot": -8.0,
+          "shoulder_l_dy": 0,
+          "shoulder_r_dy": 0,
+          "mouth_round": 0.1
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 2.19,
+          "dur": 0.12,
+          "ease": "out",
+          "overlap": 0.2,
+          "torso_sy": 1.07,
+          "head_dy": -5,
+          "head_rot": -12.0,
+          "shoulder_l_dy": -4,
+          "shoulder_r_dy": -4,
+          "mouth_round": 0.5
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 2.31,
+          "dur": 0.2,
+          "ease": "inout",
+          "overlap": 0.2,
+          "torso_sy": 1.03,
+          "head_dy": -3,
+          "head_rot": -8.0,
+          "shoulder_l_dy": 0,
+          "shoulder_r_dy": 0,
+          "mouth_round": 0.1
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 2.5300000000000002,
+          "dur": 0.12,
+          "ease": "out",
+          "overlap": 0.2,
+          "torso_sy": 1.07,
+          "head_dy": -5,
+          "head_rot": -12.0,
+          "shoulder_l_dy": -4,
+          "shoulder_r_dy": -4,
+          "mouth_round": 0.5
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 2.6500000000000004,
+          "dur": 0.2,
+          "ease": "inout",
+          "overlap": 0.2,
+          "torso_sy": 1.03,
+          "head_dy": -3,
+          "head_rot": -8.0,
+          "shoulder_l_dy": 0,
+          "shoulder_r_dy": 0,
+          "mouth_round": 0.1
+        },
+        {
+          "on": "papa_oso",
+          "do": "blink",
+          "times": [
+            2.97
+          ]
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 2.97,
+          "dur": 0.3,
+          "ease": "inout",
+          "head_rot": -3,
+          "face_y": -0.1,
+          "lean": -1,
+          "lid": 0,
+          "squint": 0,
+          "mouth_round": 0,
+          "torso_sy": 1,
+          "brow_y": 0.9,
+          "brow_rot": 8,
+          "mouth_w": 0.6,
+          "smile": -0.1
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 3.02,
+          "x": 0.6,
+          "y": 0,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "mama_osa",
+          "do": "face",
+          "t": 2.0,
+          "name": "curious",
+          "dur": 0.3
+        },
+        {
+          "on": "mama_osa",
+          "do": "look",
+          "t": 2.1,
+          "x": 0.95,
+          "y": -0.2,
+          "dur": 0.1,
+          "head": 0.4
+        },
+        {
+          "on": "osito",
+          "do": "look",
+          "t": 2.35,
+          "x": 0.9,
+          "y": -0.5,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 2.4,
+          "dur": 0.3,
+          "ease": "inout",
+          "head_rot": -4,
+          "lean": -2
+        },
+        {
+          "on": "osito",
+          "do": "pulse",
+          "t": 2.7,
+          "up": 0.15,
+          "hold": 0.1,
+          "down": 0.25,
+          "hip_dy": 2.5,
+          "head_dy": 2
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 2.6,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0.3,
+          "lean": -3,
+          "head_rot": -3
+        },
+        {
+          "on": "mama_osa",
+          "do": "set",
+          "t": 2.65,
+          "hand_l": "open"
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 2.65,
+          "dur": 0.35,
+          "ease": "inout",
+          "overlap": 0,
+          "arm_l_x": -12,
+          "arm_l_y": 60,
+          "arm_l_bend": 1.0,
+          "lean": -4
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 3.0,
+          "dur": 0.1,
+          "ease": "out",
+          "overlap": 0,
+          "arm_l_x": 62,
+          "arm_l_y": 2,
+          "arm_l_bend": 0.4,
+          "lean": 6,
+          "hip_dy": 2,
+          "head_rot": 3
+        },
+        {
+          "on": "mama_osa",
+          "do": "face",
+          "t": 3.0,
+          "name": "smug",
+          "dur": 0.15
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 3.35,
+          "dur": 0.35,
+          "ease": "back",
+          "overlap": 0,
+          "arm_l_x": 38,
+          "arm_l_y": 22,
+          "lean": 2
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 3.9,
+          "dur": 0.4,
+          "ease": "inout",
+          "overlap": 0,
+          "arm_l_x": -5.0,
+          "arm_l_y": 88.00809999999998,
+          "arm_l_bend": 1.0,
+          "lean": 0,
+          "head_rot": 0
+        },
+        {
+          "on": "mama_osa",
+          "do": "set",
+          "t": 4.2,
+          "hand_l": "closed"
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 3.08,
+          "dur": 0.1,
+          "ease": "out",
+          "overlap": 0.2,
+          "lean": 10,
+          "hip_dx": 6,
+          "head_rot": 7,
+          "torso_sy": 0.97,
+          "hip_dy": 3
+        },
+        {
+          "on": "papa_oso",
+          "do": "face",
+          "t": 3.1,
+          "name": "oops",
+          "dur": 0.1
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 3.1,
+          "x": -0.9,
+          "y": 0,
+          "dur": 0.06,
+          "head": 0.5
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 3.35,
+          "dur": 0.35,
+          "ease": "back",
+          "lean": 0,
+          "hip_dx": 0,
+          "head_rot": -2,
+          "torso_sy": 1,
+          "hip_dy": 0
+        },
+        {
+          "on": "papa_oso",
+          "do": "blink",
+          "times": [
+            3.55
+          ]
+        },
+        {
+          "on": "papa_oso",
+          "do": "face",
+          "t": 3.9,
+          "name": "soft",
+          "dur": 0.3
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 4.1,
+          "x": 0.9,
+          "y": 0,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "osito",
+          "do": "react",
+          "t": 3.1,
+          "x": -0.8,
+          "y": 0.3,
+          "head": 0.4
+        },
+        {
+          "on": "osito",
+          "do": "face",
+          "t": 3.25,
+          "name": "happy",
+          "dur": 0.2
+        },
+        {
+          "on": "osito",
+          "do": "pulse",
+          "t": 3.7,
+          "up": 0.12,
+          "hold": 0.05,
+          "down": 0.25,
+          "hip_dy": 3,
+          "head_dy": 2
+        },
+        {
+          "on": "papa_oso",
+          "do": "set",
+          "t": 3.45,
+          "hand_l": "closed"
+        },
+        {
+          "on": "papa_oso",
+          "do": "walk",
+          "t0": 3.45,
+          "t1": 6.2,
+          "x0": 795.0,
+          "x1": 1007.0,
+          "scale": 0.62,
+          "step": 57.49999999999999,
+          "lift": 20.7,
+          "swing": 9,
+          "phase": 0.0,
+          "bob": 2.0,
+          "view": "3q"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.45,
+          "channel": "y",
+          "value": 640.0,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.45,
+          "channel": "scale",
+          "value": 0.62,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.4916666666666667,
+          "channel": "y",
+          "value": 639.9374046916749,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.4916666666666667,
+          "channel": "scale",
+          "value": 0.6199353181813975,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.5333333333333337,
+          "channel": "y",
+          "value": 639.7491680804798,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.5333333333333337,
+          "channel": "scale",
+          "value": 0.6197408070164957,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.575,
+          "channel": "y",
+          "value": 639.4361915388544,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.575,
+          "channel": "scale",
+          "value": 0.6194173979234828,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.6166666666666667,
+          "channel": "y",
+          "value": 638.9980243805787,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.6166666666666667,
+          "channel": "scale",
+          "value": 0.6189646251932647,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.6583333333333337,
+          "channel": "y",
+          "value": 638.4333405065195,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.6583333333333337,
+          "channel": "scale",
+          "value": 0.6183811185234034,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.7,
+          "channel": "y",
+          "value": 637.7772415227793,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.7,
+          "channel": "scale",
+          "value": 0.6177031495735386,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.7416666666666667,
+          "channel": "y",
+          "value": 637.1162350668664,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.7416666666666667,
+          "channel": "scale",
+          "value": 0.6170201095690953,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.7833333333333337,
+          "channel": "y",
+          "value": 636.4536421954593,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.7833333333333337,
+          "channel": "scale",
+          "value": 0.6163354302686413,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.825,
+          "channel": "y",
+          "value": 635.7926357395465,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.825,
+          "channel": "scale",
+          "value": 0.615652390264198,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.8666666666666667,
+          "channel": "y",
+          "value": 635.1316292836336,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.8666666666666667,
+          "channel": "scale",
+          "value": 0.6149693502597547,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.9083333333333337,
+          "channel": "y",
+          "value": 634.4690364122266,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.9083333333333337,
+          "channel": "scale",
+          "value": 0.6142846709593007,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.95,
+          "channel": "y",
+          "value": 633.8080299563137,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.95,
+          "channel": "scale",
+          "value": 0.6136016309548575,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.9916666666666667,
+          "channel": "y",
+          "value": 633.1470235004008,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 3.9916666666666667,
+          "channel": "scale",
+          "value": 0.6129185909504142,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.033333333333333,
+          "channel": "y",
+          "value": 632.4844306289938,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.033333333333333,
+          "channel": "scale",
+          "value": 0.6122339116499602,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.075,
+          "channel": "y",
+          "value": 631.8234241730809,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.075,
+          "channel": "scale",
+          "value": 0.6115508716455169,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.116666666666667,
+          "channel": "y",
+          "value": 631.1624177171681,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.116666666666667,
+          "channel": "scale",
+          "value": 0.6108678316410736,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.158333333333333,
+          "channel": "y",
+          "value": 630.4998248457609,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.158333333333333,
+          "channel": "scale",
+          "value": 0.6101831523406197,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.2,
+          "channel": "y",
+          "value": 629.8388183898481,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.2,
+          "channel": "scale",
+          "value": 0.6095001123361764,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.241666666666667,
+          "channel": "y",
+          "value": 629.1778119339352,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.241666666666667,
+          "channel": "scale",
+          "value": 0.6088170723317331,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.283333333333333,
+          "channel": "y",
+          "value": 628.5152190625282,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.283333333333333,
+          "channel": "scale",
+          "value": 0.6081323930312792,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.325,
+          "channel": "y",
+          "value": 627.8542126066153,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.325,
+          "channel": "scale",
+          "value": 0.6074493530268359,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.366666666666667,
+          "channel": "y",
+          "value": 627.1932061507025,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.366666666666667,
+          "channel": "scale",
+          "value": 0.6067663130223926,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.408333333333333,
+          "channel": "y",
+          "value": 626.5306132792954,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.408333333333333,
+          "channel": "scale",
+          "value": 0.6060816337219386,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.45,
+          "channel": "y",
+          "value": 625.8696068233826,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.45,
+          "channel": "scale",
+          "value": 0.6053985937174953,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.491666666666667,
+          "channel": "y",
+          "value": 625.2086003674697,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.491666666666667,
+          "channel": "scale",
+          "value": 0.604715553713052,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.533333333333333,
+          "channel": "y",
+          "value": 624.5460074960627,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.533333333333333,
+          "channel": "scale",
+          "value": 0.6040308744125981,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.575,
+          "channel": "y",
+          "value": 623.8850010401497,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.575,
+          "channel": "scale",
+          "value": 0.6033478344081548,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.616666666666667,
+          "channel": "y",
+          "value": 623.223994584237,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.616666666666667,
+          "channel": "scale",
+          "value": 0.6026647944037115,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.658333333333333,
+          "channel": "y",
+          "value": 622.5614017128298,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.658333333333333,
+          "channel": "scale",
+          "value": 0.6019801151032576,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.7,
+          "channel": "y",
+          "value": 621.900395256917,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.7,
+          "channel": "scale",
+          "value": 0.6012970750988142,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.741666666666667,
+          "channel": "y",
+          "value": 621.2393888010041,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.741666666666667,
+          "channel": "scale",
+          "value": 0.600614035094371,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.783333333333333,
+          "channel": "y",
+          "value": 620.5767959295971,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.783333333333333,
+          "channel": "scale",
+          "value": 0.5999293557939169,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.825,
+          "channel": "y",
+          "value": 619.9157894736842,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.825,
+          "channel": "scale",
+          "value": 0.5992463157894736,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.866666666666667,
+          "channel": "y",
+          "value": 619.2547830177713,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.866666666666667,
+          "channel": "scale",
+          "value": 0.5985632757850303,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.908333333333333,
+          "channel": "y",
+          "value": 618.5921901463643,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.908333333333333,
+          "channel": "scale",
+          "value": 0.5978785964845764,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.95,
+          "channel": "y",
+          "value": 617.9311836904515,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.95,
+          "channel": "scale",
+          "value": 0.5971955564801331,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.991666666666667,
+          "channel": "y",
+          "value": 617.2701772345386,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 4.991666666666667,
+          "channel": "scale",
+          "value": 0.5965125164756898,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.033333333333333,
+          "channel": "y",
+          "value": 616.6075843631315,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.033333333333333,
+          "channel": "scale",
+          "value": 0.5958278371752359,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.075,
+          "channel": "y",
+          "value": 615.9465779072186,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.075,
+          "channel": "scale",
+          "value": 0.5951447971707926,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.116666666666667,
+          "channel": "y",
+          "value": 615.2855714513057,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.116666666666667,
+          "channel": "scale",
+          "value": 0.5944617571663493,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.158333333333333,
+          "channel": "y",
+          "value": 614.6229785798987,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.158333333333333,
+          "channel": "scale",
+          "value": 0.5937770778658953,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.2,
+          "channel": "y",
+          "value": 613.9619721239859,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.2,
+          "channel": "scale",
+          "value": 0.5930940378614521,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.241666666666667,
+          "channel": "y",
+          "value": 613.300965668073,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.241666666666667,
+          "channel": "scale",
+          "value": 0.5924109978570087,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.283333333333333,
+          "channel": "y",
+          "value": 612.638372796666,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.283333333333333,
+          "channel": "scale",
+          "value": 0.5917263185565548,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.325,
+          "channel": "y",
+          "value": 611.9773663407531,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.325,
+          "channel": "scale",
+          "value": 0.5910432785521115,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.366666666666667,
+          "channel": "y",
+          "value": 611.3163598848402,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.366666666666667,
+          "channel": "scale",
+          "value": 0.5903602385476682,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.408333333333333,
+          "channel": "y",
+          "value": 610.6537670134331,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.408333333333333,
+          "channel": "scale",
+          "value": 0.5896755592472143,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.45,
+          "channel": "y",
+          "value": 609.9927605575203,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.45,
+          "channel": "scale",
+          "value": 0.588992519242771,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.491666666666667,
+          "channel": "y",
+          "value": 609.3317541016074,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.491666666666667,
+          "channel": "scale",
+          "value": 0.5883094792383277,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.533333333333333,
+          "channel": "y",
+          "value": 608.6691612302004,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.533333333333333,
+          "channel": "scale",
+          "value": 0.5876247999378736,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.575,
+          "channel": "y",
+          "value": 608.0081547742875,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.575,
+          "channel": "scale",
+          "value": 0.5869417599334305,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.616666666666667,
+          "channel": "y",
+          "value": 607.3471483183746,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.616666666666667,
+          "channel": "scale",
+          "value": 0.586258719928987,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.658333333333333,
+          "channel": "y",
+          "value": 606.6845554469676,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.658333333333333,
+          "channel": "scale",
+          "value": 0.5855740406285331,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.7,
+          "channel": "y",
+          "value": 606.0235489910547,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.7,
+          "channel": "scale",
+          "value": 0.5848910006240898,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.741666666666667,
+          "channel": "y",
+          "value": 605.3625425351419,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.741666666666667,
+          "channel": "scale",
+          "value": 0.5842079606196465,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.783333333333333,
+          "channel": "y",
+          "value": 604.6999496637347,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.783333333333333,
+          "channel": "scale",
+          "value": 0.5835232813191926,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.825,
+          "channel": "y",
+          "value": 604.038943207822,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.825,
+          "channel": "scale",
+          "value": 0.5828402413147493,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.866666666666667,
+          "channel": "y",
+          "value": 595.642988687263,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.866666666666667,
+          "channel": "scale",
+          "value": 0.5698466324652577,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.908333333333333,
+          "channel": "y",
+          "value": 586.7414884956328,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.908333333333333,
+          "channel": "scale",
+          "value": 0.5560493071682309,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.95,
+          "channel": "y",
+          "value": 577.8613007545813,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.95,
+          "channel": "scale",
+          "value": 0.5422850161696009,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.991666666666667,
+          "channel": "y",
+          "value": 569.0470416800921,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.991666666666667,
+          "channel": "scale",
+          "value": 0.5286229146041427,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 6.033333333333333,
+          "channel": "y",
+          "value": 561.4608845841442,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 6.033333333333333,
+          "channel": "scale",
+          "value": 0.5168643711054235,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 6.075,
+          "channel": "y",
+          "value": 555.5743964982197,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 6.075,
+          "channel": "scale",
+          "value": 0.5077403145722404,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 6.116666666666667,
+          "channel": "y",
+          "value": 551.3697621511305,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 6.116666666666667,
+          "channel": "scale",
+          "value": 0.5012231313342523,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 6.158333333333333,
+          "channel": "y",
+          "value": 548.8409268694176,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 6.158333333333333,
+          "channel": "scale",
+          "value": 0.49730343664759724,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 6.2,
+          "channel": "y",
+          "value": 548.0,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 6.2,
+          "channel": "scale",
+          "value": 0.496,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "order",
+          "value": 5,
+          "ease": "step"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.908333333333333,
+          "channel": "order",
+          "value": 1,
+          "ease": "step"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 5.908333333333333,
+          "channel": "opacity",
+          "value": 1.0,
+          "ease": "linear"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 6.2,
+          "channel": "opacity",
+          "value": 0.0,
+          "ease": "in"
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 3.35,
+          "dur": 0.15,
+          "ease": "out",
+          "overlap": 0,
+          "lean": -2
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 3.35,
+          "x": 0.95,
+          "y": 0.0,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "papa_oso",
+          "do": "face",
+          "t": 3.45,
+          "name": "curious",
+          "dur": 0.3
+        },
+        {
+          "on": "mama_osa",
+          "do": "set",
+          "t": 3.85,
+          "hand_l": "closed"
+        },
+        {
+          "on": "mama_osa",
+          "do": "walk",
+          "t0": 3.85,
+          "t1": 6.7,
+          "x0": 712.0,
+          "x1": 1007.0,
+          "scale": 0.62,
+          "step": 52.75,
+          "lift": 18.99,
+          "swing": 9,
+          "phase": 0.0,
+          "bob": 2.0,
+          "view": "3q"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 3.85,
+          "channel": "y",
+          "value": 640.0,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 3.85,
+          "channel": "scale",
+          "value": 0.62,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 3.8919117647058825,
+          "channel": "y",
+          "value": 639.9408995197864,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 3.8919117647058825,
+          "channel": "scale",
+          "value": 0.6199389295037793,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 3.933823529411765,
+          "channel": "y",
+          "value": 639.7636312397459,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 3.933823529411765,
+          "channel": "scale",
+          "value": 0.6197557522810707,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 3.975735294117647,
+          "channel": "y",
+          "value": 639.4681951598786,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 3.975735294117647,
+          "channel": "scale",
+          "value": 0.6194504683318746,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.017647058823529,
+          "channel": "y",
+          "value": 639.0545927013532,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.017647058823529,
+          "channel": "scale",
+          "value": 0.6190230791247316,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.059558823529412,
+          "channel": "y",
+          "value": 638.5242525531121,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.059558823529412,
+          "channel": "scale",
+          "value": 0.6184750609715493,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.101470588235294,
+          "channel": "y",
+          "value": 637.9078997570143,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.101470588235294,
+          "channel": "scale",
+          "value": 0.6178381630822481,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.143382352941177,
+          "channel": "y",
+          "value": 637.2877991004763,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.143382352941177,
+          "channel": "scale",
+          "value": 0.6171973924038255,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.185294117647059,
+          "channel": "y",
+          "value": 636.6676958714146,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.185294117647059,
+          "channel": "scale",
+          "value": 0.6165566190671284,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.2272058823529415,
+          "channel": "y",
+          "value": 636.0475926423529,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.2272058823529415,
+          "channel": "scale",
+          "value": 0.6159158457304313,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.269117647058824,
+          "channel": "y",
+          "value": 635.4274894132913,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.269117647058824,
+          "channel": "scale",
+          "value": 0.6152750723937344,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.311029411764706,
+          "channel": "y",
+          "value": 634.8073861842296,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.311029411764706,
+          "channel": "scale",
+          "value": 0.6146342990570373,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.352941176470589,
+          "channel": "y",
+          "value": 634.1872844057018,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.352941176470589,
+          "channel": "scale",
+          "value": 0.6139935272192252,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.39485294117647,
+          "channel": "y",
+          "value": 633.5686576128998,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.39485294117647,
+          "channel": "scale",
+          "value": 0.6133542795333298,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.436764705882353,
+          "channel": "y",
+          "value": 632.9485560415911,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.436764705882353,
+          "channel": "scale",
+          "value": 0.6127135079096442,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.478676470588235,
+          "channel": "y",
+          "value": 632.3284528125295,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.478676470588235,
+          "channel": "scale",
+          "value": 0.6120727345729471,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.520588235294118,
+          "channel": "y",
+          "value": 631.7083495834677,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.520588235294118,
+          "channel": "scale",
+          "value": 0.61143196123625,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.5625,
+          "channel": "y",
+          "value": 631.088246354406,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.5625,
+          "channel": "scale",
+          "value": 0.6107911878995529,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.604411764705882,
+          "channel": "y",
+          "value": 630.4681431253443,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.604411764705882,
+          "channel": "scale",
+          "value": 0.6101504145628558,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.646323529411765,
+          "channel": "y",
+          "value": 629.8480398962827,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.646323529411765,
+          "channel": "scale",
+          "value": 0.6095096412261588,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.688235294117647,
+          "channel": "y",
+          "value": 629.227936667221,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.688235294117647,
+          "channel": "scale",
+          "value": 0.6088688678894617,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.73014705882353,
+          "channel": "y",
+          "value": 628.6078350959124,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.73014705882353,
+          "channel": "scale",
+          "value": 0.608228096265776,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.772058823529412,
+          "channel": "y",
+          "value": 627.9892083031103,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.772058823529412,
+          "channel": "scale",
+          "value": 0.6075888485798806,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.813970588235295,
+          "channel": "y",
+          "value": 627.3691065245825,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.813970588235295,
+          "channel": "scale",
+          "value": 0.6069480767420686,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.855882352941176,
+          "channel": "y",
+          "value": 626.7490032955209,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.855882352941176,
+          "channel": "scale",
+          "value": 0.6063073034053715,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.897794117647059,
+          "channel": "y",
+          "value": 626.1289000664591,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.897794117647059,
+          "channel": "scale",
+          "value": 0.6056665300686744,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.939705882352941,
+          "channel": "y",
+          "value": 625.5087968373974,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.939705882352941,
+          "channel": "scale",
+          "value": 0.6050257567319773,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.981617647058823,
+          "channel": "y",
+          "value": 624.8886936083358,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 4.981617647058823,
+          "channel": "scale",
+          "value": 0.6043849833952804,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.023529411764706,
+          "channel": "y",
+          "value": 624.2685903792741,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.023529411764706,
+          "channel": "scale",
+          "value": 0.6037442100585833,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.065441176470588,
+          "channel": "y",
+          "value": 623.6484886007463,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.065441176470588,
+          "channel": "scale",
+          "value": 0.6031034382207712,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.107352941176471,
+          "channel": "y",
+          "value": 623.0298618079443,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.107352941176471,
+          "channel": "scale",
+          "value": 0.6024641905348758,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.149264705882353,
+          "channel": "y",
+          "value": 622.4097602366356,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.149264705882353,
+          "channel": "scale",
+          "value": 0.6018234189111901,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.1911764705882355,
+          "channel": "y",
+          "value": 621.789657007574,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.1911764705882355,
+          "channel": "scale",
+          "value": 0.6011826455744931,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.233088235294118,
+          "channel": "y",
+          "value": 621.1695537785122,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.233088235294118,
+          "channel": "scale",
+          "value": 0.600541872237796,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.275,
+          "channel": "y",
+          "value": 620.5494505494505,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.275,
+          "channel": "scale",
+          "value": 0.5999010989010989,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.316911764705882,
+          "channel": "y",
+          "value": 619.9293473203888,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.316911764705882,
+          "channel": "scale",
+          "value": 0.5992603255644019,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.358823529411765,
+          "channel": "y",
+          "value": 619.3092440913272,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.358823529411765,
+          "channel": "scale",
+          "value": 0.5986195522277047,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.400735294117647,
+          "channel": "y",
+          "value": 618.6891408622655,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.400735294117647,
+          "channel": "scale",
+          "value": 0.5979787788910077,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.442647058823529,
+          "channel": "y",
+          "value": 618.0690392909568,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.442647058823529,
+          "channel": "scale",
+          "value": 0.597338007267322,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.484558823529412,
+          "channel": "y",
+          "value": 617.4504124981548,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.484558823529412,
+          "channel": "scale",
+          "value": 0.5966987595814266,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.526470588235294,
+          "channel": "y",
+          "value": 616.830310719627,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.526470588235294,
+          "channel": "scale",
+          "value": 0.5960579877436145,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.5683823529411764,
+          "channel": "y",
+          "value": 616.2102074905653,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.5683823529411764,
+          "channel": "scale",
+          "value": 0.5954172144069175,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.610294117647059,
+          "channel": "y",
+          "value": 615.5901042615036,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.610294117647059,
+          "channel": "scale",
+          "value": 0.5947764410702204,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.652205882352941,
+          "channel": "y",
+          "value": 614.9700010324419,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.652205882352941,
+          "channel": "scale",
+          "value": 0.5941356677335233,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.694117647058824,
+          "channel": "y",
+          "value": 614.3498978033803,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.694117647058824,
+          "channel": "scale",
+          "value": 0.5934948943968262,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.736029411764706,
+          "channel": "y",
+          "value": 613.7297945743186,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.736029411764706,
+          "channel": "scale",
+          "value": 0.5928541210601291,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.777941176470588,
+          "channel": "y",
+          "value": 613.1096927957908,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.777941176470588,
+          "channel": "scale",
+          "value": 0.5922133492223172,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.819852941176471,
+          "channel": "y",
+          "value": 612.4910660029888,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.819852941176471,
+          "channel": "scale",
+          "value": 0.5915741015364218,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.8617647058823525,
+          "channel": "y",
+          "value": 611.8709644316801,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.8617647058823525,
+          "channel": "scale",
+          "value": 0.5909333299127361,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.903676470588236,
+          "channel": "y",
+          "value": 611.2508612026184,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.903676470588236,
+          "channel": "scale",
+          "value": 0.590292556576039,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.945588235294117,
+          "channel": "y",
+          "value": 610.6307579735567,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.945588235294117,
+          "channel": "scale",
+          "value": 0.589651783239342,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.9875,
+          "channel": "y",
+          "value": 610.010654744495,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 5.9875,
+          "channel": "scale",
+          "value": 0.5890110099026449,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.029411764705882,
+          "channel": "y",
+          "value": 609.3905515154333,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.029411764705882,
+          "channel": "scale",
+          "value": 0.5883702365659478,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.071323529411766,
+          "channel": "y",
+          "value": 608.7704482863717,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.071323529411766,
+          "channel": "scale",
+          "value": 0.5877294632292507,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.113235294117647,
+          "channel": "y",
+          "value": 608.15034505731,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.113235294117647,
+          "channel": "scale",
+          "value": 0.5870886898925537,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.1551470588235295,
+          "channel": "y",
+          "value": 607.5302434860013,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.1551470588235295,
+          "channel": "scale",
+          "value": 0.586447918268868,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.197058823529412,
+          "channel": "y",
+          "value": 606.9116166931993,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.197058823529412,
+          "channel": "scale",
+          "value": 0.5858086705829726,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.238970588235294,
+          "channel": "y",
+          "value": 606.2915149146716,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.238970588235294,
+          "channel": "scale",
+          "value": 0.5851678987451605,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.280882352941177,
+          "channel": "y",
+          "value": 605.6714116856099,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.280882352941177,
+          "channel": "scale",
+          "value": 0.5845271254084635,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.322794117647058,
+          "channel": "y",
+          "value": 605.0513084565481,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.322794117647058,
+          "channel": "scale",
+          "value": 0.5838863520717664,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.364705882352942,
+          "channel": "y",
+          "value": 604.4312052274864,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.364705882352942,
+          "channel": "scale",
+          "value": 0.5832455787350693,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.406617647058823,
+          "channel": "y",
+          "value": 600.3536961514117,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.406617647058823,
+          "channel": "scale",
+          "value": 0.577148229034688,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.4485294117647065,
+          "channel": "y",
+          "value": 588.3838743873288,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.4485294117647065,
+          "channel": "scale",
+          "value": 0.5585950053003595,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.490441176470588,
+          "channel": "y",
+          "value": 576.4863976868961,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.490441176470588,
+          "channel": "scale",
+          "value": 0.540153916414689,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.532352941176471,
+          "channel": "y",
+          "value": 566.2492257344857,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.532352941176471,
+          "channel": "scale",
+          "value": 0.5242862998884528,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.574264705882353,
+          "channel": "y",
+          "value": 558.2654449441604,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.574264705882353,
+          "channel": "scale",
+          "value": 0.5119114396634487,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.616176470588235,
+          "channel": "y",
+          "value": 552.5626333418747,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.616176470588235,
+          "channel": "scale",
+          "value": 0.5030720816799059,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.658088235294118,
+          "channel": "y",
+          "value": 549.1408183604875,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.658088235294118,
+          "channel": "scale",
+          "value": 0.49776826845875555,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.7,
+          "channel": "y",
+          "value": 548.0,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.7,
+          "channel": "scale",
+          "value": 0.496,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "order",
+          "value": 4,
+          "ease": "step"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.4485294117647065,
+          "channel": "order",
+          "value": 1,
+          "ease": "step"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.4485294117647065,
+          "channel": "opacity",
+          "value": 1.0,
+          "ease": "linear"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 6.7,
+          "channel": "opacity",
+          "value": 0.0,
+          "ease": "in"
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 3.75,
+          "dur": 0.15,
+          "ease": "out",
+          "overlap": 0,
+          "lean": -2
+        },
+        {
+          "on": "mama_osa",
+          "do": "look",
+          "t": 3.75,
+          "x": 0.95,
+          "y": 0.0,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "mama_osa",
+          "do": "face",
+          "t": 3.85,
+          "name": "curious",
+          "dur": 0.3
+        },
+        {
+          "on": "osito",
+          "do": "set",
+          "t": 4.2,
+          "hand_l": "closed"
+        },
+        {
+          "on": "osito",
+          "do": "walk",
+          "t0": 4.2,
+          "t1": 7.2,
+          "x0": 635.0,
+          "x1": 1007.0,
+          "scale": 0.62,
+          "step": 35.699999999999996,
+          "lift": 15.299999999999999,
+          "swing": 9,
+          "phase": 0.0,
+          "bob": 2.0,
+          "view": "3q"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.2,
+          "channel": "y",
+          "value": 640.0,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.2,
+          "channel": "scale",
+          "value": 0.62,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.241666666666667,
+          "channel": "y",
+          "value": 639.9457362074462,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.241666666666667,
+          "channel": "scale",
+          "value": 0.6199439274143611,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.283333333333333,
+          "channel": "y",
+          "value": 639.7825541304786,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.283333333333333,
+          "channel": "scale",
+          "value": 0.619775305934828,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.325,
+          "channel": "y",
+          "value": 639.51123516771,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.325,
+          "channel": "scale",
+          "value": 0.6194949430066337,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.366666666666667,
+          "channel": "y",
+          "value": 639.1313886198338,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.366666666666667,
+          "channel": "scale",
+          "value": 0.6191024349071617,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.408333333333333,
+          "channel": "y",
+          "value": 638.641864893211,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.408333333333333,
+          "channel": "scale",
+          "value": 0.6185965937229848,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.45,
+          "channel": "y",
+          "value": 638.0730935251798,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.45,
+          "channel": "scale",
+          "value": 0.6180088633093526,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.491666666666667,
+          "channel": "y",
+          "value": 637.5000678758124,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.491666666666667,
+          "channel": "scale",
+          "value": 0.6174167368050061,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.533333333333333,
+          "channel": "y",
+          "value": 636.9256669648864,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.533333333333333,
+          "channel": "scale",
+          "value": 0.6168231891970494,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.575,
+          "channel": "y",
+          "value": 636.352641315519,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.575,
+          "channel": "scale",
+          "value": 0.616231062692703,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.616666666666667,
+          "channel": "y",
+          "value": 635.7796156661516,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.616666666666667,
+          "channel": "scale",
+          "value": 0.6156389361883566,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.658333333333333,
+          "channel": "y",
+          "value": 635.2052147552256,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.658333333333333,
+          "channel": "scale",
+          "value": 0.6150453885803998,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.7,
+          "channel": "y",
+          "value": 634.6321891058582,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.7,
+          "channel": "scale",
+          "value": 0.6144532620760534,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.741666666666667,
+          "channel": "y",
+          "value": 634.0591634564908,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.741666666666667,
+          "channel": "scale",
+          "value": 0.6138611355717071,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.783333333333333,
+          "channel": "y",
+          "value": 633.4847625455648,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.783333333333333,
+          "channel": "scale",
+          "value": 0.6132675879637502,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.825,
+          "channel": "y",
+          "value": 632.9117368961973,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.825,
+          "channel": "scale",
+          "value": 0.6126754614594039,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.866666666666667,
+          "channel": "y",
+          "value": 632.3387112468298,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.866666666666667,
+          "channel": "scale",
+          "value": 0.6120833349550575,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.908333333333333,
+          "channel": "y",
+          "value": 631.7643103359039,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.908333333333333,
+          "channel": "scale",
+          "value": 0.6114897873471007,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.95,
+          "channel": "y",
+          "value": 631.1912846865365,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.95,
+          "channel": "scale",
+          "value": 0.6108976608427543,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.991666666666667,
+          "channel": "y",
+          "value": 630.618259037169,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 4.991666666666667,
+          "channel": "scale",
+          "value": 0.610305534338408,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.033333333333333,
+          "channel": "y",
+          "value": 630.0438581262431,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.033333333333333,
+          "channel": "scale",
+          "value": 0.6097119867304511,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.075,
+          "channel": "y",
+          "value": 629.4708324768757,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.075,
+          "channel": "scale",
+          "value": 0.6091198602261049,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.116666666666667,
+          "channel": "y",
+          "value": 628.8978068275081,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.116666666666667,
+          "channel": "scale",
+          "value": 0.6085277337217584,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.158333333333333,
+          "channel": "y",
+          "value": 628.3234059165823,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.158333333333333,
+          "channel": "scale",
+          "value": 0.6079341861138017,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.2,
+          "channel": "y",
+          "value": 627.7503802672148,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.2,
+          "channel": "scale",
+          "value": 0.6073420596094553,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.241666666666667,
+          "channel": "y",
+          "value": 627.1773546178473,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.241666666666667,
+          "channel": "scale",
+          "value": 0.6067499331051089,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.283333333333333,
+          "channel": "y",
+          "value": 626.6029537069214,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.283333333333333,
+          "channel": "scale",
+          "value": 0.6061563854971521,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.325,
+          "channel": "y",
+          "value": 626.029928057554,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.325,
+          "channel": "scale",
+          "value": 0.6055642589928057,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.366666666666667,
+          "channel": "y",
+          "value": 625.4569024081865,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.366666666666667,
+          "channel": "scale",
+          "value": 0.6049721324884594,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.408333333333333,
+          "channel": "y",
+          "value": 624.8825014972606,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.408333333333333,
+          "channel": "scale",
+          "value": 0.6043785848805026,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.45,
+          "channel": "y",
+          "value": 624.3094758478932,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.45,
+          "channel": "scale",
+          "value": 0.6037864583761562,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.491666666666667,
+          "channel": "y",
+          "value": 623.7364501985256,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.491666666666667,
+          "channel": "scale",
+          "value": 0.6031943318718098,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.533333333333333,
+          "channel": "y",
+          "value": 623.1620492875998,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.533333333333333,
+          "channel": "scale",
+          "value": 0.602600784263853,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.575,
+          "channel": "y",
+          "value": 622.5890236382322,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.575,
+          "channel": "scale",
+          "value": 0.6020086577595066,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.616666666666667,
+          "channel": "y",
+          "value": 622.0159979888648,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.616666666666667,
+          "channel": "scale",
+          "value": 0.6014165312551603,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.658333333333333,
+          "channel": "y",
+          "value": 621.4415970779389,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.658333333333333,
+          "channel": "scale",
+          "value": 0.6008229836472035,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.7,
+          "channel": "y",
+          "value": 620.8685714285714,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.7,
+          "channel": "scale",
+          "value": 0.6002308571428572,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.741666666666667,
+          "channel": "y",
+          "value": 620.295545779204,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.741666666666667,
+          "channel": "scale",
+          "value": 0.5996387306385108,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.783333333333333,
+          "channel": "y",
+          "value": 619.721144868278,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.783333333333333,
+          "channel": "scale",
+          "value": 0.599045183030554,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.825,
+          "channel": "y",
+          "value": 619.1481192189106,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.825,
+          "channel": "scale",
+          "value": 0.5984530565262076,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.866666666666667,
+          "channel": "y",
+          "value": 618.5750935695431,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.866666666666667,
+          "channel": "scale",
+          "value": 0.5978609300218612,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.908333333333333,
+          "channel": "y",
+          "value": 618.0006926586171,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.908333333333333,
+          "channel": "scale",
+          "value": 0.5972673824139044,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.95,
+          "channel": "y",
+          "value": 617.4276670092497,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.95,
+          "channel": "scale",
+          "value": 0.596675255909558,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.991666666666667,
+          "channel": "y",
+          "value": 616.8546413598823,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 5.991666666666667,
+          "channel": "scale",
+          "value": 0.5960831294052117,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.033333333333333,
+          "channel": "y",
+          "value": 616.2802404489563,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.033333333333333,
+          "channel": "scale",
+          "value": 0.5954895817972549,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.075,
+          "channel": "y",
+          "value": 615.7072147995889,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.075,
+          "channel": "scale",
+          "value": 0.5948974552929085,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.116666666666667,
+          "channel": "y",
+          "value": 615.1341891502215,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.116666666666667,
+          "channel": "scale",
+          "value": 0.5943053287885621,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.158333333333333,
+          "channel": "y",
+          "value": 614.5597882392955,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.158333333333333,
+          "channel": "scale",
+          "value": 0.5937117811806053,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.2,
+          "channel": "y",
+          "value": 613.986762589928,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.2,
+          "channel": "scale",
+          "value": 0.5931196546762589,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.241666666666667,
+          "channel": "y",
+          "value": 613.4137369405606,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.241666666666667,
+          "channel": "scale",
+          "value": 0.5925275281719126,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.283333333333333,
+          "channel": "y",
+          "value": 612.8393360296346,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.283333333333333,
+          "channel": "scale",
+          "value": 0.5919339805639559,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.325,
+          "channel": "y",
+          "value": 612.2663103802672,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.325,
+          "channel": "scale",
+          "value": 0.5913418540596095,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.366666666666667,
+          "channel": "y",
+          "value": 611.6932847308998,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.366666666666667,
+          "channel": "scale",
+          "value": 0.5907497275552631,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.408333333333333,
+          "channel": "y",
+          "value": 611.1188838199738,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.408333333333333,
+          "channel": "scale",
+          "value": 0.5901561799473063,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.45,
+          "channel": "y",
+          "value": 610.5458581706064,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.45,
+          "channel": "scale",
+          "value": 0.5895640534429599,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.491666666666667,
+          "channel": "y",
+          "value": 609.972832521239,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.491666666666667,
+          "channel": "scale",
+          "value": 0.5889719269386136,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.533333333333333,
+          "channel": "y",
+          "value": 609.398431610313,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.533333333333333,
+          "channel": "scale",
+          "value": 0.5883783793306567,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.575,
+          "channel": "y",
+          "value": 608.8254059609455,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.575,
+          "channel": "scale",
+          "value": 0.5877862528263104,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.616666666666667,
+          "channel": "y",
+          "value": 608.252380311578,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.616666666666667,
+          "channel": "scale",
+          "value": 0.587194126321964,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.658333333333333,
+          "channel": "y",
+          "value": 607.6779794006521,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.658333333333333,
+          "channel": "scale",
+          "value": 0.5866005787140072,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.7,
+          "channel": "y",
+          "value": 607.1049537512847,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.7,
+          "channel": "scale",
+          "value": 0.5860084522096608,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.741666666666667,
+          "channel": "y",
+          "value": 606.5319281019172,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.741666666666667,
+          "channel": "scale",
+          "value": 0.5854163257053144,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.783333333333333,
+          "channel": "y",
+          "value": 605.9575271909913,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.783333333333333,
+          "channel": "scale",
+          "value": 0.5848227780973576,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.825,
+          "channel": "y",
+          "value": 605.3845015416239,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.825,
+          "channel": "scale",
+          "value": 0.5842306515930114,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.866666666666667,
+          "channel": "y",
+          "value": 604.8114758922563,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.866666666666667,
+          "channel": "scale",
+          "value": 0.5836385250886649,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.908333333333333,
+          "channel": "y",
+          "value": 604.2370749813305,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.908333333333333,
+          "channel": "scale",
+          "value": 0.5830449774807082,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.95,
+          "channel": "y",
+          "value": 595.6860693263569,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.95,
+          "channel": "scale",
+          "value": 0.5699134074558532,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.991666666666667,
+          "channel": "y",
+          "value": 581.610414258917,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.991666666666667,
+          "channel": "scale",
+          "value": 0.5480961421013213,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 7.033333333333333,
+          "channel": "y",
+          "value": 569.4959381960313,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 7.033333333333333,
+          "channel": "scale",
+          "value": 0.5293187042038484,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 7.075,
+          "channel": "y",
+          "value": 560.0956953445508,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 7.075,
+          "channel": "scale",
+          "value": 0.5147483277840537,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 7.116666666666667,
+          "channel": "y",
+          "value": 553.3812361649218,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 7.116666666666667,
+          "channel": "scale",
+          "value": 0.5043409160556287,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 7.158333333333333,
+          "channel": "y",
+          "value": 549.3428918359259,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 7.158333333333333,
+          "channel": "scale",
+          "value": 0.49808148234568517,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 7.2,
+          "channel": "y",
+          "value": 548.0,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 7.2,
+          "channel": "scale",
+          "value": 0.496,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "order",
+          "value": 3,
+          "ease": "step"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.991666666666667,
+          "channel": "order",
+          "value": 1,
+          "ease": "step"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 6.991666666666667,
+          "channel": "opacity",
+          "value": 1.0,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 7.2,
+          "channel": "opacity",
+          "value": 0.0,
+          "ease": "in"
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 4.1000000000000005,
+          "dur": 0.15,
+          "ease": "out",
+          "overlap": 0,
+          "lean": -2
+        },
+        {
+          "on": "osito",
+          "do": "look",
+          "t": 4.1000000000000005,
+          "x": 0.95,
+          "y": 0.0,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "osito",
+          "do": "face",
+          "t": 4.2,
+          "name": "curious",
+          "dur": 0.3
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 3.35,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0,
+          "head_rot": 0
+        },
+        {
+          "on": "osito",
+          "do": "face",
+          "t": 4.2,
+          "name": "happy",
+          "dur": 0.2
+        }
+      ],
+      "layer_order": {
+        "door_dark": -1,
+        "door_frame": 2
+      }
+    },
+    {
+      "id": "s03",
+      "duration": 6.5,
+      "scene": "dormitorio",
+      "description": "General. Entran por la izquierda y ven las camas; osito se adelanta, se detiene y senala la cama pequena.",
+      "actors": [
+        {
+          "id": "papa_oso",
+          "start": {
+            "x": 140,
+            "turn": 2,
+            "smile": 0.35,
+            "look_x": 0.8,
+            "look_y": -0.1,
+            "brow_y": 0.3,
+            "wear": ""
+          },
+          "order": 1
+        },
+        {
+          "id": "mama_osa",
+          "start": {
+            "x": 50,
+            "turn": 2,
+            "smile": 0.35,
+            "look_x": 0.8,
+            "brow_y": 0.3,
+            "wear": ""
+          },
+          "order": 1
+        },
+        {
+          "id": "osito",
+          "start": {
+            "x": -55,
+            "y": 681.0,
+            "scale": 0.74,
+            "turn": 2,
+            "smile": 0.5,
+            "look_x": 0.8,
+            "brow_y": 0.3,
+            "wear": ""
+          },
+          "order": 2
+        },
+        {
+          "id": "ricitos"
+        }
+      ],
+      "props": [],
+      "actions": [
+        {
+          "on": "shot",
+          "do": "dof",
+          "value": 1.0
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 0,
+          "x": 560,
+          "y": 372,
+          "zoom": 1.0
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 6.5,
+          "x": 660,
+          "y": 380,
+          "zoom": 1.1,
+          "ease": "inout"
+        },
+        {
+          "on": "papa_oso",
+          "do": "walk",
+          "t0": -0.1,
+          "t1": 2.6,
+          "x0": 140,
+          "x1": 470.0,
+          "scale": 0.7,
+          "step": 69.0,
+          "lift": 16.099999999999998,
+          "swing": 14,
+          "phase": 0.35,
+          "bob": 2.2,
+          "view": "profile"
+        },
+        {
+          "on": "mama_osa",
+          "do": "walk",
+          "t0": -0.1,
+          "t1": 2.8,
+          "x0": 50,
+          "x1": 360.0,
+          "scale": 0.7,
+          "step": 63.3,
+          "lift": 14.77,
+          "swing": 14,
+          "phase": 0.8,
+          "bob": 2.2,
+          "view": "profile"
+        },
+        {
+          "on": "osito",
+          "do": "walk",
+          "t0": 0.0,
+          "t1": 4.3,
+          "x0": -55,
+          "x1": 585.0,
+          "scale": 0.7,
+          "step": 70,
+          "lift": 17,
+          "swing": 20,
+          "phase": 0.2,
+          "bob": 2.2,
+          "view": "profile"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 2.0,
+          "channel": "lift",
+          "value": 0,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 2.15,
+          "channel": "lift",
+          "value": 12,
+          "ease": "out"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 2.3,
+          "channel": "lift",
+          "value": 0,
+          "ease": "in"
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 2.0,
+          "dur": 0.1,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 0.95,
+          "sx": 1.04
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 2.1,
+          "dur": 0.14,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 1.05,
+          "sx": 0.96
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 2.2800000000000002,
+          "dur": 0.08,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 0.93,
+          "sx": 1.06
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 2.36,
+          "dur": 0.2,
+          "ease": "back",
+          "overlap": 0,
+          "sy": 1.0,
+          "sx": 1.0
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 3.2,
+          "channel": "lift",
+          "value": 0,
+          "ease": "linear"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 3.35,
+          "channel": "lift",
+          "value": 12,
+          "ease": "out"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 3.5,
+          "channel": "lift",
+          "value": 0,
+          "ease": "in"
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 3.2,
+          "dur": 0.1,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 0.95,
+          "sx": 1.04
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 3.3000000000000003,
+          "dur": 0.14,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 1.05,
+          "sx": 0.96
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 3.4800000000000004,
+          "dur": 0.08,
+          "ease": "out",
+          "overlap": 0,
+          "sy": 0.93,
+          "sx": 1.06
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 3.56,
+          "dur": 0.2,
+          "ease": "back",
+          "overlap": 0,
+          "sy": 1.0,
+          "sx": 1.0
+        },
+        {
+          "on": "ricitos",
+          "do": "auto_blink",
+          "enabled": false
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 0.9,
+          "x": -0.2,
+          "y": 0.1,
+          "dur": 0.1,
+          "head": 0.5
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 1.8,
+          "x": 0.5,
+          "y": -0.1,
+          "dur": 0.1,
+          "head": 0.4
+        },
+        {
+          "on": "mama_osa",
+          "do": "look",
+          "t": 1.0,
+          "x": 0.9,
+          "y": -0.3,
+          "dur": 0.1,
+          "head": 0.4
+        },
+        {
+          "on": "mama_osa",
+          "do": "look",
+          "t": 2.1,
+          "x": -0.1,
+          "y": 0.1,
+          "dur": 0.1,
+          "head": 0.4
+        },
+        {
+          "on": "mama_osa",
+          "do": "look",
+          "t": 2.9,
+          "x": 0.9,
+          "y": 0,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "papa_oso",
+          "do": "face",
+          "t": 1.2,
+          "name": "curious",
+          "dur": 0.4
+        },
+        {
+          "on": "mama_osa",
+          "do": "face",
+          "t": 1.4,
+          "name": "curious",
+          "dur": 0.4
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 2.6,
+          "channel": "turn",
+          "value": 1.0,
+          "ease": "smooth"
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 2.8,
+          "channel": "turn",
+          "value": 1.0,
+          "ease": "smooth"
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 4.25,
+          "dur": 0.12,
+          "ease": "out",
+          "overlap": 0,
+          "lean": 9,
+          "hip_dy": 5
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 4.37,
+          "dur": 0.25,
+          "ease": "back",
+          "overlap": 0,
+          "lean": 0,
+          "hip_dy": 0
+        },
+        {
+          "on": "osito",
+          "do": "look",
+          "t": 4.3,
+          "x": 1,
+          "y": -0.2,
+          "dur": 0.08,
+          "head": 0.6
+        },
+        {
+          "on": "osito",
+          "do": "face",
+          "t": 4.35,
+          "name": "awe",
+          "dur": 0.12
+        },
+        {
+          "on": "osito",
+          "do": "gasp",
+          "t": 4.4,
+          "amount": 0.8
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 4.8,
+          "dur": 0.16,
+          "ease": "out",
+          "overlap": 0,
+          "arm_l_x": 18,
+          "arm_l_y": 70,
+          "lean": -3
+        },
+        {
+          "on": "osito",
+          "do": "set",
+          "t": 4.9,
+          "hand_l": "point"
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 4.95,
+          "dur": 0.22,
+          "ease": "out",
+          "overlap": 0,
+          "arm_l_x": 84,
+          "arm_l_y": -26,
+          "arm_l_bend": 0.45,
+          "lean": 5,
+          "head_dy": -2
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 5.17,
+          "dur": 0.3,
+          "ease": "soft",
+          "overlap": 0,
+          "arm_l_x": 74,
+          "arm_l_y": -18,
+          "arm_l_bend": 0.6,
+          "lean": 3,
+          "head_dy": 0
+        },
+        {
+          "on": "osito",
+          "do": "drift",
+          "t0": 5.45,
+          "t1": 6.5,
+          "period": 1.2,
+          "arm_l_x": 2.4,
+          "arm_l_y": 2.2,
+          "hand_l_rot": 4,
+          "lean": 0.9
+        },
+        {
+          "on": "papa_oso",
+          "do": "react",
+          "t": 5.0,
+          "x": 0.95,
+          "y": -0.1,
+          "head": 0.5,
+          "lean": 2
+        },
+        {
+          "on": "papa_oso",
+          "do": "face",
+          "t": 5.05,
+          "name": "awe",
+          "dur": 0.2
+        },
+        {
+          "on": "mama_osa",
+          "do": "react",
+          "t": 5.15,
+          "x": 0.95,
+          "y": -0.1,
+          "head": 0.5,
+          "lean": 2
+        },
+        {
+          "on": "mama_osa",
+          "do": "face",
+          "t": 5.2,
+          "name": "surprise",
+          "dur": 0.15
+        },
+        {
+          "on": "papa_oso",
+          "do": "blink",
+          "times": [
+            5.8
+          ]
+        },
+        {
+          "on": "mama_osa",
+          "do": "blink",
+          "times": [
+            6.05
+          ]
+        }
+      ],
+      "layer_order": {
+        "blanket_small": 0.5
+      }
+    },
+    {
+      "id": "s04",
+      "duration": 4.0,
+      "scene": "dormitorio",
+      "description": "Primer plano de Ricitos. Duerme, respira, se acomoda y un rizo le cae sobre la cara.",
+      "actors": [
+        {
+          "id": "ricitos"
+        }
+      ],
+      "props": [
+        {
+          "id": "curl"
+        }
+      ],
+      "actions": [
+        {
+          "on": "shot",
+          "do": "dof",
+          "value": 3.5
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 0,
+          "x": 930,
+          "y": 438,
+          "zoom": 3.2
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 4.0,
+          "x": 926,
+          "y": 436,
+          "zoom": 3.4,
+          "ease": "inout"
+        },
+        {
+          "on": "ricitos",
+          "do": "auto_blink",
+          "enabled": false
+        },
+        {
+          "on": "ricitos",
+          "do": "key",
+          "t": 0,
+          "channel": "life",
+          "value": 1.0
+        },
+        {
+          "on": "ricitos",
+          "do": "to",
+          "t": 1.1,
+          "dur": 0.9,
+          "ease": "inout",
+          "overlap": 0.4,
+          "head_rot": 58,
+          "head_dx": -2,
+          "head_dy": 2,
+          "lean": 1
+        },
+        {
+          "on": "ricitos",
+          "do": "to",
+          "t": 1.4,
+          "dur": 0.6,
+          "ease": "inout",
+          "overlap": 0.3,
+          "arm_l_x": -10,
+          "arm_l_y": 30
+        },
+        {
+          "on": "ricitos",
+          "do": "pulse",
+          "t": 1.5,
+          "up": 0.3,
+          "hold": 0.3,
+          "down": 0.5,
+          "smile": 0.6,
+          "brow_y": 0.2
+        },
+        {
+          "on": "ricitos",
+          "do": "to",
+          "t": 2.7,
+          "dur": 0.8,
+          "ease": "inout",
+          "overlap": 0.4,
+          "head_rot": 60,
+          "head_dx": 0,
+          "head_dy": 0
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 0,
+          "channel": "opacity",
+          "value": 0,
+          "ease": "step"
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 2.2,
+          "channel": "opacity",
+          "value": 1,
+          "ease": "step"
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 0,
+          "channel": "x",
+          "value": 934.0
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 0,
+          "channel": "y",
+          "value": 402.0
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 0,
+          "channel": "scale",
+          "value": 1.5
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 2.2,
+          "channel": "frame",
+          "value": 0,
+          "ease": "step"
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 2.5,
+          "channel": "frame",
+          "value": 1,
+          "ease": "step"
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 2.78,
+          "channel": "frame",
+          "value": 2,
+          "ease": "step"
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 2.2,
+          "channel": "rot",
+          "value": 0
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 2.5,
+          "channel": "rot",
+          "value": 8,
+          "ease": "out"
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 2.78,
+          "channel": "rot",
+          "value": 0,
+          "ease": "out"
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 2.5,
+          "channel": "x",
+          "value": 938.0,
+          "ease": "out"
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 2.78,
+          "channel": "x",
+          "value": 944.0,
+          "ease": "out"
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 2.78,
+          "channel": "y",
+          "value": 412.0,
+          "ease": "out"
+        },
+        {
+          "on": "ricitos",
+          "do": "pulse",
+          "t": 3.0,
+          "up": 0.15,
+          "hold": 0.55,
+          "down": 0.35,
+          "mouth_w": 0.5,
+          "mouth_round": 0.55,
+          "mouth_open": 0.18,
+          "smile": 0.1,
+          "brow_y": 0.5,
+          "brow_rot": 6
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 3.18,
+          "channel": "frame",
+          "value": 1,
+          "ease": "step"
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 3.34,
+          "channel": "frame",
+          "value": 0,
+          "ease": "step"
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 3.6,
+          "channel": "frame",
+          "value": 2,
+          "ease": "step"
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 3.18,
+          "channel": "y",
+          "value": 412.0
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 3.3,
+          "channel": "y",
+          "value": 400.0,
+          "ease": "out"
+        },
+        {
+          "on": "curl",
+          "do": "key",
+          "t": 3.6,
+          "channel": "y",
+          "value": 412.0,
+          "ease": "in"
+        }
+      ],
+      "layer_order": {
+        "blanket_small": 0.5
+      }
+    },
+    {
+      "id": "s05",
+      "duration": 6.0,
+      "scene": "dormitorio",
+      "description": "Medio de los tres. Se miran entre si: sorpresa, pausa, y una sonrisa lenta compartida.",
+      "actors": [
+        {
+          "id": "papa_oso",
+          "start": {
+            "x": 470.0,
+            "turn": 1,
+            "look_x": 0.9,
+            "look_y": -0.1,
+            "wear": ""
+          },
+          "order": 1
+        },
+        {
+          "id": "mama_osa",
+          "start": {
+            "x": 360.0,
+            "turn": 1,
+            "look_x": 0.9,
+            "look_y": -0.1,
+            "wear": ""
+          },
+          "order": 1
+        },
+        {
+          "id": "osito",
+          "start": {
+            "x": 585.0,
+            "y": 669.0,
+            "scale": 0.72,
+            "turn": 1,
+            "look_x": 0.9,
+            "look_y": -0.1,
+            "wear": ""
+          },
+          "order": 2
+        }
+      ],
+      "props": [],
+      "actions": [
+        {
+          "on": "shot",
+          "do": "dof",
+          "value": 4.0
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 0,
+          "x": 490,
+          "y": 448,
+          "zoom": 1.75
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 6.0,
+          "x": 494,
+          "y": 444,
+          "zoom": 1.88,
+          "ease": "inout"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "smile",
+          "value": 0.45
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_open",
+          "value": 0.38
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_w",
+          "value": 0.62
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_round",
+          "value": 0.7
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_y",
+          "value": 0.85
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_rot",
+          "value": 6
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "eye_open",
+          "value": 1.14
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "squint",
+          "value": 0
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "lid",
+          "value": 0
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "pupil",
+          "value": 1.12
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "smile",
+          "value": 0
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_open",
+          "value": 0.62
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_w",
+          "value": 0.42
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_round",
+          "value": 1
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_y",
+          "value": 1.15
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_rot",
+          "value": 4
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "eye_open",
+          "value": 1.2
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "squint",
+          "value": 0
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "lid",
+          "value": 0
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "pupil",
+          "value": 0.74
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "smile",
+          "value": 0.45
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_open",
+          "value": 0.38
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_w",
+          "value": 0.62
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_round",
+          "value": 0.7
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_y",
+          "value": 0.85
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_rot",
+          "value": 6
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "eye_open",
+          "value": 1.14
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "squint",
+          "value": 0
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "lid",
+          "value": 0
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "pupil",
+          "value": 1.12
+        },
+        {
+          "on": "osito",
+          "do": "set",
+          "t": 0,
+          "hand_l": "point"
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "arm_l_x",
+          "value": 74
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "arm_l_y",
+          "value": -18
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "arm_l_bend",
+          "value": 0.6
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "lean",
+          "value": 3
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 0.1,
+          "dur": 0.5,
+          "ease": "inout",
+          "arm_l_x": -5.0,
+          "arm_l_y": 70.907,
+          "arm_l_bend": 1.0,
+          "lean": 0
+        },
+        {
+          "on": "osito",
+          "do": "set",
+          "t": 0.6,
+          "hand_l": "closed"
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 0.4,
+          "x": 0.1,
+          "y": 0.1,
+          "dur": 0.08
+        },
+        {
+          "on": "papa_oso",
+          "do": "turn_around",
+          "t": 0.62,
+          "facing": -1,
+          "arms": false
+        },
+        {
+          "on": "papa_oso",
+          "do": "face",
+          "t": 0.55,
+          "name": "surprise",
+          "dur": 0.15
+        },
+        {
+          "on": "papa_oso",
+          "do": "gasp",
+          "t": 0.8,
+          "amount": 0.9
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 0.95,
+          "x": 0.95,
+          "y": 0.1,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "mama_osa",
+          "do": "react",
+          "t": 0.55,
+          "x": 0.95,
+          "y": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "mama_osa",
+          "do": "face",
+          "t": 0.7,
+          "name": "surprise",
+          "dur": 0.15
+        },
+        {
+          "on": "mama_osa",
+          "do": "gasp",
+          "t": 0.78,
+          "amount": 0.9
+        },
+        {
+          "on": "osito",
+          "do": "turn_around",
+          "t": 1.0,
+          "facing": -1,
+          "arms": false
+        },
+        {
+          "on": "osito",
+          "do": "face",
+          "t": 0.88,
+          "name": "surprise",
+          "dur": 0.15
+        },
+        {
+          "on": "osito",
+          "do": "look",
+          "t": 1.3,
+          "x": 0.95,
+          "y": -0.5,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "papa_oso",
+          "do": "blink",
+          "times": [
+            1.9
+          ]
+        },
+        {
+          "on": "mama_osa",
+          "do": "blink",
+          "times": [
+            2.15
+          ]
+        },
+        {
+          "on": "osito",
+          "do": "blink",
+          "times": [
+            2.4
+          ]
+        },
+        {
+          "on": "papa_oso",
+          "do": "pulse",
+          "t": 1.5,
+          "up": 0.2,
+          "hold": 0.3,
+          "down": 0.5,
+          "head_dy": 1.5,
+          "torso_sy": 1.02
+        },
+        {
+          "on": "mama_osa",
+          "do": "pulse",
+          "t": 1.9,
+          "up": 0.2,
+          "hold": 0.3,
+          "down": 0.5,
+          "head_rot": 2
+        },
+        {
+          "on": "osito",
+          "do": "look",
+          "t": 2.2,
+          "x": 0.95,
+          "y": -0.9,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 2.55,
+          "dur": 1.7,
+          "ease": "inout",
+          "overlap": 0.4,
+          "smile": 1.25,
+          "mouth_open": 0.35,
+          "mouth_w": 1.3,
+          "mouth_round": 0,
+          "brow_y": 0.1,
+          "brow_rot": -8,
+          "eye_open": 0.98,
+          "squint": 0.35,
+          "lid": 0.12,
+          "pupil": 1.0
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 2.9499999999999997,
+          "dur": 1.2,
+          "ease": "soft",
+          "overlap": 0.3,
+          "head_rot": -3,
+          "lean": 1.5
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 2.85,
+          "dur": 1.7,
+          "ease": "inout",
+          "overlap": 0.4,
+          "smile": 1.25,
+          "mouth_open": 0.335,
+          "mouth_w": 1.3,
+          "mouth_round": 0,
+          "brow_y": 0.1,
+          "brow_rot": -8,
+          "eye_open": 0.98,
+          "squint": 0.35,
+          "lid": 0.12,
+          "pupil": 1.0
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 3.25,
+          "dur": 1.2,
+          "ease": "soft",
+          "overlap": 0.3,
+          "head_rot": -3,
+          "lean": 1.5
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 3.15,
+          "dur": 1.7,
+          "ease": "inout",
+          "overlap": 0.4,
+          "smile": 1.25,
+          "mouth_open": 0.41000000000000003,
+          "mouth_w": 1.3,
+          "mouth_round": 0,
+          "brow_y": 0.1,
+          "brow_rot": -8,
+          "eye_open": 0.98,
+          "squint": 0.35,
+          "lid": 0.12,
+          "pupil": 1.0
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 3.55,
+          "dur": 1.2,
+          "ease": "soft",
+          "overlap": 0.3,
+          "head_rot": -3,
+          "lean": 1.5
+        },
+        {
+          "on": "osito",
+          "do": "pulse",
+          "t": 3.9,
+          "up": 0.12,
+          "hold": 0.05,
+          "down": 0.25,
+          "hip_dy": 3,
+          "head_dy": 2
+        },
+        {
+          "on": "papa_oso",
+          "do": "turn_around",
+          "t": 4.7,
+          "facing": 1,
+          "arms": false
+        },
+        {
+          "on": "osito",
+          "do": "turn_around",
+          "t": 4.9,
+          "facing": 1,
+          "arms": false
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 5.05,
+          "x": 0.95,
+          "y": 0.25,
+          "dur": 0.12,
+          "head": 0.4
+        },
+        {
+          "on": "mama_osa",
+          "do": "look",
+          "t": 4.85,
+          "x": 0.95,
+          "y": 0.25,
+          "dur": 0.12,
+          "head": 0.4
+        },
+        {
+          "on": "osito",
+          "do": "look",
+          "t": 5.2,
+          "x": 0.95,
+          "y": 0.25,
+          "dur": 0.12,
+          "head": 0.4
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 4.9,
+          "dur": 0.5,
+          "ease": "inout",
+          "lean": 3
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 4.95,
+          "dur": 0.5,
+          "ease": "inout",
+          "lean": 3
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 5.0,
+          "dur": 0.5,
+          "ease": "inout",
+          "lean": 3
+        }
+      ],
+      "layer_order": {
+        "blanket_small": 0.5
+      }
+    },
+    {
+      "id": "s06",
+      "duration": 7.0,
+      "scene": "dormitorio",
+      "description": "Medio. Uno tras otro sacan un babero y se lo atan al cuello: papa, mama y osito, tarde y torpe.",
+      "actors": [
+        {
+          "id": "papa_oso",
+          "start": {
+            "x": 470.0,
+            "turn": 1,
+            "look_x": 0.95,
+            "look_y": 0.25,
+            "wear": ""
+          },
+          "order": 1
+        },
+        {
+          "id": "mama_osa",
+          "start": {
+            "x": 360.0,
+            "turn": 1,
+            "look_x": 0.95,
+            "look_y": 0.25,
+            "wear": ""
+          },
+          "order": 1
+        },
+        {
+          "id": "osito",
+          "start": {
+            "x": 585.0,
+            "y": 669.0,
+            "scale": 0.72,
+            "turn": 1,
+            "look_x": 0.95,
+            "look_y": 0.25,
+            "wear": ""
+          },
+          "order": 2
+        }
+      ],
+      "props": [],
+      "actions": [
+        {
+          "on": "shot",
+          "do": "dof",
+          "value": 4.0
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 0,
+          "x": 490,
+          "y": 448,
+          "zoom": 1.8
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 7.0,
+          "x": 496,
+          "y": 446,
+          "zoom": 1.9,
+          "ease": "inout"
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "smile",
+          "value": 1.1
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_open",
+          "value": 0.25
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_w",
+          "value": 1.15
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_round",
+          "value": 0
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_y",
+          "value": 0.1
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_rot",
+          "value": -8
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "eye_open",
+          "value": 0.98
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "squint",
+          "value": 0.35
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "lid",
+          "value": 0.12
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "lean",
+          "value": 3
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "smile",
+          "value": 1.1
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_open",
+          "value": 0.25
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_w",
+          "value": 1.15
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_round",
+          "value": 0
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_y",
+          "value": 0.1
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_rot",
+          "value": -8
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "eye_open",
+          "value": 0.98
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "squint",
+          "value": 0.35
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "lid",
+          "value": 0.12
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "lean",
+          "value": 3
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "smile",
+          "value": 1.1
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_open",
+          "value": 0.25
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_w",
+          "value": 1.15
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_round",
+          "value": 0
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_y",
+          "value": 0.1
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_rot",
+          "value": -8
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "eye_open",
+          "value": 0.98
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "squint",
+          "value": 0.35
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "lid",
+          "value": 0.12
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "lean",
+          "value": 3
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 0.45,
+          "dur": 0.18,
+          "ease": "out",
+          "overlap": 0,
+          "lean": 6,
+          "hip_dy": 2
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 0.55,
+          "dur": 0.32,
+          "ease": "inout",
+          "overlap": 0.2,
+          "arm_l_x": -34,
+          "arm_l_y": 58,
+          "arm_l_bend": 1.0
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 0.55,
+          "x": 0.2,
+          "y": 0.4,
+          "dur": 0.1,
+          "head": 0.2
+        },
+        {
+          "on": "papa_oso",
+          "do": "set",
+          "t": 0.95,
+          "hand_l": "grip",
+          "item_l": "babero_mano"
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 0.95,
+          "dur": 0.22,
+          "ease": "out",
+          "overlap": 0.2,
+          "lean": -2,
+          "arm_l_x": 10,
+          "arm_l_y": 46
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 1.17,
+          "dur": 0.4,
+          "ease": "back",
+          "overlap": 0.2,
+          "lean": 0,
+          "arm_l_x": 40,
+          "arm_l_y": -8,
+          "arm_l_bend": 0.8
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 1.35,
+          "x": 0.9,
+          "y": 0.9,
+          "dur": 0.1,
+          "head": 0.5
+        },
+        {
+          "on": "papa_oso",
+          "do": "pulse",
+          "t": 1.55,
+          "up": 0.15,
+          "hold": 0.1,
+          "down": 0.3,
+          "hip_dy": 1.5,
+          "head_dy": 2
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 1.8499999999999999,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0.2,
+          "lean": -1,
+          "arm_l_x": 20,
+          "arm_l_y": -66,
+          "arm_l_bend": 0.6
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 1.8499999999999999,
+          "x": 0.5,
+          "y": 0,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "papa_oso",
+          "do": "set",
+          "t": 2.2,
+          "item_l": "",
+          "wear": "babero"
+        },
+        {
+          "on": "papa_oso",
+          "do": "pulse",
+          "t": 2.2,
+          "up": 0.08,
+          "hold": 0.05,
+          "down": 0.25,
+          "torso_sy": 1.04,
+          "shoulder_l_dy": -3,
+          "shoulder_r_dy": -3
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 2.2,
+          "dur": 0.22,
+          "ease": "out",
+          "overlap": 0.2,
+          "head_rot": -2,
+          "arm_l_x": 4,
+          "arm_l_y": -96,
+          "arm_l_bend": 0.8
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 2.4000000000000004,
+          "dur": 0.1,
+          "ease": "sine",
+          "overlap": 0,
+          "head_rot": -3,
+          "head_dx": -1.2,
+          "arm_l_x": 2,
+          "arm_l_y": -98,
+          "hand_l_rot": 14
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 2.5,
+          "dur": 0.1,
+          "ease": "sine",
+          "overlap": 0,
+          "arm_l_x": 8,
+          "arm_l_y": -92,
+          "hand_l_rot": -14
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 2.6000000000000005,
+          "dur": 0.1,
+          "ease": "sine",
+          "overlap": 0,
+          "head_rot": -1,
+          "head_dx": 1.2,
+          "arm_l_x": 2,
+          "arm_l_y": -98,
+          "hand_l_rot": 14
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 2.7,
+          "dur": 0.1,
+          "ease": "sine",
+          "overlap": 0,
+          "arm_l_x": 8,
+          "arm_l_y": -92,
+          "hand_l_rot": -14
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 2.8000000000000003,
+          "dur": 0.1,
+          "ease": "sine",
+          "overlap": 0,
+          "head_rot": -3,
+          "head_dx": -1.2,
+          "arm_l_x": 2,
+          "arm_l_y": -98,
+          "hand_l_rot": 14
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 2.9,
+          "dur": 0.1,
+          "ease": "sine",
+          "overlap": 0,
+          "arm_l_x": 8,
+          "arm_l_y": -92,
+          "hand_l_rot": -14
+        },
+        {
+          "on": "papa_oso",
+          "do": "set",
+          "t": 3.1,
+          "hand_l": "closed"
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 3.1,
+          "dur": 0.32,
+          "ease": "inout",
+          "overlap": 0.2,
+          "head_dx": 0,
+          "head_rot": 0,
+          "arm_l_x": 22,
+          "arm_l_y": 36,
+          "arm_l_bend": 0.9,
+          "hand_l_rot": 0
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 3.1,
+          "x": 0.95,
+          "y": 0.4,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "papa_oso",
+          "do": "pulse",
+          "t": 3.42,
+          "up": 0.1,
+          "hold": 0.08,
+          "down": 0.2,
+          "arm_l_y": 26
+        },
+        {
+          "on": "papa_oso",
+          "do": "pulse",
+          "t": 3.72,
+          "up": 0.1,
+          "hold": 0.08,
+          "down": 0.25,
+          "torso_sy": 1.02,
+          "arm_l_y": 26
+        },
+        {
+          "on": "papa_oso",
+          "do": "set",
+          "t": 4.05,
+          "hand_l": "closed"
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 4.05,
+          "dur": 0.4,
+          "ease": "inout",
+          "overlap": 0.2,
+          "lean": 3,
+          "arm_l_x": -5.0,
+          "arm_l_y": 95.93299999999999,
+          "arm_l_bend": 1.0
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 1.95,
+          "dur": 0.18,
+          "ease": "out",
+          "overlap": 0,
+          "lean": 6,
+          "hip_dy": 2
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 2.05,
+          "dur": 0.32,
+          "ease": "inout",
+          "overlap": 0.2,
+          "arm_l_x": -34,
+          "arm_l_y": 58,
+          "arm_l_bend": 1.0
+        },
+        {
+          "on": "mama_osa",
+          "do": "look",
+          "t": 2.05,
+          "x": 0.2,
+          "y": 0.4,
+          "dur": 0.1,
+          "head": 0.2
+        },
+        {
+          "on": "mama_osa",
+          "do": "set",
+          "t": 2.45,
+          "hand_l": "grip",
+          "item_l": "babero_mano"
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 2.45,
+          "dur": 0.22,
+          "ease": "out",
+          "overlap": 0.2,
+          "lean": -2,
+          "arm_l_x": 10,
+          "arm_l_y": 46
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 2.67,
+          "dur": 0.4,
+          "ease": "back",
+          "overlap": 0.2,
+          "lean": 0,
+          "arm_l_x": 40,
+          "arm_l_y": -8,
+          "arm_l_bend": 0.8
+        },
+        {
+          "on": "mama_osa",
+          "do": "look",
+          "t": 2.85,
+          "x": 0.9,
+          "y": 0.9,
+          "dur": 0.1,
+          "head": 0.5
+        },
+        {
+          "on": "mama_osa",
+          "do": "pulse",
+          "t": 3.05,
+          "up": 0.15,
+          "hold": 0.1,
+          "down": 0.3,
+          "hip_dy": 1.5,
+          "head_dy": 2
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 3.3499999999999996,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0.2,
+          "lean": -1,
+          "arm_l_x": 20,
+          "arm_l_y": -66,
+          "arm_l_bend": 0.6
+        },
+        {
+          "on": "mama_osa",
+          "do": "look",
+          "t": 3.3499999999999996,
+          "x": 0.5,
+          "y": 0,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "mama_osa",
+          "do": "set",
+          "t": 3.7,
+          "item_l": "",
+          "wear": "babero"
+        },
+        {
+          "on": "mama_osa",
+          "do": "pulse",
+          "t": 3.7,
+          "up": 0.08,
+          "hold": 0.05,
+          "down": 0.25,
+          "torso_sy": 1.04,
+          "shoulder_l_dy": -3,
+          "shoulder_r_dy": -3
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 3.7,
+          "dur": 0.22,
+          "ease": "out",
+          "overlap": 0.2,
+          "head_rot": -2,
+          "arm_l_x": 4,
+          "arm_l_y": -96,
+          "arm_l_bend": 0.8
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 3.9000000000000004,
+          "dur": 0.1,
+          "ease": "sine",
+          "overlap": 0,
+          "head_rot": -3,
+          "head_dx": -1.2,
+          "arm_l_x": 2,
+          "arm_l_y": -98,
+          "hand_l_rot": 14
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 4.0,
+          "dur": 0.1,
+          "ease": "sine",
+          "overlap": 0,
+          "arm_l_x": 8,
+          "arm_l_y": -92,
+          "hand_l_rot": -14
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 4.1000000000000005,
+          "dur": 0.1,
+          "ease": "sine",
+          "overlap": 0,
+          "head_rot": -1,
+          "head_dx": 1.2,
+          "arm_l_x": 2,
+          "arm_l_y": -98,
+          "hand_l_rot": 14
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 4.2,
+          "dur": 0.1,
+          "ease": "sine",
+          "overlap": 0,
+          "arm_l_x": 8,
+          "arm_l_y": -92,
+          "hand_l_rot": -14
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 4.300000000000001,
+          "dur": 0.1,
+          "ease": "sine",
+          "overlap": 0,
+          "head_rot": -3,
+          "head_dx": -1.2,
+          "arm_l_x": 2,
+          "arm_l_y": -98,
+          "hand_l_rot": 14
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 4.4,
+          "dur": 0.1,
+          "ease": "sine",
+          "overlap": 0,
+          "arm_l_x": 8,
+          "arm_l_y": -92,
+          "hand_l_rot": -14
+        },
+        {
+          "on": "mama_osa",
+          "do": "set",
+          "t": 4.6000000000000005,
+          "hand_l": "closed"
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 4.6000000000000005,
+          "dur": 0.32,
+          "ease": "inout",
+          "overlap": 0.2,
+          "head_dx": 0,
+          "head_rot": 0,
+          "arm_l_x": 22,
+          "arm_l_y": 36,
+          "arm_l_bend": 0.9,
+          "hand_l_rot": 0
+        },
+        {
+          "on": "mama_osa",
+          "do": "look",
+          "t": 4.6000000000000005,
+          "x": 0.95,
+          "y": 0.4,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "mama_osa",
+          "do": "pulse",
+          "t": 4.920000000000001,
+          "up": 0.1,
+          "hold": 0.08,
+          "down": 0.2,
+          "arm_l_y": 26
+        },
+        {
+          "on": "mama_osa",
+          "do": "pulse",
+          "t": 5.220000000000001,
+          "up": 0.1,
+          "hold": 0.08,
+          "down": 0.25,
+          "torso_sy": 1.02,
+          "arm_l_y": 26
+        },
+        {
+          "on": "mama_osa",
+          "do": "set",
+          "t": 5.550000000000001,
+          "hand_l": "closed"
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 5.550000000000001,
+          "dur": 0.4,
+          "ease": "inout",
+          "overlap": 0.2,
+          "lean": 3,
+          "arm_l_x": -5.0,
+          "arm_l_y": 88.00809999999998,
+          "arm_l_bend": 1.0
+        },
+        {
+          "on": "papa_oso",
+          "do": "face",
+          "t": 4.05,
+          "name": "happy",
+          "dur": 0.3
+        },
+        {
+          "on": "mama_osa",
+          "do": "face",
+          "t": 5.550000000000001,
+          "name": "happy",
+          "dur": 0.3
+        },
+        {
+          "on": "mama_osa",
+          "do": "react",
+          "t": 0.9,
+          "x": -0.1,
+          "y": 0.6,
+          "head": 0.4
+        },
+        {
+          "on": "mama_osa",
+          "do": "look",
+          "t": 3.55,
+          "x": 0.95,
+          "y": 0.6,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "papa_oso",
+          "do": "react",
+          "t": 2.3,
+          "x": -0.9,
+          "y": 0.1,
+          "head": 0.4
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 5.8500000000000005,
+          "x": 0.3,
+          "y": 0.6,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "osito",
+          "do": "react",
+          "t": 1.0,
+          "x": -0.9,
+          "y": -0.4,
+          "head": 0.5
+        },
+        {
+          "on": "osito",
+          "do": "react",
+          "t": 2.4,
+          "x": -0.9,
+          "y": -0.4,
+          "head": 0.5
+        },
+        {
+          "on": "osito",
+          "do": "look",
+          "t": 3.0,
+          "x": 0.95,
+          "y": 0.9,
+          "dur": 0.1,
+          "head": 0.2
+        },
+        {
+          "on": "papa_oso",
+          "do": "blink",
+          "times": [
+            3.0
+          ]
+        },
+        {
+          "on": "mama_osa",
+          "do": "blink",
+          "times": [
+            4.2
+          ]
+        },
+        {
+          "on": "osito",
+          "do": "face",
+          "t": 3.1,
+          "name": "oops",
+          "dur": 0.15
+        },
+        {
+          "on": "osito",
+          "do": "gasp",
+          "t": 3.15,
+          "amount": 0.9
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 3.3,
+          "dur": 0.2,
+          "ease": "out",
+          "overlap": 0,
+          "lean": 9,
+          "hip_dy": 3
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 3.4,
+          "dur": 0.22,
+          "ease": "inout",
+          "overlap": 0.2,
+          "arm_l_x": -30,
+          "arm_l_y": 44,
+          "lean": 9,
+          "head_rot": 5
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 3.65,
+          "dur": 0.2,
+          "ease": "out",
+          "overlap": 0.2,
+          "arm_l_x": -10,
+          "arm_l_y": 70,
+          "lean": 3
+        },
+        {
+          "on": "osito",
+          "do": "look",
+          "t": 3.5,
+          "x": -0.5,
+          "y": 0.3,
+          "dur": 0.1,
+          "head": 0.2
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 4.0,
+          "dur": 0.22,
+          "ease": "inout",
+          "overlap": 0.2,
+          "arm_l_x": -24,
+          "arm_l_y": 49,
+          "lean": 9,
+          "head_rot": 5
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 4.25,
+          "dur": 0.2,
+          "ease": "out",
+          "overlap": 0.2,
+          "arm_l_x": -10,
+          "arm_l_y": 70,
+          "lean": 3
+        },
+        {
+          "on": "osito",
+          "do": "look",
+          "t": 4.1,
+          "x": -0.5,
+          "y": 0.3,
+          "dur": 0.1,
+          "head": 0.2
+        },
+        {
+          "on": "osito",
+          "do": "face",
+          "t": 3.8,
+          "name": "worried",
+          "dur": 0.2
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 4.5,
+          "dur": 0.22,
+          "ease": "inout",
+          "overlap": 0.2,
+          "arm_l_x": -36,
+          "arm_l_y": 52,
+          "lean": 10,
+          "head_rot": 6
+        },
+        {
+          "on": "osito",
+          "do": "set",
+          "t": 4.75,
+          "hand_l": "grip",
+          "item_l": "babero_mano"
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 4.75,
+          "dur": 0.2,
+          "ease": "out",
+          "overlap": 0.2,
+          "arm_l_x": 8,
+          "arm_l_y": 48,
+          "lean": 0
+        },
+        {
+          "on": "osito",
+          "do": "face",
+          "t": 4.75,
+          "name": "happy",
+          "dur": 0.15
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 4.95,
+          "dur": 0.4,
+          "ease": "back",
+          "overlap": 0.2,
+          "arm_l_x": 42,
+          "arm_l_y": -8,
+          "arm_l_bend": 0.8,
+          "hand_l_rot": 25
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 5.5,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0.2,
+          "arm_l_x": 24,
+          "arm_l_y": -60,
+          "arm_l_bend": 0.6,
+          "hand_l_rot": 0,
+          "lean": -1
+        },
+        {
+          "on": "osito",
+          "do": "set",
+          "t": 5.85,
+          "item_l": "",
+          "wear": "babero"
+        },
+        {
+          "on": "osito",
+          "do": "pulse",
+          "t": 5.85,
+          "up": 0.08,
+          "hold": 0.05,
+          "down": 0.25,
+          "torso_sy": 1.04
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 5.85,
+          "dur": 0.25,
+          "ease": "out",
+          "overlap": 0.2,
+          "arm_l_x": -2,
+          "arm_l_y": -88,
+          "arm_r_x": 12,
+          "arm_r_y": -84,
+          "arm_l_bend": 0.9,
+          "head_rot": -4
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 6.1,
+          "dur": 0.11,
+          "ease": "sine",
+          "overlap": 0,
+          "arm_l_x": -6,
+          "arm_l_y": -92,
+          "head_dx": -1.4,
+          "head_rot": -3
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 6.21,
+          "dur": 0.11,
+          "ease": "sine",
+          "overlap": 0,
+          "arm_l_x": 2,
+          "arm_l_y": -84
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 6.319999999999999,
+          "dur": 0.11,
+          "ease": "sine",
+          "overlap": 0,
+          "arm_l_x": -6,
+          "arm_l_y": -92,
+          "head_dx": 1.4,
+          "head_rot": 3
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 6.43,
+          "dur": 0.11,
+          "ease": "sine",
+          "overlap": 0,
+          "arm_l_x": 2,
+          "arm_l_y": -84
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 6.54,
+          "dur": 0.11,
+          "ease": "sine",
+          "overlap": 0,
+          "arm_l_x": -6,
+          "arm_l_y": -92,
+          "head_dx": -1.4,
+          "head_rot": -3
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 6.65,
+          "dur": 0.11,
+          "ease": "sine",
+          "overlap": 0,
+          "arm_l_x": 2,
+          "arm_l_y": -84
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 6.76,
+          "dur": 0.11,
+          "ease": "sine",
+          "overlap": 0,
+          "arm_l_x": -6,
+          "arm_l_y": -92,
+          "head_dx": 1.4,
+          "head_rot": 3
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 6.87,
+          "dur": 0.11,
+          "ease": "sine",
+          "overlap": 0,
+          "arm_l_x": 2,
+          "arm_l_y": -84
+        },
+        {
+          "on": "osito",
+          "do": "pulse",
+          "t": 6.3,
+          "up": 0.12,
+          "hold": 0.3,
+          "down": 0.3,
+          "hip_dy": -3,
+          "torso_sy": 1.03
+        },
+        {
+          "on": "osito",
+          "do": "face",
+          "t": 6.4,
+          "name": "focus",
+          "dur": 0.2
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 7.0,
+          "dur": 0.25,
+          "ease": "out",
+          "overlap": 0.2,
+          "arm_l_x": 24,
+          "arm_l_y": 14,
+          "arm_l_bend": 0.9,
+          "lean": 2
+        },
+        {
+          "on": "osito",
+          "do": "face",
+          "t": 7.0,
+          "name": "joy",
+          "dur": 0.15
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 5.9,
+          "x": -0.95,
+          "y": 0.5,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "mama_osa",
+          "do": "look",
+          "t": 5.7,
+          "x": 0.95,
+          "y": 0.5,
+          "dur": 0.1,
+          "head": 0.3
+        },
+        {
+          "on": "papa_oso",
+          "do": "face",
+          "t": 5.9,
+          "name": "soft",
+          "dur": 0.3
+        },
+        {
+          "on": "mama_osa",
+          "do": "face",
+          "t": 5.7,
+          "name": "soft",
+          "dur": 0.3
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 6.9,
+          "x": 0.95,
+          "y": 0.3,
+          "dur": 0.1,
+          "head": 0.2
+        },
+        {
+          "on": "mama_osa",
+          "do": "look",
+          "t": 6.9,
+          "x": 0.95,
+          "y": 0.3,
+          "dur": 0.1,
+          "head": 0.2
+        }
+      ],
+      "layer_order": {
+        "blanket_small": 0.5
+      }
+    },
+    {
+      "id": "s07",
+      "duration": 5.5,
+      "scene": "dormitorio",
+      "description": "Medio. Sacan tenedor y cuchillo, los levantan a la vez y se relamen.",
+      "actors": [
+        {
+          "id": "papa_oso",
+          "start": {
+            "x": 470.0,
+            "turn": 1,
+            "look_x": 0.95,
+            "look_y": 0.2,
+            "wear": "babero"
+          },
+          "order": 1
+        },
+        {
+          "id": "mama_osa",
+          "start": {
+            "x": 360.0,
+            "turn": 1,
+            "look_x": 0.95,
+            "look_y": 0.2,
+            "wear": "babero"
+          },
+          "order": 1
+        },
+        {
+          "id": "osito",
+          "start": {
+            "x": 585.0,
+            "y": 669.0,
+            "scale": 0.72,
+            "turn": 1,
+            "look_x": 0.95,
+            "look_y": 0.2,
+            "wear": "babero"
+          },
+          "order": 2
+        },
+        {
+          "id": "ricitos"
+        }
+      ],
+      "props": [],
+      "actions": [
+        {
+          "on": "shot",
+          "do": "dof",
+          "value": 2.5
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 0,
+          "x": 560,
+          "y": 440,
+          "zoom": 1.4
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 5.5,
+          "x": 600,
+          "y": 436,
+          "zoom": 1.5,
+          "ease": "inout"
+        },
+        {
+          "on": "ricitos",
+          "do": "auto_blink",
+          "enabled": false
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "smile",
+          "value": 1.05
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_open",
+          "value": 0.15
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_w",
+          "value": 1.15
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_round",
+          "value": 0
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_y",
+          "value": 0.1
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_rot",
+          "value": -8
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "eye_open",
+          "value": 0.98
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "squint",
+          "value": 0.35
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "lid",
+          "value": 0.12
+        },
+        {
+          "on": "papa_oso",
+          "do": "key",
+          "t": 0,
+          "channel": "lean",
+          "value": 3
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "smile",
+          "value": 1.05
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_open",
+          "value": 0.15
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_w",
+          "value": 1.15
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_round",
+          "value": 0
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_y",
+          "value": 0.1
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_rot",
+          "value": -8
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "eye_open",
+          "value": 0.98
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "squint",
+          "value": 0.35
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "lid",
+          "value": 0.12
+        },
+        {
+          "on": "mama_osa",
+          "do": "key",
+          "t": 0,
+          "channel": "lean",
+          "value": 3
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "smile",
+          "value": 1.05
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_open",
+          "value": 0.15
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_w",
+          "value": 1.15
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "mouth_round",
+          "value": 0
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_y",
+          "value": 0.1
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "brow_rot",
+          "value": -8
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "eye_open",
+          "value": 0.98
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "squint",
+          "value": 0.35
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "lid",
+          "value": 0.12
+        },
+        {
+          "on": "osito",
+          "do": "key",
+          "t": 0,
+          "channel": "lean",
+          "value": 3
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 0.35,
+          "dur": 0.2,
+          "ease": "out",
+          "overlap": 0,
+          "lean": 6,
+          "hip_dy": 2
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 0.44999999999999996,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0.2,
+          "arm_l_x": -30,
+          "arm_l_y": 56,
+          "arm_l_bend": 1.0
+        },
+        {
+          "on": "papa_oso",
+          "do": "set",
+          "t": 0.85,
+          "hand_l": "grip",
+          "item_l": "cuchillo"
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 0.85,
+          "dur": 0.3,
+          "ease": "back",
+          "overlap": 0.2,
+          "arm_l_x": 14,
+          "arm_l_y": 56,
+          "lean": 2
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 0.85,
+          "x": 0.5,
+          "y": 0.2,
+          "dur": 0.1,
+          "head": 0.2
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 0.6,
+          "dur": 0.2,
+          "ease": "out",
+          "overlap": 0,
+          "lean": 6,
+          "hip_dy": 2
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 0.7,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0.2,
+          "arm_l_x": -30,
+          "arm_l_y": 56,
+          "arm_l_bend": 1.0
+        },
+        {
+          "on": "mama_osa",
+          "do": "set",
+          "t": 1.1,
+          "hand_l": "grip",
+          "item_l": "cuchillo"
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 1.1,
+          "dur": 0.3,
+          "ease": "back",
+          "overlap": 0.2,
+          "arm_l_x": 14,
+          "arm_l_y": 56,
+          "lean": 2
+        },
+        {
+          "on": "mama_osa",
+          "do": "look",
+          "t": 1.1,
+          "x": 0.5,
+          "y": 0.2,
+          "dur": 0.1,
+          "head": 0.2
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 0.85,
+          "dur": 0.2,
+          "ease": "out",
+          "overlap": 0,
+          "lean": 6,
+          "hip_dy": 2
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 0.95,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0.2,
+          "arm_l_x": -30,
+          "arm_l_y": 56,
+          "arm_l_bend": 1.0
+        },
+        {
+          "on": "osito",
+          "do": "set",
+          "t": 1.35,
+          "hand_l": "grip",
+          "item_l": "cuchillo"
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 1.35,
+          "dur": 0.3,
+          "ease": "back",
+          "overlap": 0.2,
+          "arm_l_x": 14,
+          "arm_l_y": 56,
+          "lean": 2
+        },
+        {
+          "on": "osito",
+          "do": "look",
+          "t": 1.35,
+          "x": 0.5,
+          "y": 0.2,
+          "dur": 0.1,
+          "head": 0.2
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 1.55,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0,
+          "turn": 0.0
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 1.5,
+          "dur": 0.6,
+          "ease": "inout",
+          "overlap": 0,
+          "x": 475.0
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 1.7,
+          "dur": 0.3,
+          "ease": "out",
+          "overlap": 0,
+          "lean": -1,
+          "hip_dy": 5,
+          "torso_sy": 0.96,
+          "arm_l_x": -30,
+          "arm_l_y": 66,
+          "arm_r_x": 30,
+          "arm_r_y": 66
+        },
+        {
+          "on": "papa_oso",
+          "do": "set",
+          "t": 1.75,
+          "hand_r": "grip",
+          "item_r": "tenedor"
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 2.0,
+          "dur": 0.2,
+          "ease": "out",
+          "overlap": 0.2,
+          "hip_dy": -2,
+          "torso_sy": 1.05,
+          "arm_l_x": -50,
+          "arm_l_y": -76,
+          "arm_r_x": 50,
+          "arm_r_y": -76,
+          "arm_l_bend": 0.8,
+          "arm_r_bend": -0.8,
+          "hand_l_rot": -70,
+          "hand_r_rot": 70,
+          "lean": 0
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 2.2,
+          "dur": 0.3,
+          "ease": "soft",
+          "overlap": 0.2,
+          "hip_dy": 0,
+          "torso_sy": 1.0,
+          "arm_l_x": -44,
+          "arm_l_y": -66,
+          "arm_r_x": 44,
+          "arm_r_y": -66,
+          "hand_l_rot": -58,
+          "hand_r_rot": 58
+        },
+        {
+          "on": "papa_oso",
+          "do": "drift",
+          "t0": 2.7,
+          "t1": 5.4,
+          "period": 1.1,
+          "arm_l_x": 2,
+          "arm_l_y": 2,
+          "arm_r_x": 2,
+          "arm_r_y": 2,
+          "hand_l_rot": 5,
+          "hand_r_rot": -5
+        },
+        {
+          "on": "papa_oso",
+          "do": "look",
+          "t": 1.8,
+          "x": 0,
+          "y": 0.15,
+          "dur": 0.1,
+          "head": 0.0
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 1.58,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0,
+          "turn": 0.0
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 1.53,
+          "dur": 0.6,
+          "ease": "inout",
+          "overlap": 0,
+          "x": 328.0
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 1.73,
+          "dur": 0.3,
+          "ease": "out",
+          "overlap": 0,
+          "lean": -1,
+          "hip_dy": 5,
+          "torso_sy": 0.96,
+          "arm_l_x": -30,
+          "arm_l_y": 66,
+          "arm_r_x": 30,
+          "arm_r_y": 66
+        },
+        {
+          "on": "mama_osa",
+          "do": "set",
+          "t": 1.78,
+          "hand_r": "grip",
+          "item_r": "tenedor"
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 2.03,
+          "dur": 0.2,
+          "ease": "out",
+          "overlap": 0.2,
+          "hip_dy": -2,
+          "torso_sy": 1.05,
+          "arm_l_x": -50,
+          "arm_l_y": -76,
+          "arm_r_x": 50,
+          "arm_r_y": -76,
+          "arm_l_bend": 0.8,
+          "arm_r_bend": -0.8,
+          "hand_l_rot": -70,
+          "hand_r_rot": 70,
+          "lean": 0
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 2.23,
+          "dur": 0.3,
+          "ease": "soft",
+          "overlap": 0.2,
+          "hip_dy": 0,
+          "torso_sy": 1.0,
+          "arm_l_x": -44,
+          "arm_l_y": -66,
+          "arm_r_x": 44,
+          "arm_r_y": -66,
+          "hand_l_rot": -58,
+          "hand_r_rot": 58
+        },
+        {
+          "on": "mama_osa",
+          "do": "drift",
+          "t0": 2.73,
+          "t1": 5.4,
+          "period": 1.1,
+          "arm_l_x": 2,
+          "arm_l_y": 2,
+          "arm_r_x": 2,
+          "arm_r_y": 2,
+          "hand_l_rot": 5,
+          "hand_r_rot": -5
+        },
+        {
+          "on": "mama_osa",
+          "do": "look",
+          "t": 1.83,
+          "x": 0,
+          "y": 0.15,
+          "dur": 0.1,
+          "head": 0.0
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 1.61,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0,
+          "turn": 0.0
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 1.56,
+          "dur": 0.6,
+          "ease": "inout",
+          "overlap": 0,
+          "x": 623.0
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 1.76,
+          "dur": 0.3,
+          "ease": "out",
+          "overlap": 0,
+          "lean": -1,
+          "hip_dy": 5,
+          "torso_sy": 0.96,
+          "arm_l_x": -30,
+          "arm_l_y": 66,
+          "arm_r_x": 30,
+          "arm_r_y": 66
+        },
+        {
+          "on": "osito",
+          "do": "set",
+          "t": 1.81,
+          "hand_r": "grip",
+          "item_r": "tenedor"
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 2.06,
+          "dur": 0.2,
+          "ease": "out",
+          "overlap": 0.2,
+          "hip_dy": -2,
+          "torso_sy": 1.05,
+          "arm_l_x": -50,
+          "arm_l_y": -76,
+          "arm_r_x": 50,
+          "arm_r_y": -76,
+          "arm_l_bend": 0.8,
+          "arm_r_bend": -0.8,
+          "hand_l_rot": -70,
+          "hand_r_rot": 70,
+          "lean": 0
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 2.2600000000000002,
+          "dur": 0.3,
+          "ease": "soft",
+          "overlap": 0.2,
+          "hip_dy": 0,
+          "torso_sy": 1.0,
+          "arm_l_x": -44,
+          "arm_l_y": -66,
+          "arm_r_x": 44,
+          "arm_r_y": -66,
+          "hand_l_rot": -58,
+          "hand_r_rot": 58
+        },
+        {
+          "on": "osito",
+          "do": "drift",
+          "t0": 2.7600000000000002,
+          "t1": 5.4,
+          "period": 1.1,
+          "arm_l_x": 2,
+          "arm_l_y": 2,
+          "arm_r_x": 2,
+          "arm_r_y": 2,
+          "hand_l_rot": 5,
+          "hand_r_rot": -5
+        },
+        {
+          "on": "osito",
+          "do": "look",
+          "t": 1.86,
+          "x": 0,
+          "y": 0.15,
+          "dur": 0.1,
+          "head": 0.0
+        },
+        {
+          "on": "papa_oso",
+          "do": "face",
+          "t": 2.5,
+          "name": "happy",
+          "dur": 0.2,
+          "mouth_open": 0.6,
+          "squint": 0.4
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 3.0,
+          "dur": 0.22,
+          "ease": "inout",
+          "overlap": 0,
+          "mouth_w": 1.35,
+          "mouth_open": 0.75,
+          "head_rot": 5,
+          "face_x": 0.12
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 3.22,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0,
+          "mouth_w": 0.85,
+          "mouth_open": 0.5,
+          "head_rot": -3,
+          "face_x": -0.12
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 3.55,
+          "dur": 0.22,
+          "ease": "inout",
+          "overlap": 0,
+          "mouth_w": 1.35,
+          "mouth_open": 0.75,
+          "head_rot": 5,
+          "face_x": 0.12
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 3.7700000000000005,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0,
+          "mouth_w": 0.85,
+          "mouth_open": 0.5,
+          "head_rot": -3,
+          "face_x": -0.12
+        },
+        {
+          "on": "papa_oso",
+          "do": "to",
+          "t": 3.9,
+          "dur": 0.5,
+          "ease": "inout",
+          "overlap": 0.2,
+          "mouth_w": 1.1,
+          "mouth_open": 0.3,
+          "head_rot": 1,
+          "lean": 5,
+          "face_x": 0
+        },
+        {
+          "on": "papa_oso",
+          "do": "blink",
+          "times": [
+            1.6,
+            4.6
+          ]
+        },
+        {
+          "on": "mama_osa",
+          "do": "face",
+          "t": 2.62,
+          "name": "happy",
+          "dur": 0.2,
+          "mouth_open": 0.6,
+          "squint": 0.4
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 3.12,
+          "dur": 0.22,
+          "ease": "inout",
+          "overlap": 0,
+          "mouth_w": 1.35,
+          "mouth_open": 0.75,
+          "head_rot": 5,
+          "face_x": 0.12
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 3.3400000000000003,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0,
+          "mouth_w": 0.85,
+          "mouth_open": 0.5,
+          "head_rot": -3,
+          "face_x": -0.12
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 3.67,
+          "dur": 0.22,
+          "ease": "inout",
+          "overlap": 0,
+          "mouth_w": 1.35,
+          "mouth_open": 0.75,
+          "head_rot": 5,
+          "face_x": 0.12
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 3.8900000000000006,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0,
+          "mouth_w": 0.85,
+          "mouth_open": 0.5,
+          "head_rot": -3,
+          "face_x": -0.12
+        },
+        {
+          "on": "mama_osa",
+          "do": "to",
+          "t": 4.02,
+          "dur": 0.5,
+          "ease": "inout",
+          "overlap": 0.2,
+          "mouth_w": 1.1,
+          "mouth_open": 0.3,
+          "head_rot": 1,
+          "lean": 5,
+          "face_x": 0
+        },
+        {
+          "on": "mama_osa",
+          "do": "blink",
+          "times": [
+            1.7200000000000002,
+            4.72
+          ]
+        },
+        {
+          "on": "osito",
+          "do": "face",
+          "t": 2.74,
+          "name": "happy",
+          "dur": 0.2,
+          "mouth_open": 0.6,
+          "squint": 0.4
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 3.24,
+          "dur": 0.22,
+          "ease": "inout",
+          "overlap": 0,
+          "mouth_w": 1.35,
+          "mouth_open": 0.75,
+          "head_rot": 5,
+          "face_x": 0.12
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 3.46,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0,
+          "mouth_w": 0.85,
+          "mouth_open": 0.5,
+          "head_rot": -3,
+          "face_x": -0.12
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 3.79,
+          "dur": 0.22,
+          "ease": "inout",
+          "overlap": 0,
+          "mouth_w": 1.35,
+          "mouth_open": 0.75,
+          "head_rot": 5,
+          "face_x": 0.12
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 4.01,
+          "dur": 0.3,
+          "ease": "inout",
+          "overlap": 0,
+          "mouth_w": 0.85,
+          "mouth_open": 0.5,
+          "head_rot": -3,
+          "face_x": -0.12
+        },
+        {
+          "on": "osito",
+          "do": "to",
+          "t": 4.14,
+          "dur": 0.5,
+          "ease": "inout",
+          "overlap": 0.2,
+          "mouth_w": 1.1,
+          "mouth_open": 0.3,
+          "head_rot": 1,
+          "lean": 5,
+          "face_x": 0
+        },
+        {
+          "on": "osito",
+          "do": "blink",
+          "times": [
+            1.84,
+            4.84
+          ]
+        },
+        {
+          "on": "osito",
+          "do": "laugh",
+          "t": 4.1,
+          "dur": 0.8,
+          "beats": 3,
+          "strength": 0.4
+        }
+      ],
+      "layer_order": {
+        "blanket_small": 0.5
+      }
+    },
+    {
+      "id": "s08",
+      "duration": 4.0,
+      "scene": "dormitorio",
+      "description": "Primer plano de Ricitos. Sigue dormida; al final abre un ojo. Fundido a negro.",
+      "actors": [
+        {
+          "id": "ricitos"
+        }
+      ],
+      "props": [],
+      "actions": [
+        {
+          "on": "shot",
+          "do": "dof",
+          "value": 3.5
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 0,
+          "x": 930,
+          "y": 438,
+          "zoom": 3.3
+        },
+        {
+          "on": "shot",
+          "do": "cam",
+          "t": 4.0,
+          "x": 927,
+          "y": 436,
+          "zoom": 3.5,
+          "ease": "inout"
+        },
+        {
+          "on": "ricitos",
+          "do": "auto_blink",
+          "enabled": false
+        },
+        {
+          "on": "ricitos",
+          "do": "pulse",
+          "t": 0.5,
+          "up": 0.3,
+          "hold": 0.3,
+          "down": 0.5,
+          "smile": 0.7
+        },
+        {
+          "on": "ricitos",
+          "do": "to",
+          "t": 1.2,
+          "dur": 0.8,
+          "ease": "inout",
+          "overlap": 0.4,
+          "head_dx": 1.5,
+          "head_dy": -1
+        },
+        {
+          "on": "ricitos",
+          "do": "to",
+          "t": 2.2,
+          "dur": 0.5,
+          "ease": "inout",
+          "overlap": 0,
+          "lid_r": -0.3
+        },
+        {
+          "on": "ricitos",
+          "do": "to",
+          "t": 2.7,
+          "dur": 0.22,
+          "ease": "out",
+          "overlap": 0,
+          "lid_r": -1.0,
+          "eye_open": 1.1
+        },
+        {
+          "on": "ricitos",
+          "do": "look",
+          "t": 2.7,
+          "x": -1,
+          "y": -0.1,
+          "dur": 0.15
+        },
+        {
+          "on": "ricitos",
+          "do": "to",
+          "t": 2.7,
+          "dur": 0.3,
+          "ease": "out",
+          "overlap": 0.3,
+          "smile": 0.15,
+          "brow_y": 0.4,
+          "mouth_w": 0.6
+        },
+        {
+          "on": "ricitos",
+          "do": "to",
+          "t": 3.2,
+          "dur": 0.5,
+          "ease": "inout",
+          "overlap": 0.3,
+          "brow_rot": 6
+        },
+        {
+          "on": "shot",
+          "do": "fade_out",
+          "dur": 0.7
+        }
+      ],
+      "layer_order": {
+        "blanket_small": 0.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,498 @@
+{
+ "name": "Ricitos",
+ "colors": {
+  "outline": "#371400",
+  "skin": "#fbc68f",
+  "eye_white": "#fcfaf7",
+  "pupil": "#3a1a08",
+  "mouth_inside": "#953522",
+  "tongue": "#f37b5e",
+  "blush": "#f59a8a",
+  "nose": "#c9815a",
+  "sleeve": "#98c9ec",
+  "sleeve_shade": "#7fb2d8",
+  "forearm": "#fbc68f",
+  "cuff": "#fffdf8",
+  "thigh": "#98c9ec",
+  "shin": "#98c9ec",
+  "leg_shade": "#7fb2d8",
+  "neck": "#fbc68f",
+  "hair": "#fcba3b"
+ },
+ "outline": 1.9,
+ "anatomy": true,
+ "hip_height": 12.0,
+ "hip_half": 5.0,
+ "hip_joint_dy": 0.0,
+ "ankle_h": 2.0,
+ "foot": {
+  "toe": 2.0,
+  "heel": 2.0,
+  "depth": 0.0
+ },
+ "arm": {
+  "upper": 30.0,
+  "fore": 28.0,
+  "w": [
+   20.0,
+   19.0,
+   16.0
+  ],
+  "smooth": 0.72,
+  "bands": [
+   {
+    "from": 0,
+    "to": 1,
+    "color": "#98c9ec"
+   }
+  ],
+  "cuff": {
+   "from": 0.8,
+   "to": 0.97,
+   "color": "#fffdf8"
+  }
+ },
+ "leg": {
+  "thigh": 5.0,
+  "shin": 5.0,
+  "smooth": 0.3,
+  "w": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "bands": [
+   {
+    "from": 0,
+    "to": 1,
+    "color": "#98c9ec"
+   }
+  ]
+ },
+ "neck": {
+  "color": "#fbc68f",
+  "w": 26.0
+ },
+ "torso": {
+  "file": "assets/ricitos/torso.png",
+  "upp": 0.1360544217687075,
+  "pivot": [
+   344.0,
+   629.5
+  ],
+  "shoulder": [
+   22.817687074829934,
+   -51.90476190476191
+  ],
+  "neck": [
+   0.0,
+   -75.27210884353742
+  ]
+ },
+ "hips": {
+  "file": "assets/ricitos/hips.png",
+  "upp": 10.0,
+  "pivot": [
+   2,
+   2
+  ]
+ },
+ "hands": {
+  "closed": {
+   "file": "assets/ricitos/hand_closed.png",
+   "upp": 0.05204460966542751,
+   "pivot": [
+    6.5,
+    238.5
+   ],
+   "dir": -5.5,
+   "back": {
+    "file": "assets/ricitos/handb_closed.png",
+    "upp": 0.052830188679245285,
+    "pivot": [
+     6.5,
+     250.5
+    ],
+    "dir": -7.3
+   }
+  },
+  "open": {
+   "file": "assets/ricitos/hand_open.png",
+   "upp": 0.05128205128205128,
+   "pivot": [
+    6.5,
+    299.5
+   ],
+   "dir": -6.4,
+   "back": {
+    "file": "assets/ricitos/handb_open.png",
+    "upp": 0.052830188679245285,
+    "pivot": [
+     6.5,
+     302.5
+    ],
+    "dir": -6.2
+   }
+  },
+  "curled": {
+   "file": "assets/ricitos/hand_curled.png",
+   "upp": 0.05303030303030303,
+   "pivot": [
+    6.5,
+    249.0
+   ],
+   "dir": -9.4,
+   "back": {
+    "file": "assets/ricitos/handb_curled.png",
+    "upp": 0.053231939163498096,
+    "pivot": [
+     6.5,
+     259.5
+    ],
+    "dir": -11.2
+   }
+  }
+ },
+ "boots": {
+  "side": {
+   "file": "assets/ricitos/boot.png",
+   "upp": 10.0,
+   "pivot": [
+    2,
+    2
+   ]
+  }
+ },
+ "head": {
+  "front": {
+   "file": "assets/ricitos/head_front.png",
+   "mask": "assets/ricitos/head_front_face.png",
+   "size": [
+    1010,
+    919
+   ],
+   "upp": 0.155,
+   "pivot": [
+    494.8,
+    767.2
+   ],
+   "top": 4.8,
+   "face": {
+    "bbox": [
+     255.8,
+     279.6,
+     733.9,
+     753.0
+    ],
+    "eye_l": {
+     "c": [
+      394.4,
+      516.3
+     ],
+     "rx": 59.8,
+     "ry": 80.5
+    },
+    "brow_l": {
+     "c": [
+      394.4,
+      407.4
+     ],
+     "w": 114.8,
+     "thickness": 7.7
+    },
+    "blush_l": {
+     "c": [
+      337.0,
+      611.0
+     ],
+     "rx": 47.8,
+     "ry": 35.5
+    },
+    "eye_r": {
+     "c": [
+      595.3,
+      516.3
+     ],
+     "rx": 59.8,
+     "ry": 80.5
+    },
+    "brow_r": {
+     "c": [
+      595.3,
+      407.4
+     ],
+     "w": 114.8,
+     "thickness": 7.7
+    },
+    "blush_r": {
+     "c": [
+      652.6,
+      611.0
+     ],
+     "rx": 47.8,
+     "ry": 35.5
+    },
+    "mouth": {
+     "c": [
+      494.8,
+      641.7
+     ],
+     "w": 105.2,
+     "thickness": 8.7
+    },
+    "nose": {
+     "c": [
+      494.8,
+      580.2
+     ],
+     "r": 10.5
+    },
+    "line": 9.0,
+    "pupil": {
+     "rx": 31.096,
+     "ry": 49.91,
+     "highlight_r": 5.635000000000001,
+     "highlight_offset": [
+      5.98,
+      -14.49
+     ]
+    }
+   },
+   "appendages": [
+    {
+     "name": "curl_l",
+     "base": [
+      171.6,
+      702.9
+     ],
+     "tip": [
+      135.8,
+      885.6
+     ],
+     "freq": 2.6,
+     "damp": 0.2,
+     "gain": 1.9,
+     "spread": 0.45,
+     "vertical": 1.6
+    },
+    {
+     "name": "curl_l2",
+     "base": [
+      282.8,
+      726.8
+     ],
+     "tip": [
+      282.8,
+      893.6
+     ],
+     "freq": 3.3,
+     "damp": 0.2,
+     "gain": 1.9,
+     "spread": 0.45,
+     "vertical": 1.6
+    },
+    {
+     "name": "curl_r2",
+     "base": [
+      703.7,
+      734.7
+     ],
+     "tip": [
+      703.7,
+      885.6
+     ],
+     "freq": 3.0,
+     "damp": 0.2,
+     "gain": 1.9,
+     "spread": 0.45,
+     "vertical": 1.6
+    },
+    {
+     "name": "curl_r",
+     "base": [
+      870.5,
+      702.9
+     ],
+     "tip": [
+      898.3,
+      885.6
+     ],
+     "freq": 3.7,
+     "damp": 0.2,
+     "gain": 1.9,
+     "spread": 0.45,
+     "vertical": 1.6
+    },
+    {
+     "name": "tuft",
+     "base": [
+      505.2,
+      186.7
+     ],
+     "tip": [
+      505.2,
+      23.8
+     ],
+     "freq": 3.6,
+     "damp": 0.22,
+     "gain": 0.9,
+     "spread": 0.8,
+     "vertical": 1.2
+    }
+   ]
+  },
+  "3q": {
+   "file": "assets/ricitos/head_3q.png",
+   "mask": "assets/ricitos/head_3q_face.png",
+   "size": [
+    920,
+    1010
+   ],
+   "upp": 0.15588910133843212,
+   "pivot": [
+    503.4,
+    760.9
+   ],
+   "top": 5.1,
+   "face": {
+    "bbox": [
+     277.0,
+     276.1,
+     729.8,
+     746.8
+    ],
+    "eye_l": {
+     "c": [
+      476.2,
+      511.5
+     ],
+     "rx": 63.4,
+     "ry": 80.0
+    },
+    "brow_l": {
+     "c": [
+      476.2,
+      403.2
+     ],
+     "w": 113.2,
+     "thickness": 7.4
+    },
+    "blush_l": {
+     "c": [
+      354.0,
+      615.0
+     ],
+     "rx": 45.3,
+     "ry": 35.3
+    },
+    "eye_r": {
+     "c": [
+      657.4,
+      506.8
+     ],
+     "rx": 47.5,
+     "ry": 75.3
+    },
+    "brow_r": {
+     "c": [
+      657.4,
+      403.2
+     ],
+     "w": 81.5,
+     "thickness": 7.4
+    },
+    "blush_r": {
+     "c": [
+      707.2,
+      600.9
+     ],
+     "rx": 27.2,
+     "ry": 32.9
+    },
+    "mouth": {
+     "c": [
+      557.7,
+      636.2
+     ],
+     "w": 90.6,
+     "thickness": 8.3
+    },
+    "nose": {
+     "c": [
+      589.4,
+      575.0
+     ],
+     "r": 9.1
+    },
+    "line": 9.0,
+    "pupil": {
+     "rx": 32.968,
+     "ry": 49.6,
+     "highlight_r": 5.6000000000000005,
+     "highlight_offset": [
+      6.34,
+      -14.399999999999999
+     ]
+    }
+   },
+   "appendages": [
+    {
+     "name": "curl_l",
+     "base": [
+      218.4,
+      763.8
+     ],
+     "tip": [
+      201.4,
+      1005.9
+     ],
+     "freq": 2.6,
+     "damp": 0.2,
+     "gain": 1.9,
+     "spread": 0.45,
+     "vertical": 1.6
+    },
+    {
+     "name": "curl_r",
+     "base": [
+      753.6,
+      653.4
+     ],
+     "tip": [
+      779.1,
+      899.7
+     ],
+     "freq": 3.7,
+     "damp": 0.2,
+     "gain": 1.9,
+     "spread": 0.45,
+     "vertical": 1.6
+    },
+    {
+     "name": "tuft",
+     "base": [
+      532.7,
+      169.1
+     ],
+     "tip": [
+      524.2,
+      11.9
+     ],
+     "freq": 3.6,
+     "damp": 0.22,
+     "gain": 0.9,
+     "spread": 0.8,
+     "vertical": 1.2
+    }
+   ]
+  }
+ },
+ "defaults": {
+  "rot": -82.0,
+  "head_rot": 62.0,
+  "lid": 1.0,
+  "shadow": 0.0,
+  "smile": 0.45,
+  "life": 0.7
+ }
+}

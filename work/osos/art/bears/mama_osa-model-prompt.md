@@ -1,0 +1,10 @@
+You are the art department for a 2D cartoon. Use your built-in image generation tool (image_gen) to make ONE image. Do NOT draw art with code. Work only inside this folder (the working directory).
+
+Reference: the attached image shows a cartoon character sheet of "Luma", a small kid (head variants, torso, boots, hands). Match its STYLE exactly: flat cel colours, thick dark-brown outline (#311605) of that same weight, simple storybook TV children's cartoon, big head (head is about 40% of the total height), simple chunky shapes, no gradients, no texture, no shadows.
+
+Draw the MODEL SHEET of this new character, a bipedal cartoon bear standing upright and walking on two legs like a person:
+MAMA_OSA, a medium-size mother bear: warm cinnamon-brown fur (#b97a45), lighter cream muzzle (#f0d3a0), round ears with a red bow (#d8402f) between the ears on top, brown-black nose. She wears a pink dress (#ef9bb0) with a white apron (#fbf6ec) decorated with small flowers. Round soft friendly body.
+
+Output: ONE wide image on a TRANSPARENT background (real alpha), showing the SAME character three times in one row with generous space between: (1) full body FRONT view, standing, arms relaxed at the sides, neutral closed-mouth friendly face; (2) full body THREE-QUARTER view looking to the right; (3) full body SIDE PROFILE view facing right. Same size and proportions in all three, whole body including both feet visible (bear paw feet with soles, no shoes). Bears have short stubby tails not visible. No text, no labels, no guide lines.
+
+Save as `mama_osa-model.png` in the working directory (largest size the tool allows). Verify with Pillow it is RGBA and the four corner pixels have alpha 0; if a checkerboard or solid background was painted, regenerate (max 3 attempts). Then write one line with the final file and size.
