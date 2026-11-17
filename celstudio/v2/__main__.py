@@ -61,27 +61,10 @@ def main():
         stage.frame(shot, args.time).save(args.output)
         return
     import skia
-    stage = Stage(film, root, args.width)
-    tiles = []
-    for shot in film['shots']:
-        if args.shot and shot['id'] not in args.shot:
-            continue
-        count = max(1, int(shot['duration']/args.step)) if args.step else args.columns
-        for i in range(count):
-            t = (i+.5)*shot['duration']/count
-            tiles.append((f"{shot['id']} {t:.2f}s", stage.frame(shot, t)))
-    columns = args.columns
-    rows = (len(tiles)+columns-1)//columns
-    surface = skia.Surface(columns*stage.width, rows*stage.height)
-    canvas = surface.getCanvas()
-    font = skia.Font(skia.Typeface('Arial'), 18)
-    for i, (label, image) in enumerate(tiles):
-        x, y = (i % columns)*stage.width, (i//columns)*stage.height
-        canvas.drawImage(image, x, y)
-        canvas.drawString(label, x+7, y+21, font, skia.Paint(Color=skia.ColorBLACK))
-        canvas.drawString(label, x+6, y+20, font, skia.Paint(Color=skia.ColorWHITE))
+    from .stage import contact_sheet
+    image = contact_sheet(film, root, args.shot, args.columns, args.width, args.step)
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)
-    surface.makeImageSnapshot().save(args.output, skia.kJPEG if args.output.lower().endswith('jpg') else skia.kPNG)
+    image.save(args.output, skia.kJPEG if args.output.lower().endswith('jpg') else skia.kPNG)
 
 
 if __name__ == '__main__':

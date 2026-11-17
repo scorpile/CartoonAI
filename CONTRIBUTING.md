@@ -16,7 +16,7 @@ cd CartoonAI
 python -m pip install -r requirements-dev.txt    # runtime deps + pytest + scipy (for the art-prep scripts)
 ```
 
-You also need [FFmpeg](https://ffmpeg.org/) on your `PATH` to render videos. Run the studio with `python -m celstudio serve --open`.
+You also need [FFmpeg](https://ffmpeg.org/) on your `PATH` to render videos. Run the studio with `python -m celstudio serve --open`. Full setup: [docs/en/INSTALL.md](docs/en/INSTALL.md). For the MCP server (`celstudio/mcp_server.py`) also run `python -m pip install -r requirements-mcp.txt`; `tests/test_mcp.py` is skipped without it. A new tool must reuse `project.py` / `api.py` (no duplicated logic), stay inside the projects root and make no network or LLM calls.
 
 ### Run the tests
 
@@ -73,7 +73,7 @@ cd CartoonAI
 python -m pip install -r requirements-dev.txt    # dependencias + pytest + scipy (para los scripts de preparación de arte)
 ```
 
-También necesitas [FFmpeg](https://ffmpeg.org/) en el `PATH` para renderizar videos. Abre el estudio con `python -m celstudio serve --open`.
+También necesitas [FFmpeg](https://ffmpeg.org/) en el `PATH` para renderizar videos. Abre el estudio con `python -m celstudio serve --open`. Instalación completa: [docs/INSTALACION.md](docs/INSTALACION.md). Para el servidor MCP (`celstudio/mcp_server.py`) ejecuta también `python -m pip install -r requirements-mcp.txt`; `tests/test_mcp.py` se omite sin él. Una herramienta nueva debe reutilizar `project.py` / `api.py` (sin duplicar lógica), quedarse dentro de la carpeta de proyectos y no hacer llamadas de red ni a un LLM.
 
 ### Ejecutar las pruebas
 

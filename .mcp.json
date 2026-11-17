@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "cel-studio": {
+      "command": "python",
+      "args": ["-m", "celstudio.mcp"]
+    }
+  }
+}

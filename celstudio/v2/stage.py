@@ -633,3 +633,28 @@ def render_film(film_path, destination, width=None, shots=None, workers=None, mo
                '-i', str(listing), '-c', 'copy', '-movflags', '+faststart', str(destination)]
     subprocess.run(command, check=True)
     return {'file': str(destination), 'frames': sum(counts), 'seconds': sum(counts)/film['fps'], 'shots': len(jobs)}
+
+
+def contact_sheet(film, root, shots=None, columns=6, width=480, step=0.0, per_shot=None):
+    """Contact sheet as a Skia image laid out in `columns` columns: `per_shot` (default `columns`) evenly spaced frames per shot,
+    or one every `step` seconds."""
+    import skia
+    stage = Stage(film, root, width)
+    tiles = []
+    for shot in film['shots']:
+        if shots and shot['id'] not in shots:
+            continue
+        count = max(1, int(shot['duration']/step)) if step else (per_shot or columns)
+        for i in range(count):
+            t = (i+.5)*shot['duration']/count
+            tiles.append((f"{shot['id']} {t:.2f}s", stage.frame(shot, t)))
+    rows = max(1, (len(tiles)+columns-1)//columns)
+    surface = skia.Surface(columns*stage.width, rows*stage.height)
+    canvas = surface.getCanvas()
+    font = skia.Font(skia.Typeface('Arial'), 18)
+    for i, (label, image) in enumerate(tiles):
+        x, y = (i % columns)*stage.width, (i//columns)*stage.height
+        canvas.drawImage(image, x, y)
+        canvas.drawString(label, x+7, y+21, font, skia.Paint(Color=skia.ColorBLACK))
+        canvas.drawString(label, x+6, y+20, font, skia.Paint(Color=skia.ColorWHITE))
+    return surface.makeImageSnapshot()

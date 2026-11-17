@@ -50,7 +50,7 @@ AI is not removed; it is used where it adds the most, and never in the render lo
 4. **Critic.** An agent looks at contact sheets (`sheet`) and motion strips and proposes fixes. Passing validation does not mean it looks good; a visual review is part of the loop.
 5. **Editor.** A note becomes a small data change: shift a time, lengthen a pause, swap an expression, move a camera key. Re-render and compare.
 
-The workflow for agents is described in [`skills/cartoon-production/SKILL.md`](skills/cartoon-production/SKILL.md). Agents such as Claude Code or Codex can drive the whole pipeline; humans can do the same by hand in the web studio.
+The workflow for agents is described in [`skills/cartoon-production/SKILL.md`](skills/cartoon-production/SKILL.md). Agents such as Claude Code, Codex or Claude Desktop can drive the whole pipeline through the built-in **MCP server** (`python -m celstudio.mcp`: read and validate scripts, edit shots with a revision check, look at frames and contact sheets, start renders) or through the CLI; humans can do the same by hand in the web studio. Setup: [docs/en/INSTALL.md](docs/en/INSTALL.md).
 
 ## Demo videos
 
@@ -95,11 +95,12 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 - **Structure:** a single film, or a **series** with a shared library (characters, sets, props) and many episodes, each with its own scenes, shots, `film.json` and renders.
 - **Web studio** (bilingual ES/EN): references, script, characters, sets and props, scenes, shots with live preview, render with progress, series and episode management, library search and usage tracking.
 - **CLI:** `compile`, `frame`, `sheet`, `render`, `new-series`, `new-episode`, `series-convert`.
+- **MCP server for AI agents** (`python -m celstudio.mcp`, optional dependency): tools to list projects, read / check / save scripts, search the library, render frames and contact sheets, and start video renders. Works with Claude Code, Codex, Claude Desktop and any MCP client. See [docs/en/INSTALL.md](docs/en/INSTALL.md).
 - **Validation:** `check()` reports errors with a path in the script before anything is rendered.
 
 ## Quick start
 
-Requirements: a recent Python 3 (developed on 3.13) and [FFmpeg](https://ffmpeg.org/) on your `PATH`. Works on Windows, macOS and Linux.
+Requirements: Python 3.10+ (developed on 3.13) and [FFmpeg](https://ffmpeg.org/) on your `PATH` (only to render videos). Works on Windows, macOS and Linux.
 
 ```bash
 git clone https://github.com/scorpile/CartoonAI.git
@@ -109,6 +110,8 @@ python -m celstudio serve --open             # web studio at http://127.0.0.1:87
 ```
 
 On Windows you can also double-click `ABRIR_CEL_STUDIO.cmd`. The server listens on `127.0.0.1` only; if the port is busy pick another with `--port`.
+
+**Full installation and agent setup** (FFmpeg per OS, virtual environment, tests, Claude Code / Codex / Claude Desktop configuration): [docs/en/INSTALL.md](docs/en/INSTALL.md).
 
 ### CLI
 
@@ -150,7 +153,7 @@ Some preparation scripts in `work/` need `scipy` (`requirements-dev.txt`).
 ```
 celstudio/v2/        engine: puppet.py (rigs), anim.py (curves, IK), stage.py (renderer), gfx.py, fx.py,
                      project.py (script format, validation, series), direct.py (Python DSL), api.py (HTTP API), i18n.py
-celstudio/           server.py and the CLI entry point (python -m celstudio)
+celstudio/           server.py and the CLI entry point (python -m celstudio); mcp_server.py + mcp/: MCP server (python -m celstudio.mcp)
 web/                 the web studio (studio.html, studio.css, studio.js)
 docs/                format and engine guides (English in docs/en, Spanish in docs/)
 skills/              cartoon-production/SKILL.md: workflow for AI agents
@@ -168,7 +171,8 @@ Rendered videos are release assets, not stored in git.
 |---|---|
 | [docs/en/FORMAT.md](docs/en/FORMAT.md): `script.json`, `film.json`, series, verbs | [docs/FORMATO_V2.md](docs/FORMATO_V2.md) |
 | [docs/en/ENGINE.md](docs/en/ENGINE.md): engine concepts, style, commands, limits | [docs/ESTUDIO_V3.md](docs/ESTUDIO_V3.md) (with the full change log) |
-| [skills/cartoon-production/SKILL.md](skills/cartoon-production/SKILL.md): agent workflow (Spanish) | same |
+| [docs/en/INSTALL.md](docs/en/INSTALL.md): installation, MCP server and agent setup | [docs/INSTALACION.md](docs/INSTALACION.md) |
+| [skills/cartoon-production/SKILL.md](skills/cartoon-production/SKILL.md): agent workflow | [SKILL.es.md](skills/cartoon-production/SKILL.es.md) |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | same |
 
 ## License

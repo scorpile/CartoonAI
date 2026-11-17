@@ -50,7 +50,7 @@ La IA no se elimina; se usa donde más aporta y nunca en el bucle de render.
 4. **Crítico.** Un agente mira hojas de contacto (`sheet`) y tiras de movimiento y propone correcciones. Pasar la validación no significa que se vea bien; la revisión visual es parte del ciclo.
 5. **Editor.** Una nota se convierte en un cambio pequeño de datos: mover un tiempo, alargar una pausa, cambiar una expresión, mover una clave de cámara. Se vuelve a renderizar y se compara.
 
-El flujo para agentes está descrito en [`skills/cartoon-production/SKILL.md`](skills/cartoon-production/SKILL.md). Agentes como Claude Code o Codex pueden manejar toda la cadena; una persona puede hacer lo mismo a mano en el estudio web.
+El flujo para agentes está descrito en [`skills/cartoon-production/SKILL.es.md`](skills/cartoon-production/SKILL.es.md) (versión en inglés: `SKILL.md`). Agentes como Claude Code, Codex o Claude Desktop pueden manejar toda la cadena con el **servidor MCP** incluido (`python -m celstudio.mcp`: leer y validar guiones, editar planos con control de revisión, mirar fotogramas y hojas de contacto, lanzar renders) o con la CLI; una persona puede hacer lo mismo a mano en el estudio web. Configuración: [docs/INSTALACION.md](docs/INSTALACION.md).
 
 ## Videos de demostración
 
@@ -95,11 +95,12 @@ Ver [CONTRIBUTING.md](CONTRIBUTING.md).
 - **Estructura:** una película suelta, o una **serie** con biblioteca compartida (personajes, escenarios, utilería) y muchos capítulos, cada uno con sus escenas, planos, `film.json` y renders.
 - **Estudio web** (bilingüe ES/EN): referencias, guion, personajes, escenarios y utilería, escenas, planos con vista previa, render con progreso, gestión de series y capítulos, búsqueda en la biblioteca y seguimiento de usos.
 - **CLI:** `compile`, `frame`, `sheet`, `render`, `new-series`, `new-episode`, `series-convert`.
+- **Servidor MCP para agentes de IA** (`python -m celstudio.mcp`, dependencia opcional): herramientas para listar proyectos, leer / validar / guardar guiones, buscar en la biblioteca, renderizar fotogramas y hojas de contacto y lanzar renders de video. Funciona con Claude Code, Codex, Claude Desktop y cualquier cliente MCP. Ver [docs/INSTALACION.md](docs/INSTALACION.md).
 - **Validación:** `check()` informa errores con ruta dentro del guion antes de renderizar nada.
 
 ## Inicio rápido
 
-Requisitos: un Python 3 reciente (desarrollado con 3.13) y [FFmpeg](https://ffmpeg.org/) en el `PATH`. Funciona en Windows, macOS y Linux.
+Requisitos: Python 3.10+ (desarrollado con 3.13) y [FFmpeg](https://ffmpeg.org/) en el `PATH` (solo para renderizar videos). Funciona en Windows, macOS y Linux.
 
 ```bash
 git clone https://github.com/scorpile/CartoonAI.git
@@ -109,6 +110,8 @@ python -m celstudio serve --open             # estudio web en http://127.0.0.1:8
 ```
 
 En Windows también puedes hacer doble clic en `ABRIR_CEL_STUDIO.cmd`. El servidor escucha solo en `127.0.0.1`; si el puerto está ocupado elige otro con `--port`.
+
+**Instalación completa y configuración de agentes** (FFmpeg por sistema, entorno virtual, pruebas, Claude Code / Codex / Claude Desktop): [docs/INSTALACION.md](docs/INSTALACION.md).
 
 ### CLI
 
@@ -150,7 +153,7 @@ Algunos scripts de preparación de `work/` necesitan `scipy` (`requirements-dev.
 ```
 celstudio/v2/        motor: puppet.py (rigs), anim.py (curvas, IK), stage.py (renderizador), gfx.py, fx.py,
                      project.py (formato del guion, validación, series), direct.py (DSL de Python), api.py (API HTTP), i18n.py
-celstudio/           server.py y el punto de entrada de la CLI (python -m celstudio)
+celstudio/           server.py y el punto de entrada de la CLI (python -m celstudio); mcp_server.py + mcp/: servidor MCP (python -m celstudio.mcp)
 web/                 el estudio web (studio.html, studio.css, studio.js)
 docs/                guías de formato y motor (español en docs/, inglés en docs/en)
 skills/              cartoon-production/SKILL.md: flujo de trabajo para agentes de IA
@@ -168,7 +171,8 @@ Los videos renderizados son archivos de release, no están en git.
 |---|---|
 | [docs/FORMATO_V2.md](docs/FORMATO_V2.md): `script.json`, `film.json`, series, verbos | [docs/en/FORMAT.md](docs/en/FORMAT.md) |
 | [docs/ESTUDIO_V3.md](docs/ESTUDIO_V3.md): motor, estilo, comandos, límites (con el historial completo de cambios) | [docs/en/ENGINE.md](docs/en/ENGINE.md) |
-| [skills/cartoon-production/SKILL.md](skills/cartoon-production/SKILL.md): flujo para agentes | igual |
+| [docs/en/INSTALL.md](docs/en/INSTALL.md): installation, MCP server and agent setup | [docs/INSTALACION.md](docs/INSTALACION.md) |
+| [skills/cartoon-production/SKILL.md](skills/cartoon-production/SKILL.md): agent workflow | [SKILL.es.md](skills/cartoon-production/SKILL.es.md) |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | igual |
 
 ## Licencia
